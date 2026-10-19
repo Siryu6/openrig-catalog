@@ -1,0 +1,18 @@
+id: gx-fz1b
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_maestro_fz1b_#_maestro_fz1b_
+bundle: gx_maestro_fz1b.lv2
+name: GxFz1b
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Maestro FZ-1B
+tags:
+- vintage
+- sixties
+summary: Early-sixties fuzz, buzzy and brassy.
+description: >-
+  Simulation of a vintage fuzz pedal from the early sixties. Balance and volume for
+  that buzzing, brassy fuzz from old records.

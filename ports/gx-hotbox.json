@@ -1,0 +1,90 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_hotbox_#_hotbox_",
+  "name": "GxHotBox",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "1a39a03018d27b5167fb660ae95c40861eb914e56ff78ea612e987755cbd34be",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "BASS",
+      "name": "BASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "GAIN",
+      "name": "GAIN",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "TREBLE",
+      "name": "TREBLE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "VOLUME",
+      "name": "VOLUME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    }
+  ]
+}

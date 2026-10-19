@@ -1,0 +1,18 @@
+id: gx-heathkit
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_Heathkit_#_Heathkit_
+bundle: gx_Heathkit.lv2
+name: GxHeathkit
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: ''
+tags:
+- vintage
+- raw
+summary: Vintage distortion booster with a raw, fuzzy edge.
+description: >-
+  Simulation of an old distortion booster pedal. Level and tone only: a raw, sputtery
+  fuzz with plenty of character.

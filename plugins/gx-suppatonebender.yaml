@@ -1,0 +1,18 @@
+id: gx-suppatonebender
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_vstb_#_vstb_
+bundle: gx_vstb.lv2
+name: GxSuppaToneBender
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Vox Supa Tone Bender
+tags:
+- vintage
+- british
+summary: British sixties fuzz with fuzz, tone and volume.
+description: >-
+  Analogue simulation of a sixties British fuzz pedal. Thick, sustaining fuzz with a
+  tone knob to dial in the bite.

@@ -1,0 +1,18 @@
+id: gx-bottlerocket
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_bottlerocket_#_bottlerocket_
+bundle: gx_bottlerocket.lv2
+name: GxBottleRocket
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- tube
+- preamp
+summary: Tube preamp pedal with bass and treble.
+description: >-
+  Analogue simulation of a valve preamp pedal. Gain plus a two-band EQ for anything
+  from a fat clean boost to a crunchy rhythm sound.

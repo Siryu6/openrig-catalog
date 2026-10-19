@@ -1,0 +1,17 @@
+id: gx-knightfuzz
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_KnightFuzz_#_KnightFuzz_
+bundle: gx_KnightFuzz.lv2
+name: GxKnightFuzz
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: ''
+tags:
+- vintage
+summary: Simple vintage fuzz, input and volume.
+description: >-
+  A two-knob vintage fuzz. Input sets how hard the circuit is hit, from a broken-up
+  growl to a full buzzing fuzz.

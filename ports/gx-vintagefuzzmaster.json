@@ -1,0 +1,78 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_vfm_#_vfm_",
+  "name": "GxVintageFuzzMaster",
+  "version": "28.4",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "80e7aafdee193198af93b6426c854f767b3b63b971b6bd00f01f59af2388afbe",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "INTENSITY",
+      "name": "INTENSITY",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.2,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "MODE",
+      "name": "MODE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Bass"
+        },
+        {
+          "value": 1,
+          "label": "Bright"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "VOLUME",
+      "name": "VOLUME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.2,
+      "unit": null
+    }
+  ]
+}

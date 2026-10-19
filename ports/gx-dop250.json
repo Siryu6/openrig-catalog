@@ -1,0 +1,68 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_DOP250_#_DOP250_",
+  "name": "GxDOP250",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "b125c245281ac6bababf453b870650f722f1c7d0edfb266306d5d6b4730fc145",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "GAIN",
+      "name": "GAIN",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "LEVEL",
+      "name": "LEVEL",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    }
+  ]
+}

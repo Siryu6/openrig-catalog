@@ -1,0 +1,18 @@
+id: gx-hotbox
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_hotbox_#_hotbox_
+bundle: gx_hotbox.lv2
+name: GxHotBox
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- tube
+- preamp
+summary: Tube preamp overdrive with interactive tone controls.
+description: >-
+  Analogue simulation of a valve preamp with overdrive. The bass and treble controls
+  interact like a real tone stack.

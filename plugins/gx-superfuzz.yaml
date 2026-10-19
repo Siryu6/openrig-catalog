@@ -1,0 +1,18 @@
+id: gx-superfuzz
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_sfp_#_sfp_
+bundle: gx_sfp.lv2
+name: GxSuperFuzz
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Univox Super-Fuzz
+tags:
+- octave
+- vintage
+summary: Octave fuzz with an expander switch and a trim control.
+description: >-
+  Simulation of a classic octave fuzz. The Expander switch scoops the mids, and the
+  internal trim is exposed to set the amount of harmonics.

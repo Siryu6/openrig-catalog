@@ -1,0 +1,18 @@
+id: gx-ultracab
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_ultracab_#_ultracab_
+bundle: gx_ultracab.lv2
+name: GxUltraCab
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Cabinet
+kind: cab
+inspired_by: ''
+tags:
+- stereo
+- no-ir
+summary: Cabinet simulator with size, punch and resonance, no IR needed.
+description: >-
+  A cabinet simulator that also models the non-linear response of the speaker. Shape
+  it with size, resonance, punch, mids and top.

@@ -1,0 +1,17 @@
+id: gx-voodoofuzz
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_voodoo_#_voodoo_
+bundle: gx_voodoo.lv2
+name: GxVoodooFuzz
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Voodoo Lab SuperFuzz
+tags:
+- octave
+summary: Octave-flavoured fuzz with attack, tone and resonance.
+description: >-
+  A Bosstone-style fuzz, then a tone stage in parallel with a dark booster. Attack,
+  tone and resonance shape a thick, vocal fuzz.

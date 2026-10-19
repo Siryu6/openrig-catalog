@@ -1,0 +1,68 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_TubeDistortion_#_TubeDistortion_",
+  "name": "GxTubeDistortion",
+  "version": "35.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "d6912608b9d39f5a02346ff5aea6576f0b1f9fbead0586a13d217915aea2e3d3",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "INPUT",
+      "name": "INPUT",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.2,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "OUTPUT",
+      "name": "OUTPUT",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    }
+  ]
+}

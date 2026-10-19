@@ -1,0 +1,17 @@
+id: gx-tubedistortion
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_TubeDistortion_#_TubeDistortion_
+bundle: gx_TubeDistortion.lv2
+name: GxTubeDistortion
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Distortion
+kind: pedal
+inspired_by: ''
+tags:
+- tube
+summary: Tube-based distortion pedal, input and output.
+description: >-
+  Simulation of a valve distortion pedal. Input drives the tube from warm crunch to
+  thick distortion; output sets the level.

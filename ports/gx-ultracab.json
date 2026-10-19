@@ -1,0 +1,126 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_ultracab_#_ultracab_",
+  "name": "GxUltraCab",
+  "version": "35.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "ec8c57369a71b84f9dbd1cb8748a6f544cb95fda9d296c70b63b1adbf24a88b4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "out1",
+      "name": "Out1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "in1",
+      "name": "In1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 4,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 5,
+      "symbol": "GAIN",
+      "name": "GAIN",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "MIDS",
+      "name": "MIDS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "PUNCH",
+      "name": "PUNCH",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "RESONANCE",
+      "name": "RESONANCE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "SIZE",
+      "name": "SIZE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "TOP",
+      "name": "TOP",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_uvox_#_uvox_",
+  "name": "GxUVox720k",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "b577a41d965082c626063076586d7acc7f0c26dbf947397aac07c543af8b3c73",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BASS",
+      "name": "BASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "CLIPPING",
+      "name": "CLIPPING",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "GAIN",
+      "name": "GAIN",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "REVERBLEVEL",
+      "name": "REVERBLEVEL",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.2,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "REVERB",
+      "name": "REVERB",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "OFF"
+        },
+        {
+          "value": 1,
+          "label": "ON"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "TREBLE",
+      "name": "TREBLE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.2,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "VOLUME",
+      "name": "VOLUME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.17,
+      "unit": null
+    }
+  ]
+}

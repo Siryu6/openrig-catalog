@@ -1,0 +1,64 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_slowgear_#_slowgear_",
+  "name": "GxSlowGear",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "GatePlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "8cb6ecf4fe752cd46cf7ae7b34a9d50d58361dcc054ad2f4e5987a044a0d6897",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "DOWNTIME",
+      "name": "DOWNTIME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1000,
+      "default": 5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "TRESHOLD",
+      "name": "TRESHOLD",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "UPTIME",
+      "name": "UPTIME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1000,
+      "default": 100,
+      "unit": null
+    }
+  ]
+}

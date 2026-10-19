@@ -1,0 +1,104 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_boobtube_#_boobtube_",
+  "name": "GxBoobTube",
+  "version": "35.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "64face1edc22ceb4fd130bdcb8e7a19c8eb8ce0af3c08b2c6e2578b0530277e4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "GAIN",
+      "name": "GAIN",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.15,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "TONE",
+      "name": "TONE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "VOLUME",
+      "name": "VOLUME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "VOLTAGE",
+      "name": "VOLTAGE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "40V"
+        },
+        {
+          "value": 1,
+          "label": "60V"
+        }
+      ]
+    }
+  ]
+}

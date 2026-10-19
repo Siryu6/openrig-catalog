@@ -1,0 +1,18 @@
+id: gx-eternity
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_eternity_#_eternity_
+bundle: gx_eternity.lv2
+name: GxEternity
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- transparent
+- low-compression
+summary: Low-compression overdrive that keeps your tone.
+description: >-
+  Natural overdrive with little compression and colour. The Glass control boosts the
+  highs instead of cutting them, so the tone stays clear, never muddy.

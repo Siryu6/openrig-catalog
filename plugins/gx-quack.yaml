@@ -1,0 +1,18 @@
+id: gx-quack
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_quack_#_quack_
+bundle: gx_quack.lv2
+name: GxQuack
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Envelope filter
+kind: pedal
+inspired_by: ''
+tags:
+- funk
+- auto-wah
+summary: Envelope wah that follows your picking, with drive.
+description: >-
+  Envelope-controlled wah: the harder you pick, the more it opens. Depth, peak and
+  range shape the sweep, and a built-in drive adds grit.

@@ -1,0 +1,53 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_hyperion_#_hyperion_",
+  "name": "GxHyperion",
+  "version": "28.3",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "1ac1f19d2c88be3f14456a15705efc16630754607c80085830ec9907d602df9b",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "INTENSITY",
+      "name": "INTENSITY",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "VOLUME",
+      "name": "VOLUME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    }
+  ]
+}

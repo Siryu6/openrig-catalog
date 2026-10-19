@@ -1,0 +1,19 @@
+id: gx-blueamp
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_blueamp_#_blueamp_
+bundle: gx_blueamp.lv2
+name: GxBlueAmp
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: Late-1950s Princeton and Champ
+tags:
+- tube
+- clean
+- vintage
+summary: Small single-ended tube amp, tight bass and clean highs.
+description: >-
+  Single-ended head in the spirit of small late-fifties practice amps. Tight bass,
+  clear mids and highs, and a sweet breakup when you dig in.

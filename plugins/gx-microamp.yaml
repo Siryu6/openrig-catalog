@@ -1,0 +1,18 @@
+id: gx-microamp
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_MicroAmp_#_MicroAmp_
+bundle: gx_MicroAmp.lv2
+name: GxMicroAmp
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Boost
+kind: pedal
+inspired_by: ''
+tags:
+- clean
+- transparent
+summary: Transparent clean boost with a single gain knob.
+description: >-
+  A clean volume booster. Put it before an amp or a drive to push it harder into
+  saturation, or after to lift a solo.

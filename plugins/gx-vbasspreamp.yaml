@@ -1,0 +1,17 @@
+id: gx-vbasspreamp
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_voxbass_#_voxbass_
+bundle: gx_voxbass.lv2
+name: GxVBassPreAmp
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Preamp
+kind: amp
+inspired_by: Vox Venue Bass 100
+tags:
+- bass
+summary: Eighties bass amp preamp with three-band EQ and cab.
+description: >-
+  Analogue simulation of the preamp section of an eighties bass amp. Bass, mid and
+  treble controls and a cabinet simulation.

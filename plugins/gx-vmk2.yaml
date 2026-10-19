@@ -1,0 +1,19 @@
+id: gx-vmk2
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_vmk2d_#_vmk2d_
+bundle: gx_vmk2d.lv2
+name: GxVMK2
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Preamp
+kind: amp
+inspired_by: Vox MkII Conqueror
+tags:
+- vibrato
+- reverb
+- british
+summary: Sixties British preamp with vibe and reverb.
+description: >-
+  Analogue simulation of a sixties British tube preamp, with bass, treble, a vibe with
+  speed and depth and a built-in reverb.

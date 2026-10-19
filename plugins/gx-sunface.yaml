@@ -1,0 +1,17 @@
+id: gx-sunface
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_SunFace_#_SunFace_
+bundle: gx_SunFace.lv2
+name: GxSunFace
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Fuzz Face
+tags:
+- vintage
+summary: Classic fuzz face with light modifications.
+description: >-
+  A sixties-style two-transistor fuzz with a few tweaks, and an input control to match
+  your pickups. Cleans up when you roll back the guitar volume.

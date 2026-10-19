@@ -1,0 +1,17 @@
+id: gx-sd2lead
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_sd2lead_#_sd2lead_
+bundle: gx_sd2lead.lv2
+name: GxSD2Lead
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: SD-2
+tags:
+- lead
+summary: Lead overdrive with drive, tone and level.
+description: >-
+  Simulation of an overdrive pedal voiced for leads. More gain than a classic
+  overdrive, still responsive to your playing.

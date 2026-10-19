@@ -1,0 +1,17 @@
+id: gx-sloopyblue
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_sloopyblue_#_sloopyblue_
+bundle: gx_sloopyblue.lv2
+name: GxSloopyBlue
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- blues
+summary: Loose, bluesy overdrive pedal.
+description: >-
+  An overdrive pedal with gain, tone and volume. A loose, open breakup that suits
+  blues and classic rock.

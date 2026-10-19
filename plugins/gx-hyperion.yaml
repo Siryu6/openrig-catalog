@@ -1,0 +1,17 @@
+id: gx-hyperion
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_hyperion_#_hyperion_
+bundle: gx_hyperion.lv2
+name: GxHyperion
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Hyperion bass fuzz
+tags:
+- bass
+summary: Bass fuzz that keeps the low end.
+description: >-
+  A fuzz voiced for bass, with intensity and volume. Keeps the fundamental under the
+  fuzz; it also works on guitar for a huge, dark sound.

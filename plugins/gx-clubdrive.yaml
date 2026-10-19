@@ -1,0 +1,17 @@
+id: gx-clubdrive
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_clubdrive_#_clubdrive_
+bundle: gx_clubdrive.lv2
+name: GxClubDrive
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: EF86 pentode
+tags:
+- tube
+summary: Overdrive built around an EF86 pentode tube.
+description: >-
+  Overdrive pedal based on a simulated EF86 pentode. Two knobs, drive and volume, for
+  a rich and chimey valve crunch.

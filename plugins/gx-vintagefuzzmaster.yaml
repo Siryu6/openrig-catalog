@@ -1,0 +1,17 @@
+id: gx-vintagefuzzmaster
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_vfm_#_vfm_
+bundle: gx_vfm.lv2
+name: GxVintageFuzzMaster
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Vintage Fuzz Master
+tags:
+- vintage
+summary: Vintage fuzz with a bass/bright switch.
+description: >-
+  Fuzz with intensity, volume and a bass/bright switch. With the intensity down it
+  gives a gritty overdrive; turned up, a thick wall of fuzz.

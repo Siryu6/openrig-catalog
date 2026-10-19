@@ -1,0 +1,89 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_sfp_#_sfp_",
+  "name": "GxSuperFuzz",
+  "version": "28.3",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "ae6b8a52e46135be23eeb58e09d1d00183357394e207cc5395c4e3c4511018e8",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BALANCE",
+      "name": "BALANCE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "EXPANDER",
+      "name": "EXPANDER",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "TONE",
+      "name": "TONE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "ON"
+        },
+        {
+          "value": 1,
+          "label": "OFF"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "TRIM",
+      "name": "TRIM",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 0.49,
+      "default": 0.25,
+      "unit": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+id: gx-timray
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_timray_#_timray_
+bundle: gx_timray.lv2
+name: GxTimRay
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- transparent
+summary: Transparent overdrive with bass, treble and a clipping trim.
+description: >-
+  A transparent overdrive with gain, volume, bass and treble controls and a clipping
+  trim. Keeps the character of your guitar and amp.
