@@ -8,4 +8,16 @@ origin: openrig-build
 source:
   url: https://github.com/brummer10/GxPlugins.lv2/releases/download/v1.0/gxplugins_1.0_src.tar.bz2
   sha256: 45ff765d7e4dbf2786af081ff115d59ebbb9a681a0158c521b9f1b9317512dc6
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/gxplugins-1.0/gxplugins-1.0-aarch64.tar.xz
+    sha256: a632c9d75ce5ce20e71ddc03e8559721672d410f716718a9b986387e1a574daa
+    size: 11383172
+    format: tar.xz
+    root: gxplugins-1.0
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/gxplugins-1.0/gxplugins-1.0-x86_64.tar.xz
+    sha256: 7c17de1045ab7460cb21d045536854eb1c32e77a4129cd06bf6d9867a5eec680
+    size: 11372304
+    format: tar.xz
+    root: gxplugins-1.0
