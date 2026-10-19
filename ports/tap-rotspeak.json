@@ -1,0 +1,98 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/rotspeak",
+  "name": "TAP Rotary Speaker",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ModulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "4fcf67aacb5c4b9525fafc2cde4893293cad7f87cf1e2f2b10b5cfd81eb17067",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "hornfreq",
+      "name": "Horn Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "unit": "hz",
+      "designation": "beatsPerMinute"
+    },
+    {
+      "index": 1,
+      "symbol": "bassfreq",
+      "name": "Rotor Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "unit": "hz",
+      "designation": "beatsPerMinute"
+    },
+    {
+      "index": 2,
+      "symbol": "stwidht",
+      "name": "Mic Distance",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "hrbal",
+      "name": "Rotor/Horn Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "latency",
+      "name": "latency",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 5,
+      "symbol": "inputl",
+      "name": "Input L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 6,
+      "symbol": "inputr",
+      "name": "Input R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 7,
+      "symbol": "outputl",
+      "name": "Output L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 8,
+      "symbol": "outputr",
+      "name": "Output R",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

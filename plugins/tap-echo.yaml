@@ -1,0 +1,19 @@
+id: tap-echo
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/echo
+bundle: tap-echo.lv2
+name: TAP Stereo Echo
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Delay
+subcategory: Ping-pong delay
+kind: space
+inspired_by: ''
+tags:
+- stereo
+- haas
+- cross-feedback
+summary: Stereo echo with cross feedback and a Haas mode.
+description: >-
+  Separate left and right delays and feedbacks, a cross mode for ping-pong echoes and
+  a Haas mode that widens a mono source.

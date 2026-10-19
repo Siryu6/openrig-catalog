@@ -1,0 +1,207 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/eq",
+  "name": "TAP Equalizer",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "9bce975a975eb8703e1cdb2e3ebc55f025abde59f7e5fae4129dc1b7754be6a1",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "Band1GainDb",
+      "name": "Band 1 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "Band2GainDb",
+      "name": "Band 2 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "Band3GainDb",
+      "name": "Band 3 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "Band4GainDb",
+      "name": "Band 4 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "Band5GainDb",
+      "name": "Band 5 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "Band6GainDb",
+      "name": "Band 6 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "Band7GainDb",
+      "name": "Band 7 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "Band8GainDb",
+      "name": "Band 8 Gain [dB]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "Band1FreqHz",
+      "name": "Band 1 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 40,
+      "max": 280,
+      "default": 100,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "Band2FreqHz",
+      "name": "Band 2 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 100,
+      "max": 500,
+      "default": 200,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "Band3FreqHz",
+      "name": "Band 3 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 200,
+      "max": 1000,
+      "default": 400,
+      "unit": null
+    },
+    {
+      "index": 11,
+      "symbol": "Band4FreqHz",
+      "name": "Band 4 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 400,
+      "max": 2800,
+      "default": 1000,
+      "unit": null
+    },
+    {
+      "index": 12,
+      "symbol": "Band5FreqHz",
+      "name": "Band 5 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 5000,
+      "default": 3000,
+      "unit": null
+    },
+    {
+      "index": 13,
+      "symbol": "Band6FreqHz",
+      "name": "Band 6 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 3000,
+      "max": 9000,
+      "default": 6000,
+      "unit": null
+    },
+    {
+      "index": 14,
+      "symbol": "Band7FreqHz",
+      "name": "Band 7 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 6000,
+      "max": 18000,
+      "default": 12000,
+      "unit": null
+    },
+    {
+      "index": 15,
+      "symbol": "Band8FreqHz",
+      "name": "Band 8 Freq [Hz]",
+      "type": "control",
+      "direction": "in",
+      "min": 10000,
+      "max": 20000,
+      "default": 15000,
+      "unit": null
+    },
+    {
+      "index": 16,
+      "symbol": "Input",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 17,
+      "symbol": "Output",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

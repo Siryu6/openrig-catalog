@@ -1,0 +1,18 @@
+id: tap-pitch
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/pitch
+bundle: tap-pitch.lv2
+name: TAP Pitch Shifter
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Pitch
+kind: pedal
+inspired_by: ''
+tags:
+- octave
+- harmony
+summary: Pitch shifter, up to one octave up or down.
+description: >-
+  Shifts the pitch by semitones within one octave, with dry and wet levels. Blend for
+  octave or harmony effects, fully wet for a drop tuning.

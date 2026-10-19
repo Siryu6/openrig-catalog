@@ -1,0 +1,18 @@
+id: tap-sigmoid
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/sigmoid
+bundle: tap-sigmoid.lv2
+name: TAP Sigmoid Booster
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- soft-clip
+- simple
+summary: Soft-clipping booster, from warmth to fuzz.
+description: >-
+  A soft-clipping curve with pre and post gain. Light settings add warmth, higher
+  pregain pushes it to a smooth overdrive and beyond.

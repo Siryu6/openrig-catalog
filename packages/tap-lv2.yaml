@@ -1,0 +1,12 @@
+id: tap-lv2
+name: TAP LV2
+version: "0.7.2"  # LV2 port at commit cab6e0dfb2ce
+license: GPL-2.0-or-later
+homepage: https://github.com/moddevices/tap-lv2
+# No Linux build upstream: built by OpenRig, published with its sources
+origin: openrig-build
+source:
+  url: https://github.com/moddevices/tap-lv2/archive/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a.tar.gz
+  sha256: c920c1ba0882b6036781c9faaec8489544111b559802442a44608db3888f95da
+# Pinned by the PR the build opens (tools/pin_build.py)
+artifacts: {}

@@ -1,0 +1,17 @@
+id: tap-eq
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/eq
+bundle: tap-eq.lv2
+name: TAP Equalizer
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- eight-band
+summary: Eight-band EQ with adjustable frequencies.
+description: >-
+  Eight peaking bands, each with its own frequency and gain. Shape the whole tone of a
+  chain in one block.

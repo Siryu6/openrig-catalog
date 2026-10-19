@@ -1,0 +1,18 @@
+id: tap-eqbw
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/eqbw
+bundle: tap-eqbw.lv2
+name: TAP Equalizer/BW
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- eight-band
+- bandwidth
+summary: Eight-band parametric EQ with a bandwidth per band.
+description: >-
+  The TAP Equalizer with a bandwidth control on each band, for precise notches or
+  broad tone shaping.

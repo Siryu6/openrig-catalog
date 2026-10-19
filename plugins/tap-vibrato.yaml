@@ -1,0 +1,18 @@
+id: tap-vibrato
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/vibrato
+bundle: tap-vibrato.lv2
+name: TAP Vibrato
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Vibrato
+kind: pedal
+inspired_by: ''
+tags:
+- pitch
+- wobble
+summary: Pitch vibrato with dry and wet levels.
+description: >-
+  Modulates the pitch with a slow sine wave. Fully wet for a true vibrato, mixed with
+  the dry signal for a chorus-like shimmer.

@@ -1,0 +1,82 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/vibrato",
+  "name": "TAP Vibrato",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ModulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "90d5913e19b61c2867d36b32c577035ab00a08bbc73d54acf4ac6b688f5c8a3d",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "frequency",
+      "name": "Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "Depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "drylevel",
+      "name": "Drylevel",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "wetlevel",
+      "name": "Wetlevel",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "latency",
+      "name": "Latency",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 5,
+      "symbol": "input",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 6,
+      "symbol": "output",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

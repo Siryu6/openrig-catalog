@@ -1,0 +1,20 @@
+id: tap-reverb
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/reverb
+bundle: tap-reverb.lv2
+name: TAP Reverberator
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Reverb
+subcategory: Hall
+kind: space
+inspired_by: ''
+tags:
+- rooms
+- halls
+- plates
+- stereo
+summary: Reverb with many room, hall and plate presets.
+description: >-
+  A reverb engine with a long list of built-in types, from small rooms to large halls
+  and plates. Set the decay and the dry and wet levels.

@@ -1,0 +1,65 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/tremolo",
+  "name": "TAP Tremolo",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ModulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "8b096c9c525e14ddd726b442e6701fe63df7a0913eefa7678cc20bea8dd7a718",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "frequency",
+      "name": "Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 20,
+      "default": 5,
+      "unit": "hz",
+      "designation": "beatsPerMinute"
+    },
+    {
+      "index": 1,
+      "symbol": "depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 2,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -70,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "input_0",
+      "name": "Input_0",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 4,
+      "symbol": "output_0",
+      "name": "Output_0",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

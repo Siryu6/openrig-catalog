@@ -1,0 +1,166 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/echo",
+  "name": "TAP Stereo Echo",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DelayPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "3420b24640555ef97e09fefb03d689672d6d43e5e221a4a7843e7ac0bdf5cd0a",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "ldelay",
+      "name": "L Delay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2000,
+      "default": 300,
+      "unit": "ms",
+      "designation": "beatsPerMinute"
+    },
+    {
+      "index": 1,
+      "symbol": "lfeedback",
+      "name": "Left Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "rhaasdelay",
+      "name": "Right Haas Delay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2000,
+      "default": 300,
+      "unit": "ms",
+      "designation": "beatsPerMinute"
+    },
+    {
+      "index": 3,
+      "symbol": "rhaasfeedback",
+      "name": "Right Haas Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "lecholevel",
+      "name": "Left Echo Level",
+      "type": "control",
+      "direction": "in",
+      "min": -70,
+      "max": 10,
+      "default": -4,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "recholevel",
+      "name": "Right Echo Level",
+      "type": "control",
+      "direction": "in",
+      "min": -70,
+      "max": 10,
+      "default": -4,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "dryLevel",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": -70,
+      "max": 10,
+      "default": -4,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "crossmode",
+      "name": "Cross Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "haaseffect",
+      "name": "Haas Effect",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "swapoutputs",
+      "name": "Swap Outputs",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "inputleft",
+      "name": "Input Left",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 11,
+      "symbol": "outputleft",
+      "name": "Output Left",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 12,
+      "symbol": "inputright",
+      "name": "Input Right",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 13,
+      "symbol": "outputright",
+      "name": "Output Right",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

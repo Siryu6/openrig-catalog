@@ -1,0 +1,18 @@
+id: tap-chorusflanger
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/chorusflanger
+bundle: tap-chorusflanger.lv2
+name: TAP Chorus/Flanger
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Chorus
+kind: pedal
+inspired_by: ''
+tags:
+- flanger
+- stereo
+summary: Stereo chorus and flanger with a contour filter.
+description: >-
+  Classic chorus and flanger in one, with a phase offset between the two sides for a
+  wide stereo image. Short delay for flanging, longer for chorus.

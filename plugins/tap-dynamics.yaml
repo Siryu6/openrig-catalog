@@ -1,0 +1,19 @@
+id: tap-dynamics
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/dynamics
+bundle: tap-dynamics.lv2
+name: TAP Dynamics
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- expander
+- gate
+- presets
+summary: Compressor, expander or gate from 15 built-in curves.
+description: >-
+  Pick one of fifteen transfer curves (compressors, expanders, gates, limiters), then
+  set attack, release and gain. A versatile dynamics block.

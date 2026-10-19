@@ -1,0 +1,87 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/pitch",
+  "name": "TAP Pitch Shifter",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "PitchPlugin",
+    "SpectralPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "0981b6cb05ce1c1aeab72a27dbcf22300cd3ca5590bfc7f037c650af76bbf7f1",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "Semitone",
+      "name": "Semitone Shift",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "Rate",
+      "name": "Rate Shift [%]",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 100,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "Drylevel",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": -90,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "Wetlevel",
+      "name": "Wet Level",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 4,
+      "symbol": "Latency",
+      "name": "latency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 16027,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "Input",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 6,
+      "symbol": "Output",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}
