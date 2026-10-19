@@ -1,0 +1,18 @@
+id: x42-darc
+package: x42-plugins
+uri: http://gareus.org/oss/lv2/darc#mono
+bundle: darc.lv2
+name: Dynamic Compressor
+author: Robin Gareus (x42)
+license: GPL-3.0-or-later
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- transparent
+- simple
+summary: Transparent compressor with few, well-chosen controls.
+description: >-
+  A clean dynamic range compressor: input gain, threshold, ratio, attack and release,
+  plus a hold switch. Evens out picking without changing the tone.

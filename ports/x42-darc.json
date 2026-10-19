@@ -1,0 +1,182 @@
+{
+  "uri": "http://gareus.org/oss/lv2/darc#mono",
+  "name": "x42-comp - Dynamic Compressor Mono",
+  "version": "1800.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "CompressorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "d237c11ba3cadec71a2730a63aed13f0a0b9e94407bb0fdf20d70b577b98fe61",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "enable",
+      "name": "Enable",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 1,
+      "symbol": "hold",
+      "name": "Hold",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 2,
+      "symbol": "inputgain",
+      "name": "Input Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -10,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "threshold",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": -10,
+      "default": -30,
+      "unit": "db"
+    },
+    {
+      "index": 4,
+      "symbol": "Ratio",
+      "name": "Ratio",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ],
+      "scale_points": [
+        {
+          "value": 0.333,
+          "label": "1:1.5"
+        },
+        {
+          "value": 0.5,
+          "label": "1:2"
+        },
+        {
+          "value": 0.666,
+          "label": "1:3"
+        },
+        {
+          "value": 0.75,
+          "label": "1:4"
+        },
+        {
+          "value": 0.8,
+          "label": "1:5"
+        },
+        {
+          "value": 0.9,
+          "label": "1:10"
+        },
+        {
+          "value": 0.95,
+          "label": "1:20"
+        },
+        {
+          "value": 1,
+          "label": "Lim"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "attack",
+      "name": "Attack Time",
+      "type": "control",
+      "direction": "in",
+      "min": 0.001,
+      "max": 0.1,
+      "default": 0.01,
+      "unit": "s",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "release",
+      "name": "Release Time",
+      "type": "control",
+      "direction": "in",
+      "min": 0.03,
+      "max": 3,
+      "default": 0.3,
+      "unit": "s",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "gain_min",
+      "name": "Gain Min",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 8,
+      "symbol": "gain_max",
+      "name": "Gain Max",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 9,
+      "symbol": "rms",
+      "name": "Signal Level",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 10,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 11,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}
