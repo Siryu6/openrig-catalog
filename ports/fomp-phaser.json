@@ -1,0 +1,139 @@
+{
+  "uri": "http://drobilla.net/plugins/fomp/cs_phaser1_lfo",
+  "name": "CS Phaser 1 with LFO",
+  "version": "2.0",
+  "license": null,
+  "classes": [
+    "PhaserPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "7c669089b885650d7b20bac6c6a5d92182a9c517ffe43a912c21d84b469ba342",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "in_gain",
+      "name": "Input gain",
+      "type": "control",
+      "direction": "in",
+      "min": -40,
+      "max": 10,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "sections",
+      "name": "Sections",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 30,
+      "default": 2,
+      "unit": null,
+      "properties": [
+        "integer"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "freq",
+      "name": "Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": -6,
+      "max": 6,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "lfo_freq",
+      "name": "LFO frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 0.01,
+      "max": 30,
+      "default": 1,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "lfo_waveform",
+      "name": "LFO waveform",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "scale_points": [
+        {
+          "value": -1,
+          "label": "Falling Saw"
+        },
+        {
+          "value": 0,
+          "label": "Triangle"
+        },
+        {
+          "value": 1,
+          "label": "Rising Saw"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "mod_gain",
+      "name": "Modulation gain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "fb_gain",
+      "name": "Feedback gain",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "out_mix",
+      "name": "Output mix",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    }
+  ]
+}

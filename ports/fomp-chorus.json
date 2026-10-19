@@ -1,0 +1,92 @@
+{
+  "uri": "http://drobilla.net/plugins/fomp/cs_chorus2",
+  "name": "CS Chorus 2",
+  "version": "2.0",
+  "license": null,
+  "classes": [
+    "ChorusPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "07e4ecb27446b1eebef3b4cc71ef482593642dca3e3071e07db78eb516b6fc7e",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out1",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "delay",
+      "name": "Delay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 30,
+      "default": 1,
+      "unit": "ms"
+    },
+    {
+      "index": 3,
+      "symbol": "mod_freq_1",
+      "name": "Mod Frequency 1",
+      "type": "control",
+      "direction": "in",
+      "min": 0.003,
+      "max": 10,
+      "default": 0.25,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "mod_amp_1",
+      "name": "Mod Amplitude 1",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 1,
+      "unit": "ms"
+    },
+    {
+      "index": 5,
+      "symbol": "mod_freq_2",
+      "name": "Mod Frequency 2",
+      "type": "control",
+      "direction": "in",
+      "min": 0.01,
+      "max": 30,
+      "default": 0.125,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "mod_amp_2",
+      "name": "Mod Amplitude 2",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 3,
+      "default": 0.5,
+      "unit": "ms"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+id: fomp-reverb
+package: fomp
+uri: http://drobilla.net/plugins/fomp/reverb
+bundle: fomp.lv2
+name: Reverb
+author: Fons Adriaensen (fomp)
+license: GPL-2.0-or-later
+family: Reverb
+subcategory: Hall
+kind: space
+inspired_by: ''
+tags:
+- natural
+- stereo
+- studio
+summary: Natural studio reverb with separate low and mid decay times.
+description: >-
+  A smooth, natural feedback-delay reverb with its own decay time for lows and mids,
+  damping and two EQ bands on the tail. From rooms to large halls.

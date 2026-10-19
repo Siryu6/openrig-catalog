@@ -63,6 +63,7 @@ Current recipes:
 | Package | Build system | Bundles |
 |---|---|---|
 | `mda-lv2` | meson | `mda.lv2` (all plugins and presets) |
+| `fomp` | meson | `fomp.lv2` (all plugins) |
 | `airwindows-lv2` | meson | `Airwindows.lv2` (all plugins) |
 | `caps-lv2` | make | the 27 `mod-caps-*.lv2`, with their MOD web UI files (HTML/CSS/PNG, no binary) |
 | `gxplugins` | make (`make mod`) | the 43 `gx_*.lv2`, with MOD's `.ttl` (7 still declare an X11 UI, not shipped) |

@@ -1,0 +1,18 @@
+id: fomp-autowah
+package: fomp
+uri: http://drobilla.net/plugins/fomp/autowah
+bundle: fomp.lv2
+name: Auto-wah
+author: Fons Adriaensen (fomp)
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Envelope filter
+kind: pedal
+inspired_by: ''
+tags:
+- funk
+- auto-wah
+summary: Auto-wah that opens with your pick attack.
+description: >-
+  An envelope-controlled wah: drive sets how much your playing opens it, decay how
+  fast it closes, range and frequency where it sweeps. Mix blends in the dry signal.
