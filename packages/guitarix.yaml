@@ -8,4 +8,16 @@ origin: openrig-build
 source:
   url: https://github.com/brummer10/guitarix/releases/download/V0.47.0/guitarix2-0.47.0.tar.xz
   sha256: f18abd3bd2cb05960d00f15f36c63f97eb1759f9571977e3e42191ff16b9b467
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/guitarix-0.47.0/guitarix-0.47.0-aarch64.tar.xz
+    sha256: f1aa47754b532f9bca838b90492a89fae758020376cba0f96c28d3bb424027ca
+    size: 843380
+    format: tar.xz
+    root: guitarix-0.47.0
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/guitarix-0.47.0/guitarix-0.47.0-x86_64.tar.xz
+    sha256: f9f661ed9cb65a4415fca826ccdf97a1ecd9dd4113a971839e6aa8f766fd64db
+    size: 843328
+    format: tar.xz
+    root: guitarix-0.47.0
