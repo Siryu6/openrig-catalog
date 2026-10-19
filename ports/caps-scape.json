@@ -1,0 +1,116 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/Scape",
+  "name": "C* Scape - Stereo delay + Filters",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DelayPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 2
+  },
+  "ports_hash": "359483d514e192b5b864ddef60a269807d6ff23d565dfad3a8cc757d8e1708b4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "bpm",
+      "name": "BPM",
+      "type": "control",
+      "direction": "in",
+      "min": 30,
+      "max": 182,
+      "default": 100,
+      "unit": "bpm",
+      "designation": "beatsPerMinute"
+    },
+    {
+      "index": 1,
+      "symbol": "div",
+      "name": "Div",
+      "type": "control",
+      "direction": "in",
+      "min": 2,
+      "max": 4,
+      "default": 3,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 1,
+          "label": "♩"
+        },
+        {
+          "value": 2,
+          "label": "♪♪"
+        },
+        {
+          "value": 3,
+          "label": "♪♪♪"
+        },
+        {
+          "value": 4,
+          "label": "♬♬"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "symbol": "feedback",
+      "name": "Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "q",
+      "name": "Q",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.75,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "blend",
+      "name": "Blend",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 6,
+      "symbol": "outl",
+      "name": "Out Left",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 7,
+      "symbol": "outr",
+      "name": "Out Right",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

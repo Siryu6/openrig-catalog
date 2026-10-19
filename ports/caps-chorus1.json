@@ -1,0 +1,100 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/ChorusI",
+  "name": "C* ChorusI - Mono chorus/flanger",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ChorusPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "ac1b2016b584d8ef2af9f295541cb8390ac62d35a98bed986b83b091a892b4e4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "time",
+      "name": "Time",
+      "type": "control",
+      "direction": "in",
+      "min": 2.5,
+      "max": 40,
+      "default": 10,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "width",
+      "name": "Width",
+      "type": "control",
+      "direction": "in",
+      "min": 0.5,
+      "max": 10,
+      "default": 3,
+      "unit": "ms"
+    },
+    {
+      "index": 2,
+      "symbol": "rate",
+      "name": "Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 0.02,
+      "max": 5,
+      "default": 1.25,
+      "unit": "hz"
+    },
+    {
+      "index": 3,
+      "symbol": "blend",
+      "name": "Blend",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "feedforward",
+      "name": "Feedforward",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "feedback",
+      "name": "Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 7,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

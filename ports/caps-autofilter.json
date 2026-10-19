@@ -1,0 +1,150 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/AutoFilter",
+  "name": "C* AutoFilter",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "FilterPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "43a57e831b3a7703e76b3c10b1027d6d104a46423813d1deceb7d65a343063c8",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Low-Pass"
+        },
+        {
+          "value": 1,
+          "label": "Band-Pass"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "filter",
+      "name": "Filter",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Breathy"
+        },
+        {
+          "value": 1,
+          "label": "Fat"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "symbol": "frequency",
+      "name": "Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 3800,
+      "default": 2555,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 3,
+      "symbol": "Q",
+      "name": "Q",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "lfoenv",
+      "name": "LFO/Envelope",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "rate",
+      "name": "Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "shape",
+      "name": "Shape",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 9,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

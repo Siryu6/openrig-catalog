@@ -9,7 +9,7 @@ families:
   Modulation: [Chorus, Flanger, Phaser, Tremolo, Vibrato, Rotary, Ring modulator]
   Delay: [Digital delay, Tape delay, Analog delay, Ping-pong delay]
   Reverb: [Room, Hall, Plate, Spring, Ambience]
-  Utility: [Tuner, Volume, Splitter, Mixer, Meter]
+  Utility: [Tuner, Volume, Splitter, Mixer, Meter, Stereo]
 
 # How the app draws the block when the plugin has no picture fit for it
 kinds: [pedal, amp, combo, cab, space]

@@ -1,0 +1,18 @@
+id: caps-compress
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/Compress
+bundle: mod-caps-Compress.lv2
+name: Compress
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- sustain
+- guitar
+summary: Compressor tuned for natural guitar sustain.
+description: >-
+  Designed to give the electric guitar more sustain without losing its percussive
+  attack. Peak or RMS detection, with saturating modes for extra warmth.

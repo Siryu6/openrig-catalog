@@ -1,0 +1,18 @@
+id: caps-cabinet3
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/CabinetIII
+bundle: mod-caps-CabinetIII.lv2
+name: CabinetIII
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Cabinet
+kind: cab
+inspired_by: ''
+tags:
+- light
+- no-ir
+summary: Light loudspeaker cabinet emulation with several models.
+description: >-
+  Idealised speaker cabinet models built from fixed filters, far lighter than an
+  impulse response. Pick a model after an amp or drive to tame the fizz.

@@ -1,0 +1,117 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/ToneStack",
+  "name": "C* ToneStack - Tone stack emulation",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "6f2eb61fcbef9216ed781622032e6b9a4709ac9c4e16c4100fdc9a7b0755d8d8",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "model",
+      "name": "Model",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Basswoman"
+        },
+        {
+          "value": 1,
+          "label": "Stanford"
+        },
+        {
+          "value": 2,
+          "label": "Wookie"
+        },
+        {
+          "value": 3,
+          "label": "DC 30"
+        },
+        {
+          "value": 4,
+          "label": "Juice 800"
+        },
+        {
+          "value": 5,
+          "label": "Twin"
+        },
+        {
+          "value": 6,
+          "label": "AK 20"
+        },
+        {
+          "value": 7,
+          "label": "Nihon Ace"
+        },
+        {
+          "value": 8,
+          "label": "Porky"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "bass",
+      "name": "Bass",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "mid",
+      "name": "Mid",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "treble",
+      "name": "Treble",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

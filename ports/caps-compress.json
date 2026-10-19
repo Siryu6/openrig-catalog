@@ -1,0 +1,147 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/Compress",
+  "name": "C* Compress - Mono compressor",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "CompressorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "3547cfece03f4550fd274af9802aef7f2d0275672cf01a3691da1a0260f02792",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "measure",
+      "name": "Measure",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "peak"
+        },
+        {
+          "value": 1,
+          "label": "rms"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "no limiting"
+        },
+        {
+          "value": 1,
+          "label": "saturating 2x"
+        },
+        {
+          "value": 2,
+          "label": "saturating 4x"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "symbol": "threshold",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "strength",
+      "name": "Strength",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "attack",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.75,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "release",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 36,
+      "default": 12,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "state",
+      "name": "State",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 8,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 9,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

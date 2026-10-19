@@ -1,0 +1,18 @@
+id: caps-tonestack
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/ToneStack
+bundle: mod-caps-ToneStack.lv2
+name: ToneStack
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Graphic EQ
+kind: pedal
+inspired_by: ''
+tags:
+- amp
+- tone-stack
+summary: Amp tone stack with bass, mid and treble, several models.
+description: >-
+  Emulation of the passive tone stack of classic guitar amps, with several amp models.
+  Put it after a drive for an amp-like EQ.

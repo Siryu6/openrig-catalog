@@ -1,0 +1,253 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/EqFA4p",
+  "name": "C* EqFA4p - 4-band parametric shelving equalizer",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "58614aedafb8735ed31e3ea9291204e5ba9c91c79bb37f1ea4333b1e30de0bfd",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "a_act",
+      "name": "A: Active",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "a_f",
+      "name": "A: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 3500,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 2,
+      "symbol": "a_bw",
+      "name": "A: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0.125,
+      "max": 8,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "a_gain",
+      "name": "A: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 4,
+      "symbol": "b_act",
+      "name": "B: Active",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "B_f",
+      "name": "B: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 6000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "b_bw",
+      "name": "B: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0.125,
+      "max": 8,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "b_gain",
+      "name": "B: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "c_act",
+      "name": "C: Active",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "c_f",
+      "name": "C: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 8000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "c_bw",
+      "name": "C: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0.125,
+      "max": 8,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 11,
+      "symbol": "c_gain",
+      "name": "C: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 12,
+      "symbol": "d_act",
+      "name": "D: Active",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 13,
+      "symbol": "d_f",
+      "name": "D: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 11000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 14,
+      "symbol": "d_bw",
+      "name": "D: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0.125,
+      "max": 8,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 15,
+      "symbol": "d_gain",
+      "name": "D: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 16,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 17,
+      "symbol": "latency",
+      "name": "Latency",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 18,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 19,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

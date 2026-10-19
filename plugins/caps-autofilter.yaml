@@ -1,0 +1,19 @@
+id: caps-autofilter
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/AutoFilter
+bundle: mod-caps-AutoFilter.lv2
+name: AutoFilter
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Envelope filter
+kind: pedal
+inspired_by: ''
+tags:
+- auto-wah
+- funk
+- lfo
+summary: Resonant filter moved by your playing or by an LFO.
+description: >-
+  Band-pass and low-pass filters of several characters. The cutoff follows the input
+  envelope, a wandering fractal LFO, or a mix of both: from auto-wah to slow sweeps.

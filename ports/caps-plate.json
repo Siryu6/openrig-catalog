@@ -1,0 +1,82 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/Plate",
+  "name": "C* Plate - Versatile plate reverb",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 2
+  },
+  "ports_hash": "b7035c18b2f4c064f1bdf21986d920338ea8e8223eee6885ad95b12b95d0a15a",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "bandwidth",
+      "name": "Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "tail",
+      "name": "Tail",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.75,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "damping",
+      "name": "Damping",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "blend",
+      "name": "Blend",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "outl",
+      "name": "Out Left",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 6,
+      "symbol": "outr",
+      "name": "Out Right",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

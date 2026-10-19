@@ -1,0 +1,142 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/CabinetIII",
+  "name": "C* CabinetIII - Idealised loudspeaker cabinet emulation",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "21ad45d96906e9f0bee36ba52c8c527ee00c05e626be05ff2a99ac0718af6e59",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "model",
+      "name": "Model",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 16,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "Twin"
+        },
+        {
+          "value": 2,
+          "label": "Wookie"
+        },
+        {
+          "value": 3,
+          "label": "Blue"
+        },
+        {
+          "value": 4,
+          "label": "Indigo"
+        },
+        {
+          "value": 5,
+          "label": "Supra"
+        },
+        {
+          "value": 6,
+          "label": "Tweedie"
+        },
+        {
+          "value": 7,
+          "label": "Basswoman"
+        },
+        {
+          "value": 8,
+          "label": "Martial"
+        },
+        {
+          "value": 9,
+          "label": "Poser"
+        },
+        {
+          "value": 10,
+          "label": "Cabby"
+        },
+        {
+          "value": 11,
+          "label": "Angel"
+        },
+        {
+          "value": 12,
+          "label": "Matched"
+        },
+        {
+          "value": 13,
+          "label": "Yellow"
+        },
+        {
+          "value": 14,
+          "label": "Piquey"
+        },
+        {
+          "value": 15,
+          "label": "Paladin"
+        },
+        {
+          "value": 16,
+          "label": "Turtle"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "alt",
+      "name": "Alt",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 2,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 4,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

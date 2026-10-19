@@ -1,0 +1,114 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/Spice",
+  "name": "C* Spice",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DynamicsPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "2d3e3d90fe792fcfa417345b56e79e19ab9ec3e8b29f17325dd8205cec6ab3a0",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lof",
+      "name": "Low Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 800,
+      "default": 237.5,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "locomp",
+      "name": "Low Compression",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "logain",
+      "name": "Low Gain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "lovolume",
+      "name": "Low Volume",
+      "type": "control",
+      "direction": "in",
+      "min": -60,
+      "max": 60,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "hif",
+      "name": "High Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 400,
+      "max": 5000,
+      "default": 1550,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "higain",
+      "name": "High Gain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "hivolume",
+      "name": "Hi Volume",
+      "type": "control",
+      "direction": "in",
+      "min": -60,
+      "max": 60,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 8,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}
