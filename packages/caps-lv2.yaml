@@ -7,5 +7,5 @@ homepage: https://github.com/moddevices/caps-lv2
 origin: openrig-build
 source:
   url: https://github.com/moddevices/caps-lv2/archive/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9.tar.gz
-  sha256: null
+  sha256: c57f8aceb1a8bf384516c902224a0e65f34730685939c0c0cb5c1a5e0e388896
 artifacts: {}

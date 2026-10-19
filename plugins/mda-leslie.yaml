@@ -4,7 +4,7 @@ uri: http://drobilla.net/plugins/mda/Leslie
 bundle: mda.lv2
 name: Leslie
 author: Paul Kellett (MDA)
-license: GPL-3.0-or-later
+license: GPL-2.0-or-later OR MIT
 family: Modulation
 subcategory: Rotary
 kind: pedal

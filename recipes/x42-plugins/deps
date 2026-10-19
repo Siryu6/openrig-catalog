@@ -1,0 +1,3 @@
+# fil4's Makefile checks for fftw3f even when only the DSP is built;
+# the DSP does not link it (check_elf.py makes sure)
+libfftw3-dev

@@ -1,11 +1,11 @@
 id: mda-lv2
 name: mda-lv2
 version: "1.2.12"
-license: GPL-3.0-or-later
+license: GPL-2.0-or-later OR MIT
 homepage: https://gitlab.com/drobilla/mda-lv2
 # No Linux arm64 build upstream: built by OpenRig, published with its sources
 origin: openrig-build
 source:
   url: https://download.drobilla.net/mda-lv2-1.2.12.tar.xz
-  sha256: null
+  sha256: 8f2090433e60e90d9c4d0326970c845a3cb471951657cd9355d3dbca4040b873
 artifacts: {}
