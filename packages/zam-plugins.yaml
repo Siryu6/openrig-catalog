@@ -1,0 +1,23 @@
+id: zam-plugins
+name: ZAM Plugins
+version: "4.5"
+license: GPL-2.0-or-later
+homepage: https://github.com/zamaudio/zam-plugins
+origin: upstream
+source:
+  # Signed git tag; the release has no source tarball
+  url: https://github.com/zamaudio/zam-plugins/archive/refs/tags/4.5.tar.gz
+  sha256: null
+artifacts:
+  aarch64:
+    url: https://github.com/zamaudio/zam-plugins/releases/download/4.5/zam-plugins-4.5-linux-arm64.tar.xz
+    sha256: 4e02771b743afaaa2d6912eac083661c1d9ab0a92dd6787414f29e365877b4c2
+    size: 39549040
+    format: tar.xz
+    root: zam-plugins-4.5
+  x86_64:
+    url: https://github.com/zamaudio/zam-plugins/releases/download/4.5/zam-plugins-4.5-linux-x86_64.tar.xz
+    sha256: 16b022cce2998d11d3dbcf15aa6fe176cd14576cad42250ae8cfc56d1b7add7a
+    size: 39868912
+    format: tar.xz
+    root: zam-plugins-4.5

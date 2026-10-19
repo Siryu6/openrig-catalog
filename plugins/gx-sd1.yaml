@@ -1,0 +1,24 @@
+id: gx-sd1
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_sd1sim_#_sd1sim_
+bundle: gx_sd1sim.lv2
+name: GxSD1
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: SD-1
+tags:
+- asymmetric
+summary: Asymmetric overdrive, brighter and grittier.
+description: >-
+  Asymmetric clipping gives more even harmonics than a TS: brighter, with more bite.
+  Great in front of a clean amp for rock rhythm.
+picture:
+  file: gxsd1.png
+  source: >-
+    https://github.com/brummer10/GxSD1.lv2/blob/706407c0fecb9525ec87b4f2f23a8c1870701687/MOD/modgui/screenshot-gxsd1.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

@@ -1,0 +1,24 @@
+id: zam-delay
+package: zam-plugins
+uri: urn:zamaudio:ZamDelay
+bundle: ZamDelay.lv2
+name: ZamDelay
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Delay
+subcategory: Digital delay
+kind: pedal
+inspired_by: ''
+tags:
+- tempo
+- sync
+summary: Clean delay that follows the tempo.
+description: >-
+  Digital delay with feedback, low-pass on the repeats and tempo sync, so it follows
+  tap tempo and MIDI clock.
+picture:
+  file: zamdelay.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/9c08ca8cb31ba77df13c900be77e7b79cac99ea7/plugins/ZamDelay/artwork/zamdelay.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

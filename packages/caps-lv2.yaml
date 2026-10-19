@@ -1,0 +1,11 @@
+id: caps-lv2
+name: CAPS LV2
+version: "0.9.26"  # LV2 port at commit 5d52a0c6e886
+license: GPL-3.0-or-later
+homepage: https://github.com/moddevices/caps-lv2
+# No Linux arm64 build upstream: built by OpenRig, published with its sources
+origin: openrig-build
+source:
+  url: https://github.com/moddevices/caps-lv2/archive/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9.tar.gz
+  sha256: null
+artifacts: {}

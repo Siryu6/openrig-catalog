@@ -1,0 +1,19 @@
+id: gx-tubescreamer
+package: guitarix
+uri: http://guitarix.sourceforge.net/plugins/gxts9#ts9sim
+bundle: gxts9.lv2
+name: GxTubeScreamer
+author: Hermann Meyer
+license: GPL-2.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: TS9
+tags:
+- vintage
+- mid
+- boost
+summary: Mid-hump overdrive that tightens the low end.
+description: >-
+  A circuit simulation of the classic green overdrive: a mid boost that pushes an
+  amp into breakup without muddying the bass. Drive, tone and level, like the pedal.

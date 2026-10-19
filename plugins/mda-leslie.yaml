@@ -1,0 +1,18 @@
+id: mda-leslie
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Leslie
+bundle: mda.lv2
+name: Leslie
+author: Paul Kellett (MDA)
+license: GPL-3.0-or-later
+family: Modulation
+subcategory: Rotary
+kind: pedal
+inspired_by: Rotary speaker
+tags:
+- organ
+- rotary
+summary: Rotating speaker with slow and fast speeds.
+description: >-
+  Horn and drum rotor simulation with speed ramping between chorale and tremolo.
+  Map the speed to a footswitch.

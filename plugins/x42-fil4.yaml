@@ -1,0 +1,25 @@
+id: x42-fil4
+package: x42-plugins
+uri: http://gareus.org/oss/lv2/fil4#mono
+bundle: fil4.lv2
+name: fil4 Parametric EQ
+author: Robin Gareus (x42)
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- eq
+- shelf
+- high-pass
+summary: Six-band parametric EQ with high and low cuts.
+description: >-
+  Four parametric bands, two shelves and high- and low-pass filters. Shape a cabinet,
+  cut mud before the amp, or notch a feedback frequency.
+picture:
+  file: fil4.png
+  source: >-
+    https://github.com/x42/fil4.lv2/blob/885edf4d4c8da3f1414462ec7b5fc1c2da0f3ac1/modgui/screenshot-x42-eq-stereo.png
+  credit: Robin Gareus
+  license: GPL-2.0-or-later

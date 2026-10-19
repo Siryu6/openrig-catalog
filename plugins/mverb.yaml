@@ -1,0 +1,25 @@
+id: mverb
+package: dpf-plugins
+uri: http://distrho.sf.net/plugins/MVerb
+bundle: MVerb.lv2
+name: MVerb
+author: Martin Eastwood (DISTRHO)
+license: GPL-3.0-or-later
+family: Reverb
+subcategory: Hall
+kind: space
+inspired_by: ''
+tags:
+- hall
+- plate
+- lush
+summary: Lush studio reverb, from room to large hall.
+description: >-
+  A dense algorithmic reverb with predelay, size, damping and early/late mix. A
+  big, smooth tail for ambient leads.
+picture:
+  file: mverb.png
+  source: >-
+    https://github.com/DISTRHO/DPF-Plugins/blob/df5cb658a2d8dc6e944d8c26a53853a7c0c6c2b2/plugins/MVerb/Screenshot.png
+  credit: Martin Eastwood, DISTRHO
+  license: GPL-3.0-or-later

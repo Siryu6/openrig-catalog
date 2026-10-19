@@ -1,0 +1,161 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/Leslie",
+  "name": "MDA Leslie",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "d1d5a09507ba746fcff7022f319906dd2cdda2bd4d2783834c2b0a8135bbf6a4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Stop"
+        },
+        {
+          "value": 0.5,
+          "label": "Slow"
+        },
+        {
+          "value": 1,
+          "label": "Fast"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "lo_width",
+      "name": "Lo Width",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "lo_throb",
+      "name": "Lo Throb",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "hi_width",
+      "name": "Hi Width",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.7,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "hi_depth",
+      "name": "Hi Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "hi_throb",
+      "name": "Hi Throb",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.7,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "x_over",
+      "name": "X-Over",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.48,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "speed",
+      "name": "Speed",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 10,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 11,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 12,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

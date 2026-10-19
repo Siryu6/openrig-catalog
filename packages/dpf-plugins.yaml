@@ -1,0 +1,23 @@
+id: dpf-plugins
+name: DPF-Plugins
+version: "1.7"
+# Mixed package: each plugin carries its own license (MVerb: GPL-3.0-or-later)
+license: ISC AND GPL-2.0-or-later AND GPL-3.0-or-later AND LGPL-3.0-only AND MIT
+homepage: https://github.com/DISTRHO/DPF-Plugins
+origin: upstream
+source:
+  url: https://github.com/DISTRHO/DPF-Plugins/archive/refs/tags/v1.7.tar.gz
+  sha256: null
+artifacts:
+  aarch64:
+    url: https://github.com/DISTRHO/DPF-Plugins/releases/download/v1.7/DPF-Plugins-v1.7-linux-arm64.tar.xz
+    sha256: f3251277b3083c363c84908656b24e213b65468ee24e85f5a10bad406b78f877
+    size: 9063488
+    format: tar.xz
+    root: DPF-Plugins-v1.7
+  x86_64:
+    url: https://github.com/DISTRHO/DPF-Plugins/releases/download/v1.7/DPF-Plugins-v1.7-linux-x86_64.tar.xz
+    sha256: 8088e362f9f68fea179abe9f96b83fca07693224ffcf46837c24ff8b59b119cb
+    size: 9827340
+    format: tar.xz
+    root: DPF-Plugins-v1.7

@@ -1,0 +1,163 @@
+{
+  "uri": "urn:dragonfly:early",
+  "name": "Dragonfly Early Reflections",
+  "version": "4.10",
+  "license": "http://www.gnu.org/licenses/gpl-3.0.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "357f5e6f4300fb7c85fdea549e0c3d1a5e61801cf33d4993918da3dd7cf8c043",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "dry_level",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 80,
+      "unit": "pc"
+    },
+    {
+      "index": 5,
+      "symbol": "early_level",
+      "name": "Wet Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 20,
+      "unit": "pc"
+    },
+    {
+      "index": 6,
+      "symbol": "program",
+      "name": "Program",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 7,
+      "default": 2,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Abrupt Echo"
+        },
+        {
+          "value": 1,
+          "label": "Backstage Pass"
+        },
+        {
+          "value": 2,
+          "label": "Concert Venue"
+        },
+        {
+          "value": 3,
+          "label": "Damaged Goods"
+        },
+        {
+          "value": 4,
+          "label": "Elevator Pitch"
+        },
+        {
+          "value": 5,
+          "label": "Floor Thirteen"
+        },
+        {
+          "value": 6,
+          "label": "Garage Band"
+        },
+        {
+          "value": 7,
+          "label": "Home Studio"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "size",
+      "name": "Size",
+      "type": "control",
+      "direction": "in",
+      "min": 10,
+      "max": 60,
+      "default": 20,
+      "unit": "m"
+    },
+    {
+      "index": 8,
+      "symbol": "width",
+      "name": "Width",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 150,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 9,
+      "symbol": "low_cut",
+      "name": "Low Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 200,
+      "default": 50,
+      "unit": "hz"
+    },
+    {
+      "index": 10,
+      "symbol": "high_cut",
+      "name": "High Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 10000,
+      "unit": "hz"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+id: x42-dpl
+package: x42-plugins
+uri: http://gareus.org/oss/lv2/dpl#mono
+bundle: dpl.lv2
+name: Digital Peak Limiter
+author: Robin Gareus (x42)
+license: GPL-3.0-or-later
+family: Dynamics
+subcategory: Limiter
+kind: pedal
+inspired_by: ''
+tags:
+- safety
+- output
+summary: Look-ahead limiter to keep the output safe.
+description: >-
+  A brickwall limiter with look-ahead: nothing goes over the threshold, so a sudden
+  feedback never reaches the front of house at full level.

@@ -1,0 +1,11 @@
+id: x42-plugins
+name: x42-plugins
+version: "20260908"
+license: GPL-2.0-or-later AND GPL-3.0-or-later
+homepage: https://x42-plugins.com/x42/
+# No Linux arm64 build upstream: built by OpenRig, published with its sources
+origin: openrig-build
+source:
+  url: https://gareus.org/misc/x42-plugins/x42-plugins-20260908.tar.xz
+  sha256: null
+artifacts: {}

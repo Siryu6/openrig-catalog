@@ -1,0 +1,17 @@
+id: caps-phaser2
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/PhaserII
+bundle: mod-caps-PhaserII.lv2
+name: PhaserII
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Modulation
+subcategory: Phaser
+kind: pedal
+inspired_by: ''
+tags:
+- swirl
+summary: Classic phaser, from slow swirl to fast warble.
+description: >-
+  Allpass phaser with rate, depth, spread and resonance. Slow and deep for seventies
+  rhythm parts.

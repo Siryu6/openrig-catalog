@@ -1,0 +1,128 @@
+{
+  "uri": "http://gareus.org/oss/lv2/dpl#mono",
+  "name": "x42-dpl - Digital Peak Limiter Mono",
+  "version": "1798.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "LimiterPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "09b3eeea354c02ea9f20003d1b6c83fa918b47e5eefbca6707deef422696c63e",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "control",
+      "name": "control",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "notify",
+      "name": "Notify",
+      "type": "AtomPort",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "enable",
+      "name": "Enable",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "gain",
+      "name": "Input Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -10,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 4,
+      "symbol": "threshold",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -10,
+      "max": 0,
+      "default": -1,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "release",
+      "name": "Release Time",
+      "type": "control",
+      "direction": "in",
+      "min": 0.001,
+      "max": 1,
+      "default": 0.01,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "truepeak",
+      "name": "True Peak",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "level",
+      "name": "Signal Level",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 8,
+      "symbol": "latency",
+      "name": "Signal Latency",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 9,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 10,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

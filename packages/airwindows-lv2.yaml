@@ -1,0 +1,11 @@
+id: airwindows-lv2
+name: airwindows-lv2
+version: "20.0"
+license: MIT
+homepage: https://github.com/hannesbraun/airwindows-lv2
+# No Linux arm64 build upstream: built by OpenRig, published with its sources
+origin: openrig-build
+source:
+  url: https://github.com/hannesbraun/airwindows-lv2/archive/refs/tags/v20.0.tar.gz
+  sha256: null
+artifacts: {}

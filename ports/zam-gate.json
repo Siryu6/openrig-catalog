@@ -1,0 +1,138 @@
+{
+  "uri": "urn:zamaudio:ZamGate",
+  "name": "ZamGate",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "GatePlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 1
+  },
+  "ports_hash": "038f63268f3f6b8272ad7b495a6e66f1ff0779ed8b2e3f5fd5321737fe05ceba",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_sidechain_in",
+      "name": "Sidechain Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "att",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 500,
+      "default": 50,
+      "unit": "ms"
+    },
+    {
+      "index": 4,
+      "symbol": "rel",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 500,
+      "default": 100,
+      "unit": "ms"
+    },
+    {
+      "index": 5,
+      "symbol": "thr",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -60,
+      "max": 0,
+      "default": -60,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "mak",
+      "name": "Makeup",
+      "type": "control",
+      "direction": "in",
+      "min": -30,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "sidechain",
+      "name": "Sidechain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "close",
+      "name": "Max gate close",
+      "type": "control",
+      "direction": "in",
+      "min": -50,
+      "max": 0,
+      "default": -50,
+      "unit": "db"
+    },
+    {
+      "index": 9,
+      "symbol": "mode",
+      "name": "Mode open/shut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "outlevel",
+      "name": "Output Level",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 11,
+      "symbol": "gainr",
+      "name": "Gain Reduction",
+      "type": "control",
+      "direction": "out"
+    }
+  ]
+}

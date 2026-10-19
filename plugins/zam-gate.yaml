@@ -1,0 +1,15 @@
+id: zam-gate
+package: zam-plugins
+uri: urn:zamaudio:ZamGate
+bundle: ZamGate.lv2
+name: ZamGate
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Dynamics
+subcategory: Gate
+kind: pedal
+inspired_by: ''
+tags:
+- noise
+summary: Noise gate for high-gain rigs.
+description: Gate with attack, release and threshold, to silence hum between riffs.

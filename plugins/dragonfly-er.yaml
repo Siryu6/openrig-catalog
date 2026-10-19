@@ -1,0 +1,24 @@
+id: dragonfly-er
+package: dragonfly-reverb
+uri: urn:dragonfly:early
+bundle: DragonflyEarlyReflections.lv2
+name: Dragonfly Early Reflections
+author: Michael Willis
+license: GPL-3.0-or-later
+family: Reverb
+subcategory: Room
+kind: space
+inspired_by: ''
+tags:
+- room
+- ambience
+summary: Short room ambience that adds space without a tail.
+description: >-
+  The early reflections of a room, without the long tail: makes a dry amp sound
+  like it is in a real room. Stays clear under fast playing.
+picture:
+  file: dragonfly-er.png
+  source: >-
+    https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-early-screenshot.png
+  credit: Michael Willis
+  license: GPL-3.0-or-later

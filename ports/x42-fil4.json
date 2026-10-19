@@ -1,0 +1,510 @@
+{
+  "uri": "http://gareus.org/oss/lv2/fil4#mono",
+  "name": "x42-eq - Parametric Equalizer Mono",
+  "version": "2074.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ParaEQPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "c269f7467b237605a9621a307e5e42da22f39d81e84d700643731d6dcc2e709b",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "control",
+      "name": "control",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "notify",
+      "name": "Notify",
+      "type": "AtomPort",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "enable",
+      "name": "Enable",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 4,
+      "symbol": "peak",
+      "name": "Peak",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 5,
+      "symbol": "peakreset",
+      "name": "Reset Peak Hold",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "HighPass",
+      "name": "Highpass",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "HPfreq",
+      "name": "Highpass Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 5,
+      "max": 1250,
+      "default": 20,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "HPQ",
+      "name": "Highpass Resonance",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1.4,
+      "default": 0.7,
+      "unit": null,
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "-6dB @freq, no resonance"
+        },
+        {
+          "value": 0.7,
+          "label": "-3dB @freq, flat"
+        },
+        {
+          "value": 1,
+          "label": "0dB @freq, resonant"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "LowPass",
+      "name": "Lowpass",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "LPfreq",
+      "name": "Lowpass Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 500,
+      "max": 20000,
+      "default": 20000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "LPQ",
+      "name": "Lowpass Resonance",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1.4,
+      "default": 1,
+      "unit": null,
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "-6dB @freq, no resonance"
+        },
+        {
+          "value": 0.7,
+          "label": "-3dB @freq, flat"
+        },
+        {
+          "value": 1,
+          "label": "0dB @freq, resonant"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "symbol": "LSsec",
+      "name": "Lowshelf",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 13,
+      "symbol": "LSfreq",
+      "name": "Lowshelf Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 25,
+      "max": 400,
+      "default": 80,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 14,
+      "symbol": "LSq",
+      "name": "Lowshelf Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0.0625,
+      "max": 4,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 15,
+      "symbol": "LSgain",
+      "name": "Lowshelf Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 16,
+      "symbol": "sec1",
+      "name": "Section 1",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 17,
+      "symbol": "freq1",
+      "name": "Frequency 1",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 2000,
+      "default": 160,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 18,
+      "symbol": "q1",
+      "name": "Bandwidth 1",
+      "type": "control",
+      "direction": "in",
+      "min": 0.0625,
+      "max": 4,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 19,
+      "symbol": "gain1",
+      "name": "Gain 1",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 20,
+      "symbol": "sec2",
+      "name": "Section 2",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 21,
+      "symbol": "freq2",
+      "name": "Frequency 2",
+      "type": "control",
+      "direction": "in",
+      "min": 40,
+      "max": 4000,
+      "default": 397,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 22,
+      "symbol": "q2",
+      "name": "Bandwidth 2",
+      "type": "control",
+      "direction": "in",
+      "min": 0.0625,
+      "max": 4,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 23,
+      "symbol": "gain2",
+      "name": "Gain 2",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 24,
+      "symbol": "sec3",
+      "name": "Section 3",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 25,
+      "symbol": "freq3",
+      "name": "Frequency 3",
+      "type": "control",
+      "direction": "in",
+      "min": 100,
+      "max": 10000,
+      "default": 1250,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 26,
+      "symbol": "q3",
+      "name": "Bandwidth 3",
+      "type": "control",
+      "direction": "in",
+      "min": 0.0625,
+      "max": 4,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 27,
+      "symbol": "gain3",
+      "name": "Gain 3",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 28,
+      "symbol": "sec4",
+      "name": "Section 4",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 29,
+      "symbol": "freq4",
+      "name": "Frequency 4",
+      "type": "control",
+      "direction": "in",
+      "min": 200,
+      "max": 20000,
+      "default": 2500,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 30,
+      "symbol": "q4",
+      "name": "Bandwidth 4",
+      "type": "control",
+      "direction": "in",
+      "min": 0.0625,
+      "max": 4,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 31,
+      "symbol": "gain4",
+      "name": "Gain 4",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 32,
+      "symbol": "HSsec",
+      "name": "Highshelf",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ]
+    },
+    {
+      "index": 33,
+      "symbol": "HSfreq",
+      "name": "Highshelf Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 8000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 34,
+      "symbol": "HSq",
+      "name": "Highshelf Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0.0625,
+      "max": 4,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 35,
+      "symbol": "HSgain",
+      "name": "Highshelf Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 36,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 37,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+id: dragonfly-reverb
+name: Dragonfly Reverb
+version: "3.2.10"
+license: GPL-3.0-or-later
+homepage: https://michaelwillis.github.io/dragonfly-reverb/
+origin: upstream
+source:
+  url: https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-src.tar.xz
+  sha256: null
+artifacts:
+  aarch64:
+    url: https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-linux-arm64.tar.xz
+    sha256: 6c830ad1b1cc028b0f3c4f4c0a4b073d7193ba1c8783528ed9365df1fc9b23c2
+    size: 2058296
+    format: tar.xz
+    root: dragonfly-reverb-3.2.10
+  x86_64:
+    url: https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-linux-x86_64.tar.xz
+    sha256: 59f1593120de82e31dd194e2ab1536af14fec2b3ec6ec45abf6d9c8ac02ef430
+    size: 2267368
+    format: tar.xz
+    root: dragonfly-reverb-3.2.10

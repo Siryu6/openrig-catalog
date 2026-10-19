@@ -1,0 +1,19 @@
+id: airwindows-totape
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/totape6
+bundle: Airwindows.lv2
+name: ToTape6
+author: Airwindows
+license: MIT
+family: Distortion
+subcategory: Saturation
+kind: pedal
+inspired_by: ''
+tags:
+- tape
+- warm
+- subtle
+summary: Tape saturation and flutter, from subtle to smeared.
+description: >-
+  Analog tape emulation: soft saturation, head bump and a touch of flutter. Put
+  it last in the chain to glue everything together.

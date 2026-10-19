@@ -1,0 +1,100 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/PhaserII",
+  "name": "C* PhaserII - Mono phaser modulated by a Lorenz fractal",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "PhaserPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "19bb92f465be5031b42799e84c0b2b0a508856f7b16f8ad364656e8e82069b9c",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "rate",
+      "name": "Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "lfo",
+      "name": "LFO",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Sine"
+        },
+        {
+          "value": 1,
+          "label": "Fractal"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "symbol": "depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.75,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "spread",
+      "name": "Spread",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.75,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "resonance",
+      "name": "Resonance",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 6,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

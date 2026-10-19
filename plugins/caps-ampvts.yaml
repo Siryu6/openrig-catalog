@@ -1,0 +1,19 @@
+id: caps-ampvts
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/AmpVTS
+bundle: mod-caps-AmpVTS.lv2
+name: AmpVTS
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: ''
+tags:
+- tube
+- tone
+- stack
+summary: Tube preamp and power amp with a choice of tone stacks.
+description: >-
+  A lightweight tube amp model with switchable tone stacks modelled on classic American
+  and British amps. Pair it with a cabinet block or CabinetIV.

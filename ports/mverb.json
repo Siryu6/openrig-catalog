@@ -1,0 +1,147 @@
+{
+  "uri": "http://distrho.sf.net/plugins/MVerb",
+  "name": "MVerb",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "29807a1821080eaf38587df62ba90bbafcff0e0244ff83a8a8c3d18ee4f0197f",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "damping",
+      "name": "Damping",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 5,
+      "symbol": "density",
+      "name": "Density",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 6,
+      "symbol": "bandwidth",
+      "name": "Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 7,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 8,
+      "symbol": "predelay",
+      "name": "Predelay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 9,
+      "symbol": "size",
+      "name": "Size",
+      "type": "control",
+      "direction": "in",
+      "min": 5,
+      "max": 100,
+      "default": 75,
+      "unit": "pc"
+    },
+    {
+      "index": 10,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 11,
+      "symbol": "mix",
+      "name": "Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 12,
+      "symbol": "earlymix",
+      "name": "Early/Late Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    }
+  ]
+}

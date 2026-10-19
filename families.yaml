@@ -1,0 +1,15 @@
+# The families of OpenRig's "Add effect" page (PluginCategory in the app)
+# and their subcategories. A plugin picks one family and one subcategory
+# from its list; add a subcategory here (in a PR) when none fits.
+families:
+  Distortion: [Overdrive, Distortion, Fuzz, Boost, Saturation, Bitcrusher]
+  Simulator: [Amp, Preamp, Cabinet, Amp + cab]
+  Dynamics: [Compressor, Limiter, Gate, Expander, Transient]
+  Filter: [Parametric EQ, Graphic EQ, Wah, Envelope filter, Filter]
+  Modulation: [Chorus, Flanger, Phaser, Tremolo, Vibrato, Rotary, Ring modulator]
+  Delay: [Digital delay, Tape delay, Analog delay, Ping-pong delay]
+  Reverb: [Room, Hall, Plate, Spring, Ambience]
+  Utility: [Tuner, Volume, Splitter, Mixer, Meter]
+
+# How the app draws the block when the plugin has no picture fit for it
+kinds: [pedal, amp, combo, cab, space]

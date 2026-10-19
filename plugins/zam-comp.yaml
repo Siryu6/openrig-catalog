@@ -1,0 +1,23 @@
+id: zam-comp
+package: zam-plugins
+uri: urn:zamaudio:ZamComp
+bundle: ZamComp.lv2
+name: ZamComp
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- transparent
+summary: Transparent compressor with sidechain.
+description: >-
+  A clean feed-forward compressor: attack, release, knee, ratio, threshold and makeup.
+  Evens out a funk rhythm or adds sustain to a clean lead.
+picture:
+  file: zamcomp.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/9c08ca8cb31ba77df13c900be77e7b79cac99ea7/plugins/ZamComp/artwork/zamcomp.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

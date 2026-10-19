@@ -1,0 +1,149 @@
+{
+  "uri": "urn:zamaudio:ZamComp",
+  "name": "ZamComp",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "CompressorPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 1
+  },
+  "ports_hash": "dbaf6510108f85689c8568a83e20f8f68808d8151b04fdaa9afe2dfcfa966f73",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_sidechain_in",
+      "name": "Sidechain Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "att",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 100,
+      "default": 10,
+      "unit": "ms"
+    },
+    {
+      "index": 4,
+      "symbol": "rel",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 500,
+      "default": 80,
+      "unit": "ms"
+    },
+    {
+      "index": 5,
+      "symbol": "kn",
+      "name": "Knee",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "rat",
+      "name": "Ratio",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 20,
+      "default": 4,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "thr",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -80,
+      "max": 0,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "mak",
+      "name": "Makeup",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 9,
+      "symbol": "slew",
+      "name": "Slew",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 150,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "sidech",
+      "name": "Sidechain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "gr",
+      "name": "Gain Reduction",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 12,
+      "symbol": "outlevel",
+      "name": "Output Level",
+      "type": "control",
+      "direction": "out"
+    }
+  ]
+}

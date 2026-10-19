@@ -1,0 +1,11 @@
+id: guitarix
+name: Guitarix
+version: "0.47.0"
+license: GPL-2.0-or-later AND GPL-3.0-or-later AND LGPL-3.0-or-later
+homepage: https://guitarix.org
+# No Linux arm64 build upstream: built by OpenRig, published with its sources
+origin: openrig-build
+source:
+  url: https://github.com/brummer10/guitarix/releases/download/V0.47.0/guitarix2-0.47.0.tar.xz
+  sha256: null
+artifacts: {}

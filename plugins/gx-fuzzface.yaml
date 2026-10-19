@@ -1,0 +1,18 @@
+id: gx-fuzzface
+package: guitarix
+uri: http://guitarix.sourceforge.net/plugins/gx_fuzzfacefm_#_fuzzfacefm_
+bundle: gx_fuzzfacefm.lv2
+name: GxFuzzFaceFullerMod
+author: Hermann Meyer
+license: GPL-2.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Fuzz Face
+tags:
+- germanium
+- vintage
+summary: Germanium-style fuzz that cleans up with the volume knob.
+description: >-
+  Two-transistor fuzz in the spirit of the sixties, with the Fuller mod for a tighter
+  bottom. Roll the guitar volume back for a glassy clean.

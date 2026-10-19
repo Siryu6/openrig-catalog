@@ -1,0 +1,17 @@
+id: caps-cabinet4
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/CabinetIV
+bundle: mod-caps-CabinetIV.lv2
+name: CabinetIV
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Cabinet
+kind: cab
+inspired_by: ''
+tags:
+- speaker
+summary: Speaker cabinet emulation without impulse files.
+description: >-
+  Filter-based models of common guitar cabinets. Lighter than an impulse response,
+  for when the CPU budget is tight.

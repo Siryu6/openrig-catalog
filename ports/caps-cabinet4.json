@@ -1,0 +1,159 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/CabinetIV",
+  "name": "C* CabinetIV - Idealised loudspeaker cabinet emulation",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "eceb5f717c0a1a9717806f7029b554725a870efc8d6631a310a00ec76c2a2538",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "model",
+      "name": "Model",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 24,
+      "default": 12,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Mega Wookie 800"
+        },
+        {
+          "value": 1,
+          "label": "Mega Wookie 812"
+        },
+        {
+          "value": 2,
+          "label": "Mega Wookie 828"
+        },
+        {
+          "value": 3,
+          "label": "Mega Wookie 868"
+        },
+        {
+          "value": 4,
+          "label": "Mega Wookie 908"
+        },
+        {
+          "value": 5,
+          "label": "Mega Wookie 912"
+        },
+        {
+          "value": 6,
+          "label": "Mega Wookie 936"
+        },
+        {
+          "value": 7,
+          "label": "Mega Wookie 968"
+        },
+        {
+          "value": 8,
+          "label": "Mega Wookie 992"
+        },
+        {
+          "value": 9,
+          "label": "Unmatched"
+        },
+        {
+          "value": 10,
+          "label": "Twin A"
+        },
+        {
+          "value": 11,
+          "label": "Twin B"
+        },
+        {
+          "value": 12,
+          "label": "Twin C"
+        },
+        {
+          "value": 13,
+          "label": "Blue A"
+        },
+        {
+          "value": 14,
+          "label": "Blue B"
+        },
+        {
+          "value": 15,
+          "label": "Tweedie A"
+        },
+        {
+          "value": 16,
+          "label": "Tweedie B"
+        },
+        {
+          "value": 17,
+          "label": "Miniwookie A"
+        },
+        {
+          "value": 18,
+          "label": "Miniwookie B"
+        },
+        {
+          "value": 19,
+          "label": "Rosie A"
+        },
+        {
+          "value": 20,
+          "label": "Rosie B"
+        },
+        {
+          "value": 21,
+          "label": "Indigo"
+        },
+        {
+          "value": 22,
+          "label": "Angel"
+        },
+        {
+          "value": 23,
+          "label": "Sixty-one"
+        },
+        {
+          "value": 24,
+          "label": "Sixty-two"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 2,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 3,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

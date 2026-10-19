@@ -1,0 +1,79 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_sd1sim_#_sd1sim_",
+  "name": "GxSD1",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "1f4346f8702973ac59cd8b1fe7bb6af3e3fe3ad096a4c1aa8f8e2309d3908b61",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "DRIVE",
+      "name": "DRIVE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "LEVEL",
+      "name": "LEVEL",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 4,
+      "default": -16,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "TONE",
+      "name": "TONE",
+      "type": "control",
+      "direction": "in",
+      "min": 100,
+      "max": 1000,
+      "default": 400,
+      "unit": null
+    }
+  ]
+}
