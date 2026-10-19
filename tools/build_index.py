@@ -25,6 +25,8 @@ SCHEMA = 1
 # How long a device trusts an index before showing it as stale
 VALIDITY = timedelta(days=90)
 MEDIA_BASE = "https://raw.githubusercontent.com/Siryu6/openrig-catalog/main/media/"
+# Where tools/build_package.py publishes what OpenRig builds
+RELEASES = "https://github.com/Siryu6/openrig-catalog/releases/download/"
 ORIGINS = {"upstream", "openrig-build"}
 ARCHES = {"aarch64", "x86_64"}
 FORMATS = {"tar.gz", "tar.xz", "tar.bz2", "zip", "deb"}
@@ -84,6 +86,17 @@ def check_package(problems, path, pkg):
     sha = source.get("sha256")
     if sha is not None and not SHA256.match(sha):
         problems.add(where, "source.sha256 must be a sha256 or null")
+    if pkg.get("origin") == "openrig-build":
+        # We publish its sources: they must be pinned, with a recipe
+        if sha is None:
+            problems.add(where, "source.sha256 is required for an openrig-build package")
+        recipe = ROOT / "recipes" / path.stem
+        if not (recipe / "build.sh").is_file() and not (recipe / "DEFERRED").is_file():
+            problems.add(where, f"recipes/{path.stem}/build.sh is missing (or DEFERRED, saying why)")
+        release = f"{RELEASES}{path.stem}-{pkg.get('version')}/"
+        for arch, art in (pkg.get("artifacts") or {}).items():
+            if not str(art.get("url", "")).startswith(release):
+                problems.add(where, f"{arch}: an openrig-build artifact must come from {release}")
     for arch, art in (pkg.get("artifacts") or {}).items():
         if arch not in ARCHES:
             problems.add(where, f"unknown arch {arch}")
@@ -169,6 +182,7 @@ def plugin_entry(plugin, media_base):
         "kind", "tags", "inspired_by", "summary", "description",
     )}
     entry["description"] = " ".join(entry["description"].split())
+    entry["classes"] = ports.get("classes", [])
     entry["audio"] = ports["audio"]
     entry["required_features"] = ports["required_features"]
     entry["ports_hash"] = ports["ports_hash"]

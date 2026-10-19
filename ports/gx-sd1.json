@@ -38,7 +38,7 @@
       "default": 1,
       "unit": null,
       "properties": [
-        "toggled"
+        "integer"
       ],
       "designation": "enabled"
     },

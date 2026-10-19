@@ -1,0 +1,4 @@
+Not built yet. The guitarix LV2 plugins the catalog lists (gx_fuzzfacefm,
+gxts9) are built by the full guitarix waf build, and OpenRig does not
+provide the LV2 worker and state features some of them rely on. Write the
+recipe once the host supports them.

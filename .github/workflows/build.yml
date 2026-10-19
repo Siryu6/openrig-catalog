@@ -1,0 +1,186 @@
+name: Build
+
+# Builds the openrig-build packages from their pinned sources, natively on
+# x86_64 and aarch64, in a debian:bookworm container (tools/build_package.py).
+# On a build-<package>-<version> tag, or when asked, publishes the release
+# <package>-<version> (binaries + exact sources + recipe) and opens a PR
+# that pins the new artifacts in packages/<package>.yaml.
+# The index is not signed here: the owner signs it locally (tools/sign_index.sh).
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: Package id (packages/<id>.yaml), or "all"
+        required: true
+        default: all
+      publish:
+        description: Publish the release and open the pinning PR
+        type: boolean
+        default: false
+  push:
+    tags: ["build-*"]
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      packages: ${{ steps.plan.outputs.packages }}
+      publish: ${{ steps.plan.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - id: plan
+        env:
+          EVENT: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref_name }}
+          WANTED: ${{ inputs.package }}
+          PUBLISH: ${{ inputs.publish }}
+        run: |
+          python tools/build_package.py --list > buildable.json
+          python - <<'EOF'
+          import json, os, sys
+          buildable = json.load(open("buildable.json"))
+          if os.environ["EVENT"] == "push":
+              # build-<package>-<version>: the version must be the one declared
+              wanted = os.environ["REF_NAME"].removeprefix("build-")
+              ids = [b["package"] for b in buildable if f"{b['package']}-{b['version']}" == wanted]
+              if not ids:
+                  sys.exit(f"tag {os.environ['REF_NAME']}: no package with a recipe at that version "
+                           f"({', '.join(b['package'] + '-' + b['version'] for b in buildable)})")
+              publish = True
+          else:
+              wanted = os.environ["WANTED"].strip()
+              ids = [b["package"] for b in buildable if wanted in ("all", b["package"])]
+              if not ids:
+                  sys.exit(f"{wanted}: not a package with a recipe ({', '.join(b['package'] for b in buildable)})")
+              publish = os.environ["PUBLISH"] == "true"
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write(f"packages={json.dumps(ids)}\n")
+              out.write(f"publish={'true' if publish else 'false'}\n")
+          print(ids, "publish" if publish else "build only")
+          EOF
+
+  build:
+    needs: plan
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{ fromJSON(needs.plan.outputs.packages) }}
+        arch: [x86_64, aarch64]
+        include:
+          - arch: x86_64
+            runner: ubuntu-24.04
+          - arch: aarch64
+            runner: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Build, check and pack
+        env:
+          PACKAGE: ${{ matrix.package }}
+          ARCH: ${{ matrix.arch }}
+        # The host features are read from OpenRig's main branch
+        run: python tools/build_package.py "$PACKAGE" --arch "$ARCH" --engine docker
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ matrix.package }}-${{ matrix.arch }}
+          path: |
+            dist/release/
+            dist/builds/
+          if-no-files-found: error
+
+  publish:
+    needs: [plan, build]
+    # Each package on its own: one that failed does not hold the others
+    if: ${{ !cancelled() && needs.plan.outputs.publish == 'true' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{ fromJSON(needs.plan.outputs.packages) }}
+    runs-on: ubuntu-24.04
+    # The only job that writes: the release, then the pinning branch and PR
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PACKAGE: ${{ matrix.package }}
+      BASE: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: build-${{ matrix.package }}-*
+          merge-multiple: true
+          path: dist
+      - name: Both architectures are built
+        run: |
+          for arch in x86_64 aarch64; do
+            test -f "dist/builds/$PACKAGE-$arch.json" || { echo "::error::$PACKAGE $arch did not build"; exit 1; }
+          done
+      - name: Upload to the release
+        run: |
+          tag=$(python -c 'import json, sys; print(json.load(open(sys.argv[1]))["tag"])' "dist/builds/$PACKAGE-x86_64.json")
+          echo "TAG=$tag" >> "$GITHUB_ENV"
+          python - "$PACKAGE" "$tag" > notes.md <<'EOF'
+          import sys, yaml
+          package, tag = sys.argv[1:]
+          pkg = yaml.safe_load(open(f"packages/{package}.yaml"))
+          src = pkg["source"]
+          print(f"""Unofficial build of {pkg['name']} {pkg['version']} by OpenRig, for the OpenRig plugin store.
+          Not made nor endorsed by the plugin's authors ({pkg['homepage']}).
+
+          - `{tag}-x86_64.tar.xz`, `{tag}-aarch64.tar.xz`: the LV2 bundles (DSP only, no UI), the license and `BUILD-INFO.txt` (source, recipe commit, compiler, flags, sha256 of each binary).
+          - `{tag}-src.*`: the exact source tarball the binaries were built from, as published at {src['url']} (sha256 `{src['sha256']}`).
+          - `{tag}-recipe.tar.xz`: the recipe, its patches and the scripts that ran the build.
+
+          License: {pkg['license']}. These sources are the corresponding source of the binaries above and stay here as long as the binaries do.""")
+          EOF
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --target "$GITHUB_SHA" --title "$tag (OpenRig build)" --notes-file notes.md
+          fi
+          # Never replace a published file: signed indexes pin its sha256.
+          # Rebuild under a new version, or delete the release by hand first.
+          existing=$(gh release view "$tag" --json assets --jq '.assets[].name')
+          for f in dist/release/"$tag"/*; do
+            if grep -qxF "$(basename "$f")" <<<"$existing"; then
+              echo "::error::$tag already has $(basename "$f")"
+              exit 1
+            fi
+          done
+          gh release upload "$tag" dist/release/"$tag"/*
+      - name: Pin the artifacts
+        run: |
+          python tools/pin_build.py dist/builds/"$PACKAGE"-*.json
+          python tools/build_index.py --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pinned-${{ matrix.package }}
+          path: |
+            dist/builds/
+            packages/${{ matrix.package }}.yaml
+      - name: Open the pinning PR
+        run: |
+          branch="pin/$TAG"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add "packages/$PACKAGE.yaml"
+          git commit -m "build($PACKAGE): pin the artifacts of $TAG"
+          git push origin "$branch"
+          gh pr create --base "$BASE" --head "$branch" --title "Pin $TAG" --body \
+            "Artifacts of the release [$TAG](https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG), built by run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID. Merge, then build and sign the index."

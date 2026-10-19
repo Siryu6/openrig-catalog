@@ -7,5 +7,5 @@ homepage: https://x42-plugins.com/x42/
 origin: openrig-build
 source:
   url: https://gareus.org/misc/x42-plugins/x42-plugins-20260908.tar.xz
-  sha256: null
+  sha256: d5d46acc39eb1fe668731f977d572222c990cbee4541d3249dc34575f8fbb5c0
 artifacts: {}

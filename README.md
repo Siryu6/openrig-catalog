@@ -32,19 +32,35 @@ store is one way in, not the only one.
 | `plugins/<id>.yaml` | One plugin of a package: URI, bundle, family, texts, picture |
 | `ports/<id>.json` | Its ports, read from the published bundle by `tools/extract_ports.py` |
 | `media/` | Pictures taken from the projects' sources |
+| `recipes/<id>/` | How OpenRig builds an `openrig-build` package: `build.sh`, Debian `deps`, `patches/` |
+| `tools/build_package.py` | Builds a package from its pinned sources, checks it and packs its release |
+| `tools/check_elf.py` | Checks built bundles load on the OS image: libraries, glibc/libstdc++ versions, required LV2 features |
+| `tools/pin_build.py` | Writes the built artifacts into `packages/<id>.yaml` |
 | `tools/build_index.py` | Checks everything and writes `dist/catalog-v1.json` |
+| `tools/sign_index.sh` | Signs the index with the owner's key, off the CI |
 | `tools/verify_artifacts.py` | Checks the pinned upstream files are unchanged (weekly in CI) |
+| `keys/` | `catalog.pub`, the public key OpenRig checks the index with (see `keys/README.md`) |
+| `docs/BUILDING.md` | How the builds, checks, releases and signing work |
 
 ## Adding a plugin
 
 1. Add or update `packages/<package>.yaml`. For an upstream build, the
    artifact URLs come from the project's release page; compute size and
-   sha256 from the downloaded file.
+   sha256 from the downloaded file. For `origin: openrig-build`, pin the
+   source tarball's sha256, write `recipes/<package>/build.sh` and build it
+   (see [docs/BUILDING.md](docs/BUILDING.md)):
+
+   ```sh
+   tools/build_package.py <package> --arch x86_64
+   ```
+
+   Its artifacts are pinned once the CI has published them.
 2. Write `plugins/<id>.yaml`. Texts are in English and our own words:
    `summary` is one line (80 characters at most), `description` two to four
    sentences. `inspired_by` names the classic gear the plugin models, as
    text only.
-3. Read its ports from the bundle as published:
+3. Read its ports from the bundle as published (or as built, under
+   `build/<package>/`):
 
    ```sh
    pip install -r requirements.txt
@@ -63,6 +79,24 @@ artifacts, and for each plugin its texts, picture, audio inputs and outputs,
 required LV2 features, control ports and `ports_hash` (the fingerprint of its
 port layout, so an update that would break saved presets is caught). The
 published index is signed; the signing key is not part of this repository.
+
+## Publishing
+
+1. For a package OpenRig builds, push the tag `build-<package>-<version>`.
+   The CI builds it on x86_64 and aarch64, publishes the release
+   `<package>-<version>` with the binaries, the exact sources and the
+   recipe, and opens a PR that pins the artifacts. Merge it.
+2. Build the index and sign it on your machine, then upload both files to
+   the `catalog` release (the command is printed):
+
+   ```sh
+   tools/build_index.py
+   OPENRIG_CATALOG_KEY=/path/outside/the/repo/catalog.key tools/sign_index.sh
+   ```
+
+OpenRig downloads
+`https://github.com/Siryu6/openrig-catalog/releases/download/catalog/catalog-v1.json`
+and its `.minisig`.
 
 ## License
 
