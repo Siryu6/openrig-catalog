@@ -8,4 +8,16 @@ origin: openrig-build
 source:
   url: https://github.com/moddevices/caps-lv2/archive/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9.tar.gz
   sha256: c57f8aceb1a8bf384516c902224a0e65f34730685939c0c0cb5c1a5e0e388896
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/caps-lv2-0.9.26/caps-lv2-0.9.26-aarch64.tar.xz
+    sha256: 5b5d748bfc5aaf17759a55a09c887fbcc026ae73add93e60913cdf2c62ffd7d8
+    size: 12315896
+    format: tar.xz
+    root: caps-lv2-0.9.26
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/caps-lv2-0.9.26/caps-lv2-0.9.26-x86_64.tar.xz
+    sha256: 6f99587f390fff87d50d14ae579c1d922401009effd71d823e040ce0635ee1c9
+    size: 12342368
+    format: tar.xz
+    root: caps-lv2-0.9.26
