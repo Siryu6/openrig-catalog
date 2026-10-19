@@ -1,0 +1,18 @@
+id: dpf-mafreeverb
+package: dpf-plugins
+uri: http://distrho.sf.net/plugins/MaFreeverb
+bundle: MaFreeverb.lv2
+name: MaFreeverb
+author: DISTRHO (Max gen~ examples)
+license: ISC
+family: Reverb
+subcategory: Room
+kind: space
+inspired_by: ''
+tags:
+- classic
+- light
+summary: Classic Freeverb algorithm, light and simple.
+description: >-
+  The well-known Freeverb design with two feedback controls, damping and spread. A
+  light, all-purpose room reverb.

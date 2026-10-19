@@ -1,0 +1,19 @@
+id: dpf-3bandeq
+package: dpf-plugins
+uri: http://distrho.sf.net/plugins/3BandEQ
+bundle: 3BandEQ.lv2
+name: 3 Band EQ
+author: Filipe Coelho (DISTRHO)
+license: LGPL-3.0-only
+family: Filter
+subcategory: Graphic EQ
+kind: pedal
+inspired_by: ''
+tags:
+- three-band
+- simple
+- stereo
+summary: Simple three-band EQ with movable crossovers.
+description: >-
+  Low, mid and high gain with adjustable crossover frequencies and a master level. A
+  quick DJ-style tone control for any point in the chain.

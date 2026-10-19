@@ -1,0 +1,136 @@
+{
+  "uri": "http://distrho.sf.net/plugins/MaGigaverb",
+  "name": "MaGigaverb",
+  "version": "1.0",
+  "license": "http://spdx.org/licenses/ISC.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "4bb3fe225e21900df87db0a8f4344b216b704ac0a9914c0641ed2870aacff11a",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "damping",
+      "name": "damping",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.7,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "revtime",
+      "name": "revtime",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 360,
+      "default": 11,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "roomsize",
+      "name": "roomsize",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 300,
+      "default": 75,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "spread",
+      "name": "spread",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 23,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "bandwidth",
+      "name": "bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "tail",
+      "name": "tail",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "dry",
+      "name": "dry",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 11,
+      "symbol": "early",
+      "name": "early",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    }
+  ]
+}

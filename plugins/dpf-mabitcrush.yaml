@@ -1,0 +1,17 @@
+id: dpf-mabitcrush
+package: dpf-plugins
+uri: http://distrho.sf.net/plugins/MaBitcrush
+bundle: MaBitcrush.lv2
+name: MaBitcrush
+author: DISTRHO (Max gen~ examples)
+license: ISC
+family: Distortion
+subcategory: Bitcrusher
+kind: pedal
+inspired_by: ''
+tags:
+- lo-fi
+summary: One-knob bit depth reducer.
+description: >-
+  Lowers the resolution of the signal for crunchy, digital lo-fi tones. A single
+  resolution control.

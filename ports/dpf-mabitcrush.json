@@ -1,0 +1,52 @@
+{
+  "uri": "http://distrho.sf.net/plugins/MaBitcrush",
+  "name": "MaBitcrush",
+  "version": "1.0",
+  "license": "http://spdx.org/licenses/ISC.html",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 2
+  },
+  "ports_hash": "edaf4778d8e6fb6e0a8fc255457fcbe5b95154f0c01075df4fa39198f9c73b0e",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "resolution",
+      "name": "resolution",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 16,
+      "default": 6,
+      "unit": "bits"
+    }
+  ]
+}

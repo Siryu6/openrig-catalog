@@ -1,0 +1,19 @@
+id: dpf-soulforce
+package: dpf-plugins
+uri: http://www.niallmoody.com/ndcplugs/soulforce.htm
+bundle: SoulForce.lv2
+name: Soul Force
+author: Niall Moody (ndc Plugs)
+license: MIT
+family: Distortion
+subcategory: Distortion
+kind: pedal
+inspired_by: ''
+tags:
+- waveshaper
+- feedback
+- extreme
+summary: Waveshaping distortion driven by feedback.
+description: >-
+  A waveshaper whose shape is pushed by feedback, for a distortion that reacts in
+  unusual ways. It can get loud and nasty: watch the output.

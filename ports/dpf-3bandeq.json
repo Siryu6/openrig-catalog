@@ -1,0 +1,114 @@
+{
+  "uri": "http://distrho.sf.net/plugins/3BandEQ",
+  "name": "3 Band EQ",
+  "version": "2.0",
+  "license": "http://opensource.org/licenses/lgpl-license",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "6771f07a5a7479d2b4e516d6dc3e7b759ed04b44d836a7694b0eac2b920acddc",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "low",
+      "name": "Low",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "mid",
+      "name": "Mid",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "high",
+      "name": "High",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "master",
+      "name": "Master",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "low_mid",
+      "name": "Low-Mid Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1000,
+      "default": 440,
+      "unit": "hz"
+    },
+    {
+      "index": 9,
+      "symbol": "mid_high",
+      "name": "Mid-High Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 20000,
+      "default": 1000,
+      "unit": "hz"
+    }
+  ]
+}
