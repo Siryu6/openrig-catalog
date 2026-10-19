@@ -1,0 +1,18 @@
+id: mda-combo
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Combo
+bundle: mda.lv2
+name: Combo
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Simulator
+subcategory: Amp + cab
+kind: combo
+inspired_by: ''
+tags:
+- light
+- speaker
+summary: Amp and speaker simulator with several models.
+description: >-
+  Speaker and amp models with drive, bias and a resonant high-pass filter. Subtle when
+  clean, comes alive with the drive turned up.

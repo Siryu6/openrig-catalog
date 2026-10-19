@@ -1,0 +1,18 @@
+id: mda-ambience
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Ambience
+bundle: mda.lv2
+name: Ambience
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Reverb
+subcategory: Ambience
+kind: space
+inspired_by: ''
+tags:
+- small
+- light
+summary: Small-space ambience, light on the CPU.
+description: >-
+  A short, dense reverb that adds room and depth without a long tail. Size, high
+  damping and mix; good to make a dry amp sound less boxy.

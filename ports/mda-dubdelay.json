@@ -1,0 +1,122 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/DubDelay",
+  "name": "MDA DubDelay",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DelayPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "a152005abe7ef97866e1034707d483785aa69b248dd9ac7ccabba013e30250b8",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "delay",
+      "name": "Delay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "feedback",
+      "name": "Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.7,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "fb_tone",
+      "name": "Fb Tone",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.4,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "lfo_depth",
+      "name": "LFO Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "lfo_rate",
+      "name": "LFO Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "fx_mix",
+      "name": "FX Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.33,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 8,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 9,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 10,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

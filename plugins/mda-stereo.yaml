@@ -1,0 +1,18 @@
+id: mda-stereo
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Stereo
+bundle: mda.lv2
+name: Stereo
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Utility
+subcategory: Stereo
+kind: pedal
+inspired_by: ''
+tags:
+- stereo
+- width
+summary: Fake stereo from a mono source, with modulation.
+description: >-
+  Makes a mono signal wide using a short delay or comb filtering between the two
+  sides. Width, delay, balance and optional modulation.

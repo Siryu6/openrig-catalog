@@ -1,0 +1,19 @@
+id: mda-dubdelay
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/DubDelay
+bundle: mda.lv2
+name: DubDelay
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Delay
+subcategory: Digital delay
+kind: space
+inspired_by: ''
+tags:
+- dub
+- modulated
+- feedback
+summary: Dub delay with modulation and runaway feedback.
+description: >-
+  A delay made for dub: high feedback that can self-oscillate, a tone control in the
+  loop and an LFO to wobble the time.

@@ -1,0 +1,17 @@
+id: mda-limiter
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Limiter
+bundle: mda.lv2
+name: Limiter
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Dynamics
+subcategory: Limiter
+kind: pedal
+inspired_by: ''
+tags:
+- output
+summary: Simple limiter with a soft knee option.
+description: >-
+  Keeps peaks under a threshold, with attack, release and a soft or hard knee. Put it
+  at the end of the chain to protect your output.

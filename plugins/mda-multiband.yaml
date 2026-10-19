@@ -1,0 +1,17 @@
+id: mda-multiband
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/MultiBand
+bundle: mda.lv2
+name: MultiBand
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- multiband
+summary: Three-band compressor.
+description: >-
+  Compresses low, mid and high bands separately. Squash everything, or push the mids
+  while leaving the low end untouched.

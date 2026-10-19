@@ -1,0 +1,78 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/RingMod",
+  "name": "MDA RingMod",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ModulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "d348da01d8c69460b2165f09efab23c68c8c0eb48c8b5cfa050a25410afcfc95",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "freq",
+      "name": "Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.0625,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "fine",
+      "name": "Fine",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "feedback",
+      "name": "Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 4,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 6,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

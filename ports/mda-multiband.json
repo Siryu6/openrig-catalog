@@ -1,0 +1,214 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/MultiBand",
+  "name": "MDA MultiBand",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "MultiEQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "069004036bcdfeace86369a8dab9e668388b653767f1d94fc5c3d7ee6733c254",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "listen",
+      "name": "Listen",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Low"
+        },
+        {
+          "value": 0.333333,
+          "label": "Mid"
+        },
+        {
+          "value": 0.666667,
+          "label": "High"
+        },
+        {
+          "value": 1,
+          "label": "Output"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "l_m",
+      "name": "L <> M",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.103,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "m_h",
+      "name": "M <> H",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.878,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "l_comp",
+      "name": "L Comp",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.54,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "m_comp",
+      "name": "M Comp",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "h_comp",
+      "name": "H Comp",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "l_out",
+      "name": "L Out",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.45,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "m_out",
+      "name": "M Out",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "h_out",
+      "name": "H Out",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "attack",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.22,
+      "unit": null,
+      "designation": "attack"
+    },
+    {
+      "index": 10,
+      "symbol": "release",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.602,
+      "unit": null,
+      "designation": "release"
+    },
+    {
+      "index": 11,
+      "symbol": "stereo",
+      "name": "Stereo",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.55,
+      "unit": null
+    },
+    {
+      "index": 12,
+      "symbol": "process",
+      "name": "Process",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 13,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 14,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 15,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 16,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

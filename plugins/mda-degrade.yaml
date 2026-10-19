@@ -1,0 +1,18 @@
+id: mda-degrade
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Degrade
+bundle: mda.lv2
+name: Degrade
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Distortion
+subcategory: Bitcrusher
+kind: pedal
+inspired_by: ''
+tags:
+- lo-fi
+- sample-rate
+summary: Lo-fi sample rate and bit depth reduction.
+description: >-
+  Lowers the sample rate and resolution for a gritty, aliased lo-fi sound, with a post
+  filter and non-linearity to shape it.

@@ -1,0 +1,89 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/Detune",
+  "name": "MDA Detune",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "PitchPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "0900ad7b05b5e7159a472f7a9d38f874e4d42c1bdc15e60258689e56a1c52cba",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "detune",
+      "name": "Detune",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.2,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "mix",
+      "name": "Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.9,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "latency",
+      "name": "Latency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 6,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 7,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

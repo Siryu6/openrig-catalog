@@ -1,0 +1,155 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/Dynamics",
+  "name": "MDA Dynamics",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DynamicsPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "6e2ecd0fd161857dbb900bcd08c1f9265f3b92c6cc0335e7cb327349f6b96344",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "thresh",
+      "name": "Thresh",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "ratio",
+      "name": "Ratio",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.4,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.1,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "attack",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.18,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "release",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.55,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "limiter",
+      "name": "Limiter",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "gate_thr",
+      "name": "Gate Thr",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "gate_att",
+      "name": "Gate Att",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.1,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "gate_rel",
+      "name": "Gate Rel",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "mix",
+      "name": "Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 11,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 12,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 13,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

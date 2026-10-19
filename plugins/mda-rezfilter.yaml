@@ -1,0 +1,19 @@
+id: mda-rezfilter
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/RezFilter
+bundle: mda.lv2
+name: RezFilter
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Filter
+subcategory: Envelope filter
+kind: pedal
+inspired_by: ''
+tags:
+- resonant
+- lfo
+- synth
+summary: Resonant filter with envelope and LFO modulation.
+description: >-
+  A resonant low-pass filter whose cutoff follows your playing, an LFO, or both. From
+  auto-wah to synth-like sweeps.

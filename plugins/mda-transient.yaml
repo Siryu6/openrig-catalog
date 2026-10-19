@@ -1,0 +1,18 @@
+id: mda-transient
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Transient
+bundle: mda.lv2
+name: Transient
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Dynamics
+subcategory: Transient
+kind: pedal
+inspired_by: ''
+tags:
+- attack
+- sustain
+summary: Boost or cut the attack and the sustain of each note.
+description: >-
+  A transient shaper: more attack for punch, less for softer notes, and the same for
+  the release. A filter control darkens or brightens the result.

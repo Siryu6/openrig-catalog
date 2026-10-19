@@ -1,0 +1,133 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/SubSynth",
+  "name": "MDA SubSynth",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "0980399609f283c279e2999c92f4412547e54e7b9f9ebb92e13120462c6bb9fe",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "type",
+      "name": "Type",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Distort"
+        },
+        {
+          "value": 0.25,
+          "label": "Divide"
+        },
+        {
+          "value": 0.5,
+          "label": "Invert"
+        },
+        {
+          "value": 0.75,
+          "label": "Key Osc."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "level",
+      "name": "Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.3,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "tune",
+      "name": "Tune",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "dry_mix",
+      "name": "Dry Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "thresh",
+      "name": "Thresh",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "release",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.65,
+      "unit": null,
+      "designation": "release"
+    },
+    {
+      "index": 6,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 7,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 8,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 9,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}
