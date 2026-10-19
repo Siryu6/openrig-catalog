@@ -67,7 +67,7 @@ Current recipes:
 | `caps-lv2` | make | the 27 `mod-caps-*.lv2`, with their MOD web UI files (HTML/CSS/PNG, no binary) |
 | `gxplugins` | make (`make mod`) | the 43 `gx_*.lv2`, with MOD's `.ttl` (7 still declare an X11 UI, not shipped) |
 | `x42-plugins` | make | `fil4.lv2` and `dpl.lv2` only, from the source tarball (never the x42-plugins.com binaries) |
-| `guitarix` | waf | `DEFERRED`: needs the LV2 worker and state features in the host |
+| `guitarix` | `g++`, without waf | `gxts9.lv2` and `gx_fuzzfacefm.lv2` only, from the Faust code shipped pre-generated (the full waf build needs the whole app) |
 
 ## Build environment
 
