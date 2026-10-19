@@ -8,4 +8,16 @@ origin: openrig-build
 source:
   url: https://download.drobilla.net/mda-lv2-1.2.12.tar.xz
   sha256: 8f2090433e60e90d9c4d0326970c845a3cb471951657cd9355d3dbca4040b873
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/mda-lv2-1.2.12/mda-lv2-1.2.12-aarch64.tar.xz
+    sha256: 1c47acb738247eb7c4e32406d5d6047e5f4e0669c0a2789d5973c7c7e615b184
+    size: 1862596
+    format: tar.xz
+    root: mda-lv2-1.2.12
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/mda-lv2-1.2.12/mda-lv2-1.2.12-x86_64.tar.xz
+    sha256: ef1f87f066f6905708b6a7017ba02bae17693b04c34387492d02d5cfc4f8dd47
+    size: 1870036
+    format: tar.xz
+    root: mda-lv2-1.2.12
