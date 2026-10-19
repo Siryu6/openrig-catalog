@@ -1,0 +1,18 @@
+id: airwindows-pocketverbs
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/pocketverbs
+bundle: Airwindows.lv2
+name: PocketVerbs
+author: Airwindows
+license: MIT
+family: Reverb
+subcategory: Ambience
+kind: space
+inspired_by: ''
+tags:
+- gated
+- special-effects
+summary: Collection of old special-effect reverbs, with gating.
+description: >-
+  A set of reverb types from chambers to odd effects, with size and a gate for
+  eighties-style gated tails.

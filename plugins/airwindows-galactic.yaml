@@ -1,0 +1,19 @@
+id: airwindows-galactic
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/galactic
+bundle: Airwindows.lv2
+name: Galactic
+author: Airwindows
+license: MIT
+family: Reverb
+subcategory: Hall
+kind: space
+inspired_by: ''
+tags:
+- ambient
+- huge
+- pad
+summary: Huge ambient reverb made for pads and space sounds.
+description: >-
+  An enormous, detuned reverb that turns notes into pads. Replace sets how much new
+  sound enters the tail; bigness and detune shape the space.

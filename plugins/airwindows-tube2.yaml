@@ -1,0 +1,18 @@
+id: airwindows-tube2
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/tube2
+bundle: Airwindows.lv2
+name: Tube2
+author: Airwindows
+license: MIT
+family: Distortion
+subcategory: Saturation
+kind: pedal
+inspired_by: ''
+tags:
+- tube
+- warm
+summary: Tube-style saturation with input trim.
+description: >-
+  Adds the asymmetric warmth of a tube stage. Input sets the level and Tube the
+  amount, from a light glow to clear grit.

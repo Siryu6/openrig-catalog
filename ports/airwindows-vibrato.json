@@ -1,0 +1,100 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/vibrato",
+  "name": "Vibrato",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "ModulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "8d69f73f8f8d27ebe811c4a7b16703e0c26bf774f3cb285da226468be60bc80e",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "speed",
+      "name": "Speed",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.3,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "fmspeed",
+      "name": "FM Speed",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.4,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "fmdepth",
+      "name": "FM Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "invwet",
+      "name": "Inv/Dry/Wet",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+id: airwindows-focus
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/focus
+bundle: Airwindows.lv2
+name: Focus
+author: Airwindows
+license: MIT
+family: Distortion
+subcategory: Saturation
+kind: pedal
+inspired_by: ''
+tags:
+- clarity
+- mid
+summary: Brings out clarity by adding distortion.
+description: >-
+  Distortion used to make a part cut through rather than to make it dirty. Several
+  modes, from subtle density to aggressive bite, with dry/wet.

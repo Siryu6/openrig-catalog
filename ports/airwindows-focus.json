@@ -1,0 +1,123 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/focus",
+  "name": "Focus",
+  "version": "2.2",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "70b70fbd5840d535990e8ac41ef584d24be3b58d53edb83c09f28e2e767e9c91",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "boost",
+      "name": "Boost",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "focus",
+      "name": "Focus",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 5,
+      "default": 2,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Density"
+        },
+        {
+          "value": 1,
+          "label": "Drive"
+        },
+        {
+          "value": 2,
+          "label": "Spiral"
+        },
+        {
+          "value": 3,
+          "label": "Mojo"
+        },
+        {
+          "value": 4,
+          "label": "Dyno"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "drywet",
+      "name": "Dry/Wet",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    }
+  ]
+}

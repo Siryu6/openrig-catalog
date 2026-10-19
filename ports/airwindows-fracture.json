@@ -1,0 +1,106 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/fracture",
+  "name": "Fracture",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "WaveshaperPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "8b19daa7efe158ad46f5641b9cd99f9ed834259e73ef8abd4d2ae66e05f7d984",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "drive",
+      "name": "Drive",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 4,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "fracture",
+      "name": "Fracture",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 3.999,
+      "default": 2.5,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 1,
+          "label": "1"
+        },
+        {
+          "value": 2.5,
+          "label": "2"
+        },
+        {
+          "value": 3.999,
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "outputlevel",
+      "name": "Output Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "drywet",
+      "name": "Dry/Wet",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    }
+  ]
+}

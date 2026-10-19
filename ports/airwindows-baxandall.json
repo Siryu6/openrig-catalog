@@ -1,0 +1,78 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/baxandall",
+  "name": "Baxandall",
+  "version": "2.2",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "c94986872512fc76819b5f46979fa7e044d3e8d3d0e57afa7af9a435affe0cae",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "treble",
+      "name": "Treble",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "bass",
+      "name": "Bass",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    }
+  ]
+}

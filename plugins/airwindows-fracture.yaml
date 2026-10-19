@@ -1,0 +1,19 @@
+id: airwindows-fracture
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/fracture
+bundle: Airwindows.lv2
+name: Fracture
+author: Airwindows
+license: MIT
+family: Distortion
+subcategory: Distortion
+kind: pedal
+inspired_by: ''
+tags:
+- waveshaper
+- extreme
+- octave
+summary: Waveshaper that multiplies the frequency, broken and wild.
+description: >-
+  A waveshaper that folds the wave over itself, adding harmonics and an octave-like,
+  fractured edge. Great for extreme leads and noise.

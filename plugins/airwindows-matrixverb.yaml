@@ -1,0 +1,18 @@
+id: airwindows-matrixverb
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/matrixverb
+bundle: Airwindows.lv2
+name: MatrixVerb
+author: Airwindows
+license: MIT
+family: Reverb
+subcategory: Hall
+kind: space
+inspired_by: ''
+tags:
+- modulated
+- colourful
+summary: Wildly adjustable, colourful reverb with modulation.
+description: >-
+  A flexible reverb with room size, damping, filter, a vibrato on the tail and a
+  flavour control. Deep and strange spaces, from rooms to caverns.
