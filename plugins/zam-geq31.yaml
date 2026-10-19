@@ -1,0 +1,18 @@
+id: zam-geq31
+package: zam-plugins
+uri: urn:zamaudio:ZamGEQ31
+bundle: ZamGEQ31.lv2
+name: ZamGEQ31
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Graphic EQ
+kind: pedal
+inspired_by: ''
+tags:
+- 31-band
+- precise
+summary: 31-band graphic EQ, third-octave bands.
+description: >-
+  A 31-band graphic equaliser with a master gain. Precise third-octave control for
+  taming room resonances or a harsh cab.

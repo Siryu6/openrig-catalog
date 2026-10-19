@@ -1,0 +1,18 @@
+id: zam-maximx2
+package: zam-plugins
+uri: urn:zamaudio:ZaMaximX2
+bundle: ZaMaximX2.lv2
+name: ZaMaximX2
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Dynamics
+subcategory: Limiter
+kind: pedal
+inspired_by: ''
+tags:
+- stereo
+- peak
+summary: Smooth stereo peak limiter.
+description: >-
+  A smooth peak limiter with input gain, threshold and release. Put it at the end of
+  the chain to raise the level without clipping.

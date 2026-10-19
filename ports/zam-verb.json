@@ -1,0 +1,85 @@
+{
+  "uri": "urn:zamaudio:ZamVerb",
+  "name": "ZamVerb",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "151ff489f961ebf1e0c5570799754d11699a310ec47390ead14e01e7e038c528",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "master",
+      "name": "Master level",
+      "type": "control",
+      "direction": "in",
+      "min": -30,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "wetdry",
+      "name": "Wet / Dry",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 6,
+      "symbol": "room",
+      "name": "Room",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 6,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "expensive",
+        "integer"
+      ]
+    }
+  ]
+}

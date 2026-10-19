@@ -1,0 +1,17 @@
+id: zam-eq2
+package: zam-plugins
+uri: urn:zamaudio:ZamEQ2
+bundle: ZamEQ2.lv2
+name: ZamEQ2
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- shelf
+summary: Two-band parametric EQ with low and high shelves.
+description: >-
+  Two fully parametric bands plus low and high shelves, with input and output gain.
+  Enough to cut mud and add presence anywhere in the chain.
