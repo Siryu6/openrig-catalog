@@ -1,0 +1,19 @@
+id: fomp-moogladder
+package: fomp
+uri: http://drobilla.net/plugins/fomp/mvclpf4
+bundle: fomp.lv2
+name: Moog Low-Pass Filter 4
+author: Fons Adriaensen (fomp)
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Filter
+kind: pedal
+inspired_by: ''
+tags:
+- resonant
+- synth
+- ladder
+summary: Resonant ladder low-pass filter with selectable slope.
+description: >-
+  A low-pass filter modelled on the classic transistor ladder, with resonance and a
+  choice of 6 to 24 dB per octave. Dark, synth-like tones from a guitar.

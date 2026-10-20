@@ -1,0 +1,169 @@
+{
+  "uri": "http://drobilla.net/plugins/fomp/reverb",
+  "name": "reverb",
+  "version": "2.0",
+  "license": null,
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/lv2core#isLive"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "a0a0644b03d0b35aba5929395d33d5067aae38815933440e67ee33cd5670a5cd",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in_l",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "in_r",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "out_l",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "out_r",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "delay",
+      "name": "Delay",
+      "type": "control",
+      "direction": "in",
+      "min": 0.02,
+      "max": 0.1,
+      "default": 0.06,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "xover",
+      "name": "Xover",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 1000,
+      "default": 223.607,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "rt_low",
+      "name": "RT-low",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 8,
+      "default": 2.75,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "rt_mid",
+      "name": "RT-mid",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 8,
+      "default": 2.75,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "damping",
+      "name": "Damping",
+      "type": "control",
+      "direction": "in",
+      "min": 1500,
+      "max": 24000,
+      "default": 6000,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "f1_freq",
+      "name": "F1-freq",
+      "type": "control",
+      "direction": "in",
+      "min": 40,
+      "max": 10000,
+      "default": 159.054,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "f1_gain",
+      "name": "F1-gain",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 11,
+      "symbol": "f2_freq",
+      "name": "F2-freq",
+      "type": "control",
+      "direction": "in",
+      "min": 40,
+      "max": 10000,
+      "default": 2514.87,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 12,
+      "symbol": "f2_gain",
+      "name": "F2-gain",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 13,
+      "symbol": "out_mix",
+      "name": "Output mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    }
+  ]
+}

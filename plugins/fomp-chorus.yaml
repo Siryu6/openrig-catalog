@@ -1,0 +1,18 @@
+id: fomp-chorus
+package: fomp
+uri: http://drobilla.net/plugins/fomp/cs_chorus2
+bundle: fomp.lv2
+name: CS Chorus
+author: Fons Adriaensen (fomp)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Chorus
+kind: pedal
+inspired_by: ''
+tags:
+- lush
+- two-lfo
+summary: Lush chorus with two LFOs.
+description: >-
+  A chorus moved by two LFOs of their own speed and depth, for a richer, less regular
+  movement than a single-LFO chorus. Upsampled delay lines keep it clean.

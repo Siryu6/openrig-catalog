@@ -1,0 +1,12 @@
+id: fomp
+name: Fomp.lv2
+version: "1.2.4"
+license: GPL-2.0-or-later
+homepage: https://drobilla.net/software/fomp.html
+# No Linux arm64 build upstream: built by OpenRig, published with its sources
+origin: openrig-build
+source:
+  url: https://download.drobilla.net/fomp-1.2.4.tar.xz
+  sha256: 43805c9708442d8e56a62b65be1ad8991ca3c90636740d7722455506078ca779
+# Pinned by the PR the build opens (tools/pin_build.py)
+artifacts: {}

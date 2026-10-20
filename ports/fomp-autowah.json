@@ -1,0 +1,86 @@
+{
+  "uri": "http://drobilla.net/plugins/fomp/autowah",
+  "name": "Auto-wah",
+  "version": "2.0",
+  "license": null,
+  "classes": [
+    "FilterPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "487908c6f3fe5cb290bf1377559d9b423ed925f7ad6f161a42cbe91767ef847a",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "drive",
+      "name": "Drive",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "range",
+      "name": "Range",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "freq",
+      "name": "Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "mix",
+      "name": "Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    }
+  ]
+}

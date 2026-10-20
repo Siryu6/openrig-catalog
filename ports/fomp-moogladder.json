@@ -1,0 +1,136 @@
+{
+  "uri": "http://drobilla.net/plugins/fomp/mvclpf4",
+  "name": "Moog Low-Pass Filter 4",
+  "version": "2.0",
+  "license": null,
+  "classes": [
+    "LowpassPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "2a8ed4d2575e7d08ec52edc1adcfe5903de0bdefda9917e6f681bf8ce8c7330b",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "fm",
+      "name": "FM",
+      "type": "cv",
+      "direction": "in"
+    },
+    {
+      "index": 3,
+      "symbol": "exp_fm",
+      "name": "Exp FM",
+      "type": "cv",
+      "direction": "in"
+    },
+    {
+      "index": 4,
+      "symbol": "res_mod",
+      "name": "Resonance Mod",
+      "type": "cv",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "in_gain",
+      "name": "Input gain",
+      "type": "control",
+      "direction": "in",
+      "min": -60,
+      "max": 10,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "freq",
+      "name": "Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 3.1e-05,
+      "max": 0.5,
+      "default": 440,
+      "unit": "hz",
+      "properties": [
+        "logarithmic",
+        "sample_rate"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "exp_fm_gain",
+      "name": "Exp FM gain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "res",
+      "name": "Resonance",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "res_gain",
+      "name": "Resonance gain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "poles",
+      "name": "Filter poles",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 4,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer"
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "out_gain",
+      "name": "Output gain",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    }
+  ]
+}

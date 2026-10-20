@@ -1,0 +1,18 @@
+id: fomp-phaser
+package: fomp
+uri: http://drobilla.net/plugins/fomp/cs_phaser1_lfo
+bundle: fomp.lv2
+name: CS Phaser
+author: Fons Adriaensen (fomp)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Phaser
+kind: pedal
+inspired_by: ''
+tags:
+- stages
+- feedback
+summary: Phaser with 1 to 30 stages, LFO and feedback.
+description: >-
+  A chain of up to thirty all-pass stages swept by an LFO with several waveforms. Few
+  stages for a gentle swirl, many with feedback for deep, vocal sweeps.
