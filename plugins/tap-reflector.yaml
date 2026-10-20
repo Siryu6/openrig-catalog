@@ -1,0 +1,18 @@
+id: tap-reflector
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/reflector
+bundle: tap-reflector.lv2
+name: TAP Reflector
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Delay
+subcategory: Digital delay
+kind: space
+inspired_by: ''
+tags:
+- reverse
+- psychedelic
+summary: Reverse audio effect for psychedelic leads.
+description: >-
+  Plays overlapping fragments of what you just played backwards. Fragment length sets
+  the size; blend with the dry signal for backward-tape solos.

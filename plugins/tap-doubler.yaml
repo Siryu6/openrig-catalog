@@ -1,0 +1,19 @@
+id: tap-doubler
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/doubler
+bundle: tap-doubler.lv2
+name: TAP Fractal Doubler
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Chorus
+kind: pedal
+inspired_by: ''
+tags:
+- doubling
+- stereo
+- natural
+summary: Natural double tracking with random time and pitch drift.
+description: >-
+  Simulates a second take of the same part, with small random drifts in timing and
+  pitch. Spread the dry and wet signals in stereo for a wide double.

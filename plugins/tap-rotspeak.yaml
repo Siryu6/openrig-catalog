@@ -1,0 +1,18 @@
+id: tap-rotspeak
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/rotspeak
+bundle: tap-rotspeak.lv2
+name: TAP Rotary Speaker
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Rotary
+kind: pedal
+inspired_by: ''
+tags:
+- organ
+- stereo
+summary: Rotating horn and drum speaker, with mic distance.
+description: >-
+  Simulates a rotating horn and drum, each with its own speed, picked up by a pair of
+  microphones. Set the mic distance and the horn/rotor mix.

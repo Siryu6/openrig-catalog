@@ -1,0 +1,125 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/chorusflanger",
+  "name": "TAP Chorus/Flanger",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ModulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "7728ae802a74b8256148363afb72954ad93bf7c5131fc25ba5158bda839f3973",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "Frequency",
+      "name": "Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 5,
+      "default": 1.75,
+      "unit": "hz"
+    },
+    {
+      "index": 1,
+      "symbol": "LRPhaseShift",
+      "name": "L/R Phase Shift",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 180,
+      "default": 90,
+      "unit": "degree"
+    },
+    {
+      "index": 2,
+      "symbol": "Depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 75,
+      "unit": "pc"
+    },
+    {
+      "index": 3,
+      "symbol": "Delay",
+      "name": "Delay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 25,
+      "unit": "ms"
+    },
+    {
+      "index": 4,
+      "symbol": "Contour",
+      "name": "Contour",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 20000,
+      "default": 100,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "DryLevel",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": -3,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "WetLevel",
+      "name": "Wet Level",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": -3,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "InputL",
+      "name": "Input L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 8,
+      "symbol": "InputR",
+      "name": "Input R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 9,
+      "symbol": "OutputL",
+      "name": "Output L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 10,
+      "symbol": "OutputR",
+      "name": "Output R",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/tubewarmth",
+  "name": "TAP Tubewarmth",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "976f39a494e34af6802554e81dd4590bbba1cf9a4405b1eedc007379840f5f29",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "drive",
+      "name": "Drive",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 10,
+      "default": 5,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "blend",
+      "name": "Tape--Tube Blend",
+      "type": "control",
+      "direction": "in",
+      "min": -10,
+      "max": 10,
+      "default": 10,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "input",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 3,
+      "symbol": "output",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

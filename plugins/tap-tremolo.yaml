@@ -1,0 +1,18 @@
+id: tap-tremolo
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/tremolo
+bundle: tap-tremolo.lv2
+name: TAP Tremolo
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Tremolo
+kind: pedal
+inspired_by: ''
+tags:
+- classic
+- simple
+summary: Classic amp-style tremolo, rate and depth.
+description: >-
+  Smooth sine-wave volume modulation with frequency, depth and gain. The vintage amp
+  effect for surf, country and swampy blues.

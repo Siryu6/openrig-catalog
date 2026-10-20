@@ -1,0 +1,367 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/reverb",
+  "name": "TAP Reverberator",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "bf80897d907000ac570a76242a546cbb9e1d436f16c0c8333ab7eb0ab0ced157",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10000,
+      "default": 2800,
+      "unit": "ms"
+    },
+    {
+      "index": 1,
+      "symbol": "drylevel",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": -70,
+      "max": 10,
+      "default": -4,
+      "unit": "db"
+    },
+    {
+      "index": 2,
+      "symbol": "wetlevel",
+      "name": "Wet Level",
+      "type": "control",
+      "direction": "in",
+      "min": -70,
+      "max": 10,
+      "default": -12,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "combs_en",
+      "name": "Comb Filters",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "On"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "allps_en",
+      "name": "Allpass Filters",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "On"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "bandpass_en",
+      "name": "Bandpass Filter",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "On"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "stereo_enh",
+      "name": "Enhanced Stereo",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "On"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "mode",
+      "name": "Reverb Type",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 42,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "AfterBurn"
+        },
+        {
+          "value": 1,
+          "label": "AfterBurn (Long)"
+        },
+        {
+          "value": 2,
+          "label": "Ambience"
+        },
+        {
+          "value": 3,
+          "label": "Ambience (Thick)"
+        },
+        {
+          "value": 4,
+          "label": "Ambience (Thick) - HD"
+        },
+        {
+          "value": 5,
+          "label": "Cathedral"
+        },
+        {
+          "value": 6,
+          "label": "Cathedral - HD"
+        },
+        {
+          "value": 7,
+          "label": "Drum Chamber"
+        },
+        {
+          "value": 8,
+          "label": "Garage"
+        },
+        {
+          "value": 9,
+          "label": "Garage (Bright)"
+        },
+        {
+          "value": 10,
+          "label": "Gymnasium"
+        },
+        {
+          "value": 11,
+          "label": "Gymnasium (Bright)"
+        },
+        {
+          "value": 12,
+          "label": "Gymnasium (Bright) - HD"
+        },
+        {
+          "value": 13,
+          "label": "Hall (Small)"
+        },
+        {
+          "value": 14,
+          "label": "Hall (Medium)"
+        },
+        {
+          "value": 15,
+          "label": "Hall (Large)"
+        },
+        {
+          "value": 16,
+          "label": "Hall (Large) - HD"
+        },
+        {
+          "value": 17,
+          "label": "Plate (Small)"
+        },
+        {
+          "value": 18,
+          "label": "Plate (Medium)"
+        },
+        {
+          "value": 19,
+          "label": "Plate (Large)"
+        },
+        {
+          "value": 20,
+          "label": "Plate (Large) - HD"
+        },
+        {
+          "value": 21,
+          "label": "Pulse Chamber"
+        },
+        {
+          "value": 22,
+          "label": "Pulse Chamber (Reverse)"
+        },
+        {
+          "value": 23,
+          "label": "Resonator (96 ms)"
+        },
+        {
+          "value": 24,
+          "label": "Resonator (152 ms)"
+        },
+        {
+          "value": 25,
+          "label": "Resonator (208 ms)"
+        },
+        {
+          "value": 26,
+          "label": "Room (Small)"
+        },
+        {
+          "value": 27,
+          "label": "Room (Medium)"
+        },
+        {
+          "value": 28,
+          "label": "Room (Large)"
+        },
+        {
+          "value": 29,
+          "label": "Room (Large) - HD"
+        },
+        {
+          "value": 30,
+          "label": "Slap Chamber"
+        },
+        {
+          "value": 31,
+          "label": "Slap Chamber - HD"
+        },
+        {
+          "value": 32,
+          "label": "Slap Chamber (Bright)"
+        },
+        {
+          "value": 33,
+          "label": "Slap Chamber (Bright) - HD"
+        },
+        {
+          "value": 34,
+          "label": "Smooth Hall (Small)"
+        },
+        {
+          "value": 35,
+          "label": "Smooth Hall (Medium)"
+        },
+        {
+          "value": 36,
+          "label": "Smooth Hall (Large)"
+        },
+        {
+          "value": 37,
+          "label": "Smooth Hall (Large) - HD"
+        },
+        {
+          "value": 38,
+          "label": "Vocal Plate"
+        },
+        {
+          "value": 39,
+          "label": "Vocal Plate - HD"
+        },
+        {
+          "value": 40,
+          "label": "Warble Chamber"
+        },
+        {
+          "value": 41,
+          "label": "Warehouse"
+        },
+        {
+          "value": 42,
+          "label": "Warehouse - HD"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "inputl",
+      "name": "Input Left",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 9,
+      "symbol": "outputl",
+      "name": "Output Left",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 10,
+      "symbol": "inputr",
+      "name": "Input Right",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 11,
+      "symbol": "outputr",
+      "name": "Output Right",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

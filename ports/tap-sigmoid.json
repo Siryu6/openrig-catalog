@@ -1,0 +1,53 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/sigmoid",
+  "name": "TAP Sigmoid Booster",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "680e54f64df9ea5fe1d7737203924991f19299b9ddad87d674e2121800a9097a",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "Pregain",
+      "name": "Pregain",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 1,
+      "symbol": "Postgain",
+      "name": "Postgain",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 2,
+      "symbol": "Input",
+      "name": "Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 3,
+      "symbol": "Output",
+      "name": "Output",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

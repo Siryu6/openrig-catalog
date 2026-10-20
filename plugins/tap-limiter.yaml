@@ -1,0 +1,18 @@
+id: tap-limiter
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/limiter
+bundle: tap-limiter.lv2
+name: TAP Scaling Limiter
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Dynamics
+subcategory: Limiter
+kind: pedal
+inspired_by: ''
+tags:
+- transparent
+- output
+summary: Transparent limiter with a limit level and output volume.
+description: >-
+  Keeps peaks under a limit by scaling whole half-waves, so it stays clean even when
+  it works hard. Good at the end of a chain.

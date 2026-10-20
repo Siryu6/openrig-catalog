@@ -1,0 +1,18 @@
+id: tap-autopan
+package: tap-lv2
+uri: http://moddevices.com/plugins/tap/autopan
+bundle: tap-autopan.lv2
+name: TAP AutoPanner
+author: Tom Szilagyi (TAP)
+license: GPL-2.0-or-later
+family: Modulation
+subcategory: Tremolo
+kind: pedal
+inspired_by: ''
+tags:
+- stereo
+- auto-pan
+summary: Stereo auto-panner, a tremolo between the two sides.
+description: >-
+  Moves the sound from left to right with frequency and depth controls. A stereo
+  tremolo that livens up rhythm parts and pads.

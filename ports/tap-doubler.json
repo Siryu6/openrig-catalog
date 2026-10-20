@@ -1,0 +1,133 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/doubler",
+  "name": "TAP Fractal Doubler",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SpectralPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "46924aa75f6c7ab6e9ac48e5610bdffea0ef7ed3fc32dba321a3423330bf02a6",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "TimeTracking",
+      "name": "Time Tracking",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "PitchTracking",
+      "name": "Pitch Tracking",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "DryLevelDb",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "DryLeftPosition",
+      "name": "Dry Left Position",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "DryRightPosition",
+      "name": "Dry Right Position",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "WetLevelDb",
+      "name": "Wet Level",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "WetLeftPosition",
+      "name": "Wet Left Position",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "WetRightPosition",
+      "name": "Wet Right Position",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "Input_L",
+      "name": "Input_L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 9,
+      "symbol": "Input_R",
+      "name": "Input_R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 10,
+      "symbol": "Output_L",
+      "name": "Output_L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 11,
+      "symbol": "Output_R",
+      "name": "Output_R",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

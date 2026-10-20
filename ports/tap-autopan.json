@@ -1,0 +1,78 @@
+{
+  "uri": "http://moddevices.com/plugins/tap/autopan",
+  "name": "TAP AutoPanner",
+  "version": "7.2",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SpatialPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "dd8e2f26315fa4db612ce3663f07e7970c60a90ec7d08a9deb756d3fbff0a8a0",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "Frequency",
+      "name": "Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 20,
+      "default": 3,
+      "unit": "hz"
+    },
+    {
+      "index": 1,
+      "symbol": "Depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 80,
+      "unit": "pc"
+    },
+    {
+      "index": 2,
+      "symbol": "Gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -70,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "InputL",
+      "name": "Input L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 4,
+      "symbol": "InputR",
+      "name": "Input R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "OutputL",
+      "name": "Output L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 6,
+      "symbol": "OutputR",
+      "name": "Output R",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}
