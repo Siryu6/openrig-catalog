@@ -15,3 +15,10 @@ summary: Lead overdrive with drive, tone and level.
 description: >-
   Simulation of an overdrive pedal voiced for leads. More gain than a classic
   overdrive, still responsive to your playing.
+picture:
+  file: gx-sd2lead.png
+  source: >-
+    https://github.com/brummer10/GxSD2Lead.lv2/blob/c6d8fb3b256bc13b0d44989f721b20964adea77e/MOD/modgui/screenshot-gxsd2lead.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

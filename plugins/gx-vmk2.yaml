@@ -17,3 +17,10 @@ summary: Sixties British preamp with vibe and reverb.
 description: >-
   Analogue simulation of a sixties British tube preamp, with bass, treble, a vibe with
   speed and depth and a built-in reverb.
+picture:
+  file: gx-vmk2.png
+  source: >-
+    https://github.com/brummer10/GxVmk2.lv2/blob/03931ede20301ab4345e0d377d4c0a901fc5ea08/MOD/modgui/screenshot-gxvmk2.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

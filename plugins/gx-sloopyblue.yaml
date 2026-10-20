@@ -15,3 +15,10 @@ summary: Loose, bluesy overdrive pedal.
 description: >-
   An overdrive pedal with gain, tone and volume. A loose, open breakup that suits
   blues and classic rock.
+picture:
+  file: gx-sloopyblue.png
+  source: >-
+    https://github.com/brummer10/GxSloopyBlue.lv2/blob/be7e6c3aa426bbdf0ef97538fa66363e8d91211c/MOD/modgui/screenshot-gxsloopyblue.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

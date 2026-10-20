@@ -15,3 +15,10 @@ summary: Bass fuzz that keeps the low end.
 description: >-
   A fuzz voiced for bass, with intensity and volume. Keeps the fundamental under the
   fuzz; it also works on guitar for a huge, dark sound.
+picture:
+  file: gx-hyperion.png
+  source: >-
+    https://github.com/brummer10/GxHyperion.lv2/blob/4272a2c23705e1e86bc8f3b6d604caa1e913f3a6/MOD/modgui/screenshot-gxhyperion.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

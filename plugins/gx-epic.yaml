@@ -16,3 +16,10 @@ summary: Class A tube amp with a boost switch.
 description: >-
   Simulation of a class A guitar valve amplifier with gain, tone and volume. The boost
   switch adds gain for leads.
+picture:
+  file: gx-epic.png
+  source: >-
+    https://github.com/brummer10/GxEpic.lv2/blob/f561f2bbd95da39ad1d70ec1abe7c37b95206c16/MOD/modgui/screenshot-gxepic.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

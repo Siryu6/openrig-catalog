@@ -16,3 +16,10 @@ summary: Pitch vibrato with dry and wet levels.
 description: >-
   Modulates the pitch with a slow sine wave. Fully wet for a true vibrato, mixed with
   the dry signal for a chorus-like shimmer.
+picture:
+  file: tap-vibrato.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/vibrato/modgui/screenshot-tap-vibrato.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

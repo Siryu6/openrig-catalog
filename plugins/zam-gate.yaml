@@ -13,3 +13,9 @@ tags:
 - noise
 summary: Noise gate for high-gain rigs.
 description: Gate with attack, release and threshold, to silence hum between riffs.
+picture:
+  file: zam-gate.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZamGate/artwork/zamgate.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

@@ -16,3 +16,10 @@ summary: Warm overdrive, from mild blues to hard rock.
 description: >-
   Warm overdrive with drive and level. Goes from a mild bluesy push to an aggressive
   hard rock tone.
+picture:
+  file: gx-liquiddrive.png
+  source: >-
+    https://github.com/brummer10/GxLiquidDrive.lv2/blob/54d5e01abf4aafc764f1aa378dd37fb4eef2d30f/MOD/modgui/screenshot-gxliquiddrive.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

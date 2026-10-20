@@ -16,3 +16,10 @@ summary: Seventies octave fuzz with sustain and tone.
 description: >-
   Simulation of a seventies fuzz with an octave-up switch. Thick, sustaining fuzz that
   turns ringing and synth-like with the octave on.
+picture:
+  file: gx-tonemachine.png
+  source: >-
+    https://github.com/brummer10/GxToneMachine.lv2/blob/9ad0edda9efd58d48c033bca6014f4fd4ff01c58/MOD/modgui/screenshot-gxtonemachine.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

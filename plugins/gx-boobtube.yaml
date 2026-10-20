@@ -16,3 +16,10 @@ summary: Tube overdrive with a supply voltage control.
 description: >-
   A tube overdrive pedal with gain and tone, plus a voltage knob: lower it to starve
   the tube for a sagging, spitty break-up.
+picture:
+  file: gx-boobtube.png
+  source: >-
+    https://github.com/brummer10/GxBoobTube.lv2/blob/c00c2bae7bab4352630989a97746a637ded9fb01/MOD/modgui/screenshot-gxboobtube.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

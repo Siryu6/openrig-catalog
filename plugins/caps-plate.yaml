@@ -16,3 +16,10 @@ summary: Smooth plate reverb, mono in and stereo out.
 description: >-
   A network of twelve delay lines tuned for a soft attack and a smooth ambience.
   Bandwidth, tail, damping and blend; from a short slap to a long wash.
+picture:
+  file: caps-plate.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-Plate.lv2/modgui/screenshot-c-plate-versatile-plate-reverb.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

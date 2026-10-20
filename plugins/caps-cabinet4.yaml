@@ -15,3 +15,10 @@ summary: Speaker cabinet emulation without impulse files.
 description: >-
   Filter-based models of common guitar cabinets. Lighter than an impulse response,
   for when the CPU budget is tight.
+picture:
+  file: caps-cabinet4.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-CabinetIV.lv2/modgui/screenshot-c-cabinetiv-idealised-loudspeaker-cabinet-emulation.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

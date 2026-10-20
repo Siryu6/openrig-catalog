@@ -16,3 +16,9 @@ summary: Triode tube stage with tone stacks from real amps.
 description: >-
   A physical model of a triode amplifier stage followed by a tone stack modelled on
   real guitar amps. Pick the model, set bass, mids and treble; Insane Boost for more.
+picture:
+  file: zam-tube.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZamTube/artwork/zamtube.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

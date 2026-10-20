@@ -16,3 +16,10 @@ summary: Tube preamp pedal with bass and treble.
 description: >-
   Analogue simulation of a valve preamp pedal. Gain plus a two-band EQ for anything
   from a fat clean boost to a crunchy rhythm sound.
+picture:
+  file: gx-bottlerocket.png
+  source: >-
+    https://github.com/brummer10/GxBottleRocket.lv2/blob/8ec0082f7622057f5ac3709632f9df65c53870e4/MOD/modgui/screenshot-gxbottlerocket.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

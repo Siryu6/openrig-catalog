@@ -15,3 +15,10 @@ summary: Silicon fuzz face with a smoothing control.
 description: >-
   Two-transistor silicon fuzz: brighter and more aggressive than the germanium kind.
   Attack sets the fuzz, Smooth rounds off the fizz.
+picture:
+  file: gx-axisface.png
+  source: >-
+    https://github.com/brummer10/GxAxisFace.lv2/blob/3eadc9f0a0eea423571425f4225bc7589ac97ef7/MOD/modgui/screenshot-gxaxisface.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

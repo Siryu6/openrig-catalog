@@ -16,3 +16,10 @@ summary: Small tube boost with overdrive and tube compression.
 description: >-
   A little tube boost pedal. Adds level, a bit of overdrive and the soft compression
   of a valve; the boost switch adds more.
+picture:
+  file: gx-valvecaster.png
+  source: >-
+    https://github.com/brummer10/GxValveCaster.lv2/blob/1fa03c23c5280956e13803fcaa6026e3a61e12cf/MOD/modgui/screenshot-gxvalvecaster.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

@@ -15,3 +15,9 @@ summary: EQ band that moves with the level of the signal.
 description: >-
   One shelf or peak band whose gain follows a detector, like a compressor. Tame harsh
   highs only when they get loud, or boost lows when you play softly.
+picture:
+  file: zam-dynamiceq.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZamDynamicEQ/artwork/zamdynamiceq.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

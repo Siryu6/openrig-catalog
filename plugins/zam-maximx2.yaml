@@ -16,3 +16,9 @@ summary: Smooth stereo peak limiter.
 description: >-
   A smooth peak limiter with input gain, threshold and release. Put it at the end of
   the chain to raise the level without clipping.
+picture:
+  file: zam-maximx2.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZaMaximX2/artwork/zamaximx2.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

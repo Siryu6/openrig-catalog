@@ -17,3 +17,10 @@ summary: Bass and treble enhancer that adds definition.
 description: >-
   Adds harmonics in the low and high registers when plain EQ would only raise the
   level or the noise. More bass definition and treble presence.
+picture:
+  file: caps-spice.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-Spice.lv2/modgui/screenshot-c-spice.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

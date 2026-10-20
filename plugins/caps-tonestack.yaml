@@ -16,3 +16,10 @@ summary: Amp tone stack with bass, mid and treble, several models.
 description: >-
   Emulation of the passive tone stack of classic guitar amps, with several amp models.
   Put it after a drive for an amp-like EQ.
+picture:
+  file: caps-tonestack.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-ToneStack.lv2/modgui/screenshot-c-tonestack-tone-stack-emulation.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

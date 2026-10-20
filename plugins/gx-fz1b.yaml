@@ -16,3 +16,10 @@ summary: Early-sixties fuzz, buzzy and brassy.
 description: >-
   Simulation of a vintage fuzz pedal from the early sixties. Balance and volume for
   that buzzing, brassy fuzz from old records.
+picture:
+  file: gx-fz1b.png
+  source: >-
+    https://github.com/brummer10/GxFz1b.lv2/blob/5a8b4ccba0c41fd3b5ccd4a5f3065a4b4c1f3a7d/MOD/modgui/screenshot-gxfz1b.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

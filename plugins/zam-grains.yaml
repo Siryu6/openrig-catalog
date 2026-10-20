@@ -17,3 +17,9 @@ summary: Granular delay with freeze.
 description: >-
   Chops the delayed signal into grains and replays them at another speed. Freeze holds
   the buffer for textures and pads.
+picture:
+  file: zam-grains.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZamGrains/artwork/zamgrains.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

@@ -17,3 +17,10 @@ summary: Automatic volume swells that follow your playing.
 description: >-
   Fades each note in after you pick it, for violin-like swells without a volume pedal.
   Threshold sets the trigger, up and down times the shape.
+picture:
+  file: gx-slowgear.png
+  source: >-
+    https://github.com/brummer10/GxSlowGear.lv2/blob/1f6a4b00c7d466be03748ae921d9ca3b60c69e46/MOD/modgui/screenshot-gxslowgear.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

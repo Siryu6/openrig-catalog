@@ -15,3 +15,10 @@ summary: Tube overdrive with drive, tone and volume.
 description: >-
   A valve overdrive pedal simulation. Rich even harmonics and a natural compression as
   you turn up the drive.
+picture:
+  file: gx-shakatube.png
+  source: >-
+    https://github.com/brummer10/GxShakaTube.lv2/blob/7361db45c4b36dcc61c5c869180712dd6d53d111/MOD/modgui/screenshot-gxshakatube.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

@@ -16,3 +16,9 @@ summary: Learns the background noise and removes it.
 description: >-
   Capture a moment of silence, then it subtracts that noise profile from the signal.
   Good for hiss and hum. The profile is not saved: capture it again after a restart.
+picture:
+  file: zam-noise.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZamNoise/artwork/zamnoise.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

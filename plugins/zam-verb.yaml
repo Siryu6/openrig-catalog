@@ -16,3 +16,9 @@ summary: Convolution reverb with built-in rooms.
 description: >-
   A stereo convolution reverb with its own room responses: no file to load. Choose the
   room and set the wet/dry balance and level.
+picture:
+  file: zam-verb.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZamVerb/artwork/zamverb.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

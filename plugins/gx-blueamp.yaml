@@ -17,3 +17,10 @@ summary: Small single-ended tube amp, tight bass and clean highs.
 description: >-
   Single-ended head in the spirit of small late-fifties practice amps. Tight bass,
   clear mids and highs, and a sweet breakup when you dig in.
+picture:
+  file: gx-blueamp.png
+  source: >-
+    https://github.com/brummer10/GxBlueAmp.lv2/blob/43a5f7e3e38217f3a264c6770958e318b1b20edc/MOD/modgui/screenshot-gxblueamp.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

@@ -17,3 +17,10 @@ summary: Resonant filter moved by your playing or by an LFO.
 description: >-
   Band-pass and low-pass filters of several characters. The cutoff follows the input
   envelope, a wandering fractal LFO, or a mix of both: from auto-wah to slow sweeps.
+picture:
+  file: caps-autofilter.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-AutoFilter.lv2/modgui/screenshot-c-autofilter.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

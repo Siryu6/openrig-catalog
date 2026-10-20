@@ -15,3 +15,10 @@ summary: Four-band parametric EQ with shelf and band modes.
 description: >-
   Four filters in series, each switchable between low shelf, band, high shelf and
   other modes, with frequency, bandwidth and gain.
+picture:
+  file: caps-eq4p.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-Eq4p.lv2/modgui/screenshot-c-eq4p-4-band-parametric-equaliser.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

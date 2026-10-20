@@ -16,3 +16,10 @@ summary: Soft-clipping booster, from warmth to fuzz.
 description: >-
   A soft-clipping curve with pre and post gain. Light settings add warmth, higher
   pregain pushes it to a smooth overdrive and beyond.
+picture:
+  file: tap-sigmoid.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/sigmoid/modgui/screenshot-tap-sigmoid-booster.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

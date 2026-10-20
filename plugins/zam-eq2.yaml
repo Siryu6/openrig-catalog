@@ -15,3 +15,9 @@ summary: Two-band parametric EQ with low and high shelves.
 description: >-
   Two fully parametric bands plus low and high shelves, with input and output gain.
   Enough to cut mud and add presence anywhere in the chain.
+picture:
+  file: zam-eq2.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZamEQ2/artwork/zameq2.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

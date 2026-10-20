@@ -16,3 +16,10 @@ summary: Stereo chorus and flanger with a contour filter.
 description: >-
   Classic chorus and flanger in one, with a phase offset between the two sides for a
   wide stereo image. Short delay for flanging, longer for chorus.
+picture:
+  file: tap-chorusflanger.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/chorusflanger/modgui/screenshot-tap-chorusflanger.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

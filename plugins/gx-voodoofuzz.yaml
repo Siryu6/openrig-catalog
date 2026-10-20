@@ -15,3 +15,10 @@ summary: Octave-flavoured fuzz with attack, tone and resonance.
 description: >-
   A Bosstone-style fuzz, then a tone stage in parallel with a dark booster. Attack,
   tone and resonance shape a thick, vocal fuzz.
+picture:
+  file: gx-voodoofuzz.png
+  source: >-
+    https://github.com/brummer10/GxVoodoFuzz.lv2/blob/b960b2fb5540d85771c32dbfa72aa4a02c907bb3/MOD/modgui/screenshot-gxvoodoofuzz.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true
