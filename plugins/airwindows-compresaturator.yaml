@@ -1,0 +1,18 @@
+id: airwindows-compresaturator
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/compresaturator
+bundle: Airwindows.lv2
+name: Compresaturator
+author: Airwindows
+license: MIT
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- saturation
+- sustain
+summary: Somewhere between a compressor and a soft clipper.
+description: >-
+  Fades between compressing and soft clipping as you push it. Drive, clamp and expand
+  set the feel; good for sustain with a bit of grit.

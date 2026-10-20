@@ -1,0 +1,89 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/verbity",
+  "name": "Verbity",
+  "version": "2.2",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "33832626bd75320d36d58f9c6d2f8443047cf7525341f37d0f95e5a5c161b1cc",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "bigness",
+      "name": "Bigness",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "longness",
+      "name": "Longness",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "darkness",
+      "name": "Darkness",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "wetness",
+      "name": "Wetness",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    }
+  ]
+}

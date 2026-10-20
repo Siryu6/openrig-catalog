@@ -1,0 +1,100 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/mv",
+  "name": "MV",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "e7b4e4326f36a601436a221e65d478746773b09668ac5c7ebfe6e9a66b4711c3",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "bright",
+      "name": "Bright",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "regen",
+      "name": "Regen",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": "coef"
+    },
+    {
+      "index": 8,
+      "symbol": "drywet",
+      "name": "Dry/Wet",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    }
+  ]
+}

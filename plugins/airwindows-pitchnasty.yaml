@@ -1,0 +1,19 @@
+id: airwindows-pitchnasty
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/pitchnasty
+bundle: Airwindows.lv2
+name: PitchNasty
+author: Airwindows
+license: MIT
+family: Modulation
+subcategory: Pitch
+kind: pedal
+inspired_by: ''
+tags:
+- lo-fi
+- glitch
+- octave
+summary: Primitive pitch shifter with gritty artefacts.
+description: >-
+  Shifts by notes and bends, with grind and feedback for glitchy, lo-fi pitch effects.
+  Embraces its artefacts instead of hiding them.

@@ -1,0 +1,18 @@
+id: airwindows-powersag2
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/powersag2
+bundle: Airwindows.lv2
+name: PowerSag2
+author: Airwindows
+license: MIT
+family: Distortion
+subcategory: Saturation
+kind: pedal
+inspired_by: ''
+tags:
+- sag
+- dynamics
+summary: Power supply sag, like a starved amp.
+description: >-
+  Simulates a circuit running out of power on loud notes: they sag and soften while
+  quieter playing stays clear. It can also do the inverse effect.

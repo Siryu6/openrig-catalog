@@ -1,0 +1,18 @@
+id: airwindows-purestdrive
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/purestdrive
+bundle: Airwindows.lv2
+name: PurestDrive
+author: Airwindows
+license: MIT
+family: Distortion
+subcategory: Saturation
+kind: pedal
+inspired_by: ''
+tags:
+- subtle
+- one-knob
+summary: One-knob saturation, subtle and musical.
+description: >-
+  A saturation that reacts to the signal so it never gets harsh. One drive control for
+  warmth and glue, from barely there to smooth and dense.

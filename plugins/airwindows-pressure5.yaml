@@ -1,0 +1,18 @@
+id: airwindows-pressure5
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/pressure5
+bundle: Airwindows.lv2
+name: Pressure5
+author: Airwindows
+license: MIT
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- punch
+- character
+summary: Characterful compressor with speed and a built-in clipper.
+description: >-
+  A musical compressor with pressure, speed and two tone controls, then a boost and a
+  clipper to catch the peaks. From gentle levelling to heavy squash.

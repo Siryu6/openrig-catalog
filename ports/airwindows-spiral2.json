@@ -1,0 +1,100 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/spiral2",
+  "name": "Spiral2",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "18e3cb6c1c8bcdeb5880d48db29608afddcacee84d922043ea5027e66f87b785",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "input",
+      "name": "Input",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "highpass",
+      "name": "Highpass",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "presence",
+      "name": "Presence",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "dryWet",
+      "name": "Dry/Wet",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    }
+  ]
+}

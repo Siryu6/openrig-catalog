@@ -1,0 +1,133 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/eq",
+  "name": "EQ",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "0291bcfbb9ef8c779ba4735e0cf1163d2a3ea324fc679860a075e26a8455d3cf",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "treble",
+      "name": "Treble",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "mid",
+      "name": "Mid",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "bass",
+      "name": "Bass",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "lowpass",
+      "name": "Lowpass",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 16,
+      "default": 16,
+      "unit": "khz"
+    },
+    {
+      "index": 8,
+      "symbol": "trebFrq",
+      "name": "TrebFrq",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 16,
+      "default": 3.4,
+      "unit": "khz"
+    },
+    {
+      "index": 9,
+      "symbol": "bassFrq",
+      "name": "BassFrq",
+      "type": "control",
+      "direction": "in",
+      "min": 30,
+      "max": 1600,
+      "default": 281.2,
+      "unit": "hz"
+    },
+    {
+      "index": 10,
+      "symbol": "hipass",
+      "name": "Hipass",
+      "type": "control",
+      "direction": "in",
+      "min": 30,
+      "max": 1600,
+      "default": 30,
+      "unit": "coef"
+    },
+    {
+      "index": 11,
+      "symbol": "outGain",
+      "name": "OutGain",
+      "type": "control",
+      "direction": "in",
+      "min": -18,
+      "max": 18,
+      "default": 0,
+      "unit": "db"
+    }
+  ]
+}

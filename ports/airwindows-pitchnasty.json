@@ -1,0 +1,111 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/pitchnasty",
+  "name": "PitchNasty",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "PitchPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "1742dc7f1a9a17a0b8a4c0fe33fea1c93fe9718a23b03b200f17dcf980fb7ac7",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "note",
+      "name": "Note",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": -12,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "bend",
+      "name": "Bend",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": -12,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "grind",
+      "name": "Grind",
+      "type": "control",
+      "direction": "in",
+      "min": -36,
+      "max": 36,
+      "default": -18,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "feedback",
+      "name": "Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "dryWet",
+      "name": "Dry/Wet",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    }
+  ]
+}
