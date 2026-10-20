@@ -1,0 +1,187 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_quack_#_quack_",
+  "name": "GxQuack",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "FilterPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "15e7667f5583541e4c6a71624530b2a24f47fba73db8c60a0944900064587d5d",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "DEPTH",
+      "name": "DEPTH",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "DRIVE",
+      "name": "DRIVE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "On"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "GAIN",
+      "name": "GAIN",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 6,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "MODE",
+      "name": "MODE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 2,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Low"
+        },
+        {
+          "value": 1,
+          "label": "High"
+        },
+        {
+          "value": 2,
+          "label": "Orig"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "PEAK",
+      "name": "PEAK",
+      "type": "control",
+      "direction": "in",
+      "min": -6,
+      "max": 20,
+      "default": 5,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "RANGE",
+      "name": "RANGE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Low"
+        },
+        {
+          "value": 1,
+          "label": "High"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "TONE",
+      "name": "TONE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "Low"
+        },
+        {
+          "value": 2,
+          "label": "High"
+        }
+      ]
+    }
+  ]
+}

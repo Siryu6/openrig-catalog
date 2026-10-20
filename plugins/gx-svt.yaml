@@ -1,0 +1,18 @@
+id: gx-svt
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_ampegsvt_#_ampegsvt_
+bundle: gx_ampegsvt.lv2
+name: GxSVT
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Preamp
+kind: amp
+inspired_by: ''
+tags:
+- bass
+- tube
+summary: Tube bass preamp with three-band EQ and a cab switch.
+description: >-
+  Tube bass preamp with bass, middle and treble, voicing switches for each band and a
+  cabinet switch. Warm, round and punchy low end.

@@ -1,0 +1,201 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_vmk2d_#_vmk2d_",
+  "name": "GxVMK2",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "4d1f8401ae0251f49a09a9ef78f513adddc6996d83d6a5d20e1d79ad127a3357",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BASS",
+      "name": "BASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "DEPTH",
+      "name": "DEPTH",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "MRBSELECT",
+      "name": "MRBSELECT",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "1"
+        },
+        {
+          "value": 1,
+          "label": "2"
+        },
+        {
+          "value": 2,
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "MRB",
+      "name": "MRB",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "OFF"
+        },
+        {
+          "value": 1,
+          "label": "ON"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "REVERBLEVEL",
+      "name": "REVERBLEVEL",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "REVERB",
+      "name": "REVERB",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "OFF"
+        },
+        {
+          "value": 1,
+          "label": "ON"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "SPEED",
+      "name": "SPEED",
+      "type": "control",
+      "direction": "in",
+      "min": 0.01,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "TREBLE",
+      "name": "TREBLE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "VIBE",
+      "name": "VIBE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "OFF"
+        },
+        {
+          "value": 1,
+          "label": "ON"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "VOLUME",
+      "name": "VOLUME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    }
+  ]
+}

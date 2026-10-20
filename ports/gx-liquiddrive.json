@@ -1,0 +1,68 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_liquiddrive_#_liquiddrive_",
+  "name": "GxLiquidDrive",
+  "version": "34.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "8f2d767fb288d9175bc6a0a5602b2365546cf8d6cc9e64b3eec623e3ed0fadc1",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "DRIVE",
+      "name": "DRIVE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "LEVEL",
+      "name": "LEVEL",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 4,
+      "default": -16,
+      "unit": null
+    }
+  ]
+}

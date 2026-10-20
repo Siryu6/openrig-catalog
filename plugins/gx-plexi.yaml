@@ -1,0 +1,19 @@
+id: gx-plexi
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_plexi_#_plexi_
+bundle: gx_plexi.lv2
+name: GxPlexi
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: ''
+tags:
+- british
+- tube
+- rock
+summary: British-style tube amp with full tone stack and presence.
+description: >-
+  A power amp simulation with volume, master, bass, mid, treble and presence. Classic
+  British rock crunch when you push the volume.

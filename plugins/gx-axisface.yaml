@@ -1,0 +1,17 @@
+id: gx-axisface
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_AxisFace_#_AxisFace_
+bundle: gx_AxisFace.lv2
+name: GxAxisFace
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Axis Face
+tags:
+- silicon
+summary: Silicon fuzz face with a smoothing control.
+description: >-
+  Two-transistor silicon fuzz: brighter and more aggressive than the germanium kind.
+  Attack sets the fuzz, Smooth rounds off the fizz.

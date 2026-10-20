@@ -1,0 +1,18 @@
+id: gx-boobtube
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_boobtube_#_boobtube_
+bundle: gx_boobtube.lv2
+name: GxBoobTube
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- tube
+- starve
+summary: Tube overdrive with a supply voltage control.
+description: >-
+  A tube overdrive pedal with gain and tone, plus a voltage knob: lower it to starve
+  the tube for a sagging, spitty break-up.

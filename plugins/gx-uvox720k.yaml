@@ -1,0 +1,18 @@
+id: gx-uvox720k
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_uvox_#_uvox_
+bundle: gx_uvox.lv2
+name: GxUVox720k
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Amp
+kind: combo
+inspired_by: Univox 720K
+tags:
+- solid-state
+- reverb
+summary: Solid-state combo amp with clipping switch and reverb.
+description: >-
+  Analogue simulation of a seventies solid-state amp, with gain, bass, treble, a
+  clipping switch and its own reverb.

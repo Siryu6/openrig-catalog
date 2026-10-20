@@ -1,0 +1,18 @@
+id: gx-guvnor
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_guvnor_#_guvnor_
+bundle: gx_guvnor.lv2
+name: GxGuvnor
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Distortion
+kind: pedal
+inspired_by: ''
+tags:
+- british
+- three-band
+summary: British-voiced distortion with a three-band EQ.
+description: >-
+  An overdrive and distortion pedal with gain, level and an active bass, mid and
+  treble EQ. Amp-like crunch to full rock distortion.

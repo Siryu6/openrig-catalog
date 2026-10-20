@@ -1,0 +1,18 @@
+id: gx-epic
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_epic_#_epic_
+bundle: gx_epic.lv2
+name: GxEpic
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: ''
+tags:
+- tube
+- class-a
+summary: Class A tube amp with a boost switch.
+description: >-
+  Simulation of a class A guitar valve amplifier with gain, tone and volume. The boost
+  switch adds gain for leads.

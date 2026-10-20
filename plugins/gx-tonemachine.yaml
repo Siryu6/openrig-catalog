@@ -1,0 +1,18 @@
+id: gx-tonemachine
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_tonemachine_#_tonemachine_
+bundle: gx_tonemachine.lv2
+name: GxToneMachine
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Foxx Tone Machine
+tags:
+- octave
+- vintage
+summary: Seventies octave fuzz with sustain and tone.
+description: >-
+  Simulation of a seventies fuzz with an octave-up switch. Thick, sustaining fuzz that
+  turns ringing and synth-like with the octave on.

@@ -1,0 +1,18 @@
+id: gx-valvecaster
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_valvecaster_#_valvecaster_
+bundle: gx_valvecaster.lv2
+name: GxValveCaster
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Boost
+kind: pedal
+inspired_by: Valvecaster
+tags:
+- tube
+- boost
+summary: Small tube boost with overdrive and tube compression.
+description: >-
+  A little tube boost pedal. Adds level, a bit of overdrive and the soft compression
+  of a valve; the boost switch adds more.

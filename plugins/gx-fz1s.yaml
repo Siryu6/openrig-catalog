@@ -1,0 +1,18 @@
+id: gx-fz1s
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_maestro_fz1s_#_maestro_fz1s_
+bundle: gx_maestro_fz1s.lv2
+name: GxFz1s
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Fuzz
+kind: pedal
+inspired_by: Maestro FZ-1S
+tags:
+- vintage
+- sustain
+summary: Vintage fuzz with sustain and a filter control.
+description: >-
+  A later take on the sixties fuzz with sustain and filter controls. More sustain and
+  a tone you can shape from dark to cutting.

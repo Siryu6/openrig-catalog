@@ -1,0 +1,53 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_saturate_#_saturate_",
+  "name": "GxSaturator",
+  "version": "28.3",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "5f480fdc0c1091b797f8666b52ca4d2ffa893e5a8a532e6480ae99c2cc838bc8",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "INTENSITY",
+      "name": "INTENSITY",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 10,
+      "default": 6,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "SATURATE",
+      "name": "SATURATE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 60,
+      "unit": null
+    }
+  ]
+}

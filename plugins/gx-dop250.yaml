@@ -1,0 +1,18 @@
+id: gx-dop250
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_DOP250_#_DOP250_
+bundle: gx_DOP250.lv2
+name: GxDOP250
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- preamp
+- simple
+summary: Two-knob overdrive preamp pedal, gain and level.
+description: >-
+  A simple overdrive preamp pedal with just gain and level. From a fat clean boost to
+  an open, mid-forward crunch.

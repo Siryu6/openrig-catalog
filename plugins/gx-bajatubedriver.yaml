@@ -1,0 +1,17 @@
+id: gx-bajatubedriver
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_bajatubedriver_#_bajatubedriver_
+bundle: gx_bajatubedriver.lv2
+name: GxBaJaTubeDriver
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- tube
+summary: Tube driver overdrive, smooth and dynamic.
+description: >-
+  A tube-driven overdrive pedal with drive, tone and volume. Responds to your pick
+  attack, from light breakup to a singing lead.

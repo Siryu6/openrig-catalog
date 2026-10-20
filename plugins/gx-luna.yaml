@@ -1,0 +1,17 @@
+id: gx-luna
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_luna_#_luna_
+bundle: gx_luna.lv2
+name: GxLuna
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- smooth
+summary: Overdrive pedal with gain, tone and volume.
+description: >-
+  A classic three-knob overdrive pedal. Smooth and touch-sensitive, good for stacking
+  with other drives.

@@ -1,0 +1,18 @@
+id: gx-creammachine
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_CreamMachine_#_CreamMachine_
+bundle: gx_CreamMachine.lv2
+name: GxCreamMachine
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: ''
+tags:
+- tube
+- clean
+summary: Tube amp with bass and treble, creamy when pushed.
+description: >-
+  Tube amp simulation with a two-band tone stack and separate level and master volume.
+  Clean at low settings, thick and creamy when you turn the level up.

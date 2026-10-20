@@ -1,0 +1,17 @@
+id: gx-saturator
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_saturate_#_saturate_
+bundle: gx_saturate.lv2
+name: GxSaturator
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Saturation
+kind: pedal
+inspired_by: ''
+tags:
+- subtle
+summary: Simple saturation with intensity and amount.
+description: >-
+  A two-knob saturator. Adds harmonics and warmth, from a subtle thickening to obvious
+  grit.

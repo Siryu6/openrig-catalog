@@ -1,0 +1,17 @@
+id: gx-supersonic
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_supersonic_#_supersonic_
+bundle: gx_supersonic.lv2
+name: GxSupersonic
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: ''
+tags:
+- tube
+summary: Tube amp with gain, bass, treble and volume.
+description: >-
+  A tube amp simulation with a simple tone stack. Clean to crunchy depending on the
+  gain, with a lively, open feel.

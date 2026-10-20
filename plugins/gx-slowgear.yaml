@@ -1,0 +1,19 @@
+id: gx-slowgear
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_slowgear_#_slowgear_
+bundle: gx_slowgear.lv2
+name: GxSlowGear
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Utility
+subcategory: Volume
+kind: pedal
+inspired_by: Boss Slow Gear
+tags:
+- swell
+- violin
+- ambient
+summary: Automatic volume swells that follow your playing.
+description: >-
+  Fades each note in after you pick it, for violin-like swells without a volume pedal.
+  Threshold sets the trigger, up and down times the shape.

@@ -1,0 +1,18 @@
+id: gx-liquiddrive
+package: gxplugins
+uri: http://guitarix.sourceforge.net/plugins/gx_liquiddrive_#_liquiddrive_
+bundle: gx_liquiddrive.lv2
+name: GxLiquidDrive
+author: Hermann Meyer
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- warm
+- blues
+summary: Warm overdrive, from mild blues to hard rock.
+description: >-
+  Warm overdrive with drive and level. Goes from a mild bluesy push to an aggressive
+  hard rock tone.

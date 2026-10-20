@@ -1,0 +1,75 @@
+{
+  "uri": "http://guitarix.sourceforge.net/plugins/gx_clubdrive_#_clubdrive_",
+  "name": "GxClubDrive",
+  "version": "37.0",
+  "license": "http://opensource.org/licenses/isc",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "55a0599f84d0008916eeea7482b1f3fd2d4ce72838b9a7be5fee074a1634a830",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 1,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "BYPASS",
+      "name": "BYPASS",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 3,
+      "symbol": "DRIVE",
+      "name": "DRIVE",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "VOLUME",
+      "name": "VOLUME",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "V1",
+      "name": "V1",
+      "type": "control",
+      "direction": "out"
+    }
+  ]
+}
