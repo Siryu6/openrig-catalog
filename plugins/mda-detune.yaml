@@ -1,0 +1,19 @@
+id: mda-detune
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Detune
+bundle: mda.lv2
+name: Detune
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Modulation
+subcategory: Chorus
+kind: pedal
+inspired_by: ''
+tags:
+- detune
+- stereo
+- pitch
+summary: Stereo detune for a thick, chorus-like doubling.
+description: >-
+  A simple pitch shifter that detunes the two sides in opposite directions, like the
+  detune patch of a rack multi-effects. Thick, static chorus without wobble.

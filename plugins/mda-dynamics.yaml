@@ -1,0 +1,18 @@
+id: mda-dynamics
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Dynamics
+bundle: mda.lv2
+name: Dynamics
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- limiter
+- gate
+summary: Compressor, limiter and gate in one.
+description: >-
+  A compressor with threshold, ratio, attack and release, plus a limiter and a noise
+  gate. One block for the whole dynamics of a chain.

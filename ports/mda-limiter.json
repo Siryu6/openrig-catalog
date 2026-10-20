@@ -1,0 +1,113 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/Limiter",
+  "name": "MDA Limiter",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "LimiterPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "6c540aa5f138316f7e11b2455e1947ebdb9b443f9d38ad7e546112c825d58ca6",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "thresh",
+      "name": "Thresh",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.6,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "release",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "attack",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.15,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "knee",
+      "name": "Knee",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Hard"
+        },
+        {
+          "value": 1,
+          "label": "Soft"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 6,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 7,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 8,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

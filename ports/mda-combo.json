@@ -1,0 +1,158 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/Combo",
+  "name": "MDA Combo",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "4917ce2993fc7e8d5a0f5747e16f4f37c60a07fbc314eacdb2469ed8922a9645",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "model",
+      "name": "Model",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "D.I. (flat frequency response)"
+        },
+        {
+          "value": 0.166667,
+          "label": "Tradtional speaker simulator"
+        },
+        {
+          "value": 0.333333,
+          "label": "Small radio speaker"
+        },
+        {
+          "value": 0.5,
+          "label": "Small combo (close mic)"
+        },
+        {
+          "value": 0.666667,
+          "label": "Small combo (far mic)"
+        },
+        {
+          "value": 0.833333,
+          "label": "Large stack (front mic)"
+        },
+        {
+          "value": 1,
+          "label": "Large stack (side mic, scooped mids)"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "drive",
+      "name": "Drive",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "bias",
+      "name": "Bias",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "stereo",
+      "name": "Stereo",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "hpf_freq",
+      "name": "HPF Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "hpf_reso",
+      "name": "HPF Reso",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 8,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 9,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 10,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

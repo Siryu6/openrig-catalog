@@ -1,0 +1,159 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/RezFilter",
+  "name": "MDA RezFilter",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "FilterPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "84e94b3aeeec98b718b0f473c535453dad6c536514c6eb68345be73fc5eff93d",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "freq",
+      "name": "Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.33,
+      "unit": null,
+      "designation": "cutoffFrequency"
+    },
+    {
+      "index": 1,
+      "symbol": "res",
+      "name": "Res",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.7,
+      "unit": null,
+      "designation": "resonance"
+    },
+    {
+      "index": 2,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "env_vcf",
+      "name": "Env->VCF",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.85,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "attack",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "designation": "attack"
+    },
+    {
+      "index": 5,
+      "symbol": "release",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null,
+      "designation": "release"
+    },
+    {
+      "index": 6,
+      "symbol": "lfo_vcf",
+      "name": "LFO->VCF",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.7,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "lfo_rate",
+      "name": "LFO Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.4,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "trigger",
+      "name": "Trigger",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "max_freq",
+      "name": "Max Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.75,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 11,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 12,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 13,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

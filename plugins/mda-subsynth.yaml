@@ -1,0 +1,19 @@
+id: mda-subsynth
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/SubSynth
+bundle: mda.lv2
+name: SubSynth
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Modulation
+subcategory: Pitch
+kind: pedal
+inspired_by: ''
+tags:
+- octave
+- bass
+- sub
+summary: Adds a sub-octave or bass under your signal.
+description: >-
+  Generates low-frequency content from the input: distorted bass, an octave-down
+  divider or a triggered low tone. Works best on single notes.

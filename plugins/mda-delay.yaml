@@ -1,0 +1,18 @@
+id: mda-delay
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Delay
+bundle: mda.lv2
+name: Delay
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Delay
+subcategory: Digital delay
+kind: space
+inspired_by: ''
+tags:
+- stereo
+- simple
+summary: Simple stereo delay with left and right times.
+description: >-
+  A clean delay with separate left and right times, feedback with a tone control, and
+  mix. Offset the two sides for a wide stereo echo.

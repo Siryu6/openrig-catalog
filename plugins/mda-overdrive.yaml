@@ -1,0 +1,18 @@
+id: mda-overdrive
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Overdrive
+bundle: mda.lv2
+name: Overdrive
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- simple
+- soft
+summary: Soft overdrive with a muffle control.
+description: >-
+  Soft clipping with drive, muffle and output. Simple and light, from a little body to
+  a fuzzy edge.

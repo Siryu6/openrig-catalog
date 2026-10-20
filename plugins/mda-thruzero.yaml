@@ -1,0 +1,18 @@
+id: mda-thruzero
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/ThruZero
+bundle: mda.lv2
+name: ThruZero
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Modulation
+subcategory: Flanger
+kind: pedal
+inspired_by: ''
+tags:
+- tape
+- through-zero
+summary: Through-zero tape flanger.
+description: >-
+  Simulates tape flanging, where the two copies cancel out as they pass each other.
+  Also does double tracking and other modulated delay effects.

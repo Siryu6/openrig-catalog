@@ -1,0 +1,111 @@
+{
+  "uri": "http://drobilla.net/plugins/mda/Degrade",
+  "name": "MDA Degrade",
+  "version": "2.0",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "bead5c711f47c2d4b6a0554c6f795708de41125c9a027dd30aa5da1fbcadfef4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "headroom",
+      "name": "Headroom",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.8,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "quant",
+      "name": "Quant",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "rate",
+      "name": "Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.65,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "post_filt",
+      "name": "Post Filter",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.9,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "non_lin",
+      "name": "Non-Lin",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.58,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "left_in",
+      "name": "Left In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 7,
+      "symbol": "right_in",
+      "name": "Right In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 8,
+      "symbol": "left_out",
+      "name": "Left Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 9,
+      "symbol": "right_out",
+      "name": "Right Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

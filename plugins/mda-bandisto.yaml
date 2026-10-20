@@ -1,0 +1,18 @@
+id: mda-bandisto
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/Bandisto
+bundle: mda.lv2
+name: Bandisto
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Distortion
+subcategory: Distortion
+kind: pedal
+inspired_by: ''
+tags:
+- multiband
+- extreme
+summary: Three-band distortion with a drive per band.
+description: >-
+  Splits the signal into low, mid and high bands and clips each one on its own. From
+  torn-speaker sounds to a distorted top over a clean low end.

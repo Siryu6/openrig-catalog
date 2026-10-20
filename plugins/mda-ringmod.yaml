@@ -1,0 +1,18 @@
+id: mda-ringmod
+package: mda-lv2
+uri: http://drobilla.net/plugins/mda/RingMod
+bundle: mda.lv2
+name: RingMod
+author: Paul Kellett (MDA)
+license: GPL-2.0-or-later OR MIT
+family: Modulation
+subcategory: Ring modulator
+kind: pedal
+inspired_by: ''
+tags:
+- metallic
+- bell
+summary: Ring modulator with a sine oscillator and feedback.
+description: >-
+  Multiplies the signal with a sine oscillator for metallic, bell-like tones. At low
+  frequencies it turns into a deep tremolo.
