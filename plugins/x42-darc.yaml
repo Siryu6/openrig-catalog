@@ -16,3 +16,9 @@ summary: Transparent compressor with few, well-chosen controls.
 description: >-
   A clean dynamic range compressor: input gain, threshold, ratio, attack and release,
   plus a hold switch. Evens out picking without changing the tone.
+picture:
+  file: x42-darc.png
+  source: >-
+    https://github.com/x42/darc.lv2/blob/8d69a2f2194e8bd00438d004c27dcef60ef8fb75/img/x42-darc.png
+  credit: Robin Gareus
+  license: GPL-3.0-or-later

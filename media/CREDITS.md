@@ -101,3 +101,5 @@ shows the credit and license on the plugin's page in the store.
 | `dpf-pingpongpan.png` | Ping Pong Pan | Filipe Coelho (DISTRHO) | LGPL-3.0-only | [source](https://github.com/DISTRHO/DPF-Plugins/blob/0e6116c77e7d341306cdf8db827c2c2c3ec031d9/plugins/PingPongPan/Screenshot.png) |
 | `dpf-soulforce.png` | Soul Force | Niall Moody (ndc Plugs) | MIT | [source](https://github.com/DISTRHO/DPF-Plugins/blob/0e6116c77e7d341306cdf8db827c2c2c3ec031d9/plugins/SoulForce/Screenshot.png) |
 | `gx-fuzzface.png` | GxFuzzFaceFullerMod | Hermann Meyer | GPL-2.0-or-later | [source](https://github.com/brummer10/guitarix/blob/516e9084e39698d249d25bada8d76f66b4b556da/trunk/src/LV2/gx_fuzzfacefm.lv2/modgui/screenshot-gxfuzzfacefuller.png) |
+| `x42-darc.png` | Dynamic Compressor | Robin Gareus | GPL-3.0-or-later | [source](https://github.com/x42/darc.lv2/blob/8d69a2f2194e8bd00438d004c27dcef60ef8fb75/img/x42-darc.png) |
+| `x42-dpl.png` | Digital Peak Limiter | Robin Gareus | GPL-3.0-or-later | [source](https://github.com/x42/dpl.lv2/blob/8bcd25deaf673fc93c66c4637fdc52bfdfe8ed6a/img/x42-dpl.png) |

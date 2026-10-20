@@ -16,3 +16,9 @@ summary: Look-ahead limiter to keep the output safe.
 description: >-
   A brickwall limiter with look-ahead: nothing goes over the threshold, so a sudden
   feedback never reaches the front of house at full level.
+picture:
+  file: x42-dpl.png
+  source: >-
+    https://github.com/x42/dpl.lv2/blob/8bcd25deaf673fc93c66c4637fdc52bfdfe8ed6a/img/x42-dpl.png
+  credit: Robin Gareus
+  license: GPL-3.0-or-later
