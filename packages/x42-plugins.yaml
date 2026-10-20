@@ -9,4 +9,16 @@ source:
   url: https://gareus.org/misc/x42-plugins/x42-plugins-20260908.tar.xz
   sha256: d5d46acc39eb1fe668731f977d572222c990cbee4541d3249dc34575f8fbb5c0
 # Pinned by the PR the build opens (tools/pin_build.py)
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/x42-plugins-20260908-2/x42-plugins-20260908-2-aarch64.tar.xz
+    sha256: bd898705b53458cba8e8b6ddc5a937dca633eea6aaa0b2993694d38dde3bb0e5
+    size: 39720
+    format: tar.xz
+    root: x42-plugins-20260908-2
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/x42-plugins-20260908-2/x42-plugins-20260908-2-x86_64.tar.xz
+    sha256: 0740eeff0e7790232b5e8d3cdc00078fc43c733b9ef1d020b3813dddd65f62b5
+    size: 42796
+    format: tar.xz
+    root: x42-plugins-20260908-2
