@@ -1,6 +1,6 @@
 id: x42-plugins
 name: x42-plugins
-version: "20260908"
+version: "20260908-2"
 license: GPL-2.0-or-later AND GPL-3.0-or-later
 homepage: https://x42-plugins.com/x42/
 # No Linux arm64 build upstream: built by OpenRig, published with its sources
@@ -8,16 +8,5 @@ origin: openrig-build
 source:
   url: https://gareus.org/misc/x42-plugins/x42-plugins-20260908.tar.xz
   sha256: d5d46acc39eb1fe668731f977d572222c990cbee4541d3249dc34575f8fbb5c0
-artifacts:
-  aarch64:
-    url: https://github.com/Siryu6/openrig-catalog/releases/download/x42-plugins-20260908/x42-plugins-20260908-aarch64.tar.xz
-    sha256: fdd584c68d9d56b6addf595d5e232ba27131d748e55bfc696d1792189c34cdb4
-    size: 36836
-    format: tar.xz
-    root: x42-plugins-20260908
-  x86_64:
-    url: https://github.com/Siryu6/openrig-catalog/releases/download/x42-plugins-20260908/x42-plugins-20260908-x86_64.tar.xz
-    sha256: aa874ad643fe58afb30fa7d390425f176133e9bab893a4d106bb51398e4ba486
-    size: 39624
-    format: tar.xz
-    root: x42-plugins-20260908
+# Pinned by the PR the build opens (tools/pin_build.py)
+artifacts: {}
