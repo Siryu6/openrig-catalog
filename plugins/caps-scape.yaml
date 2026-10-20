@@ -17,3 +17,10 @@ summary: Tempo-synced stereo delay with resonant filters.
 description: >-
   A stereo delay set by tempo and division, with resonant filters and slowly wandering
   panning. Good for ambient pads and dotted rhythms.
+picture:
+  file: caps-scape.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-Scape.lv2/modgui/screenshot-c-scape-stereo-delay-filters.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

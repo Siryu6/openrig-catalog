@@ -16,3 +16,10 @@ summary: Tube bass preamp with three-band EQ and a cab switch.
 description: >-
   Tube bass preamp with bass, middle and treble, voicing switches for each band and a
   cabinet switch. Warm, round and punchy low end.
+picture:
+  file: gx-svt.png
+  source: >-
+    https://github.com/brummer10/GxSVT.lv2/blob/cba7cff68987d169d9e94ce1c8d95cf618e04567/MOD/modgui/screenshot-gxsvt.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

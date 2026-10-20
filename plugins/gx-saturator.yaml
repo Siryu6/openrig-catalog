@@ -15,3 +15,10 @@ summary: Simple saturation with intensity and amount.
 description: >-
   A two-knob saturator. Adds harmonics and warmth, from a subtle thickening to obvious
   grit.
+picture:
+  file: gx-saturator.png
+  source: >-
+    https://github.com/brummer10/GxSaturator.lv2/blob/5ab57852cbb78eff32b97f82831388bae3841d71/MOD/modgui/screenshot-gxsaturator.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

@@ -16,3 +16,10 @@ summary: Compressor tuned for natural guitar sustain.
 description: >-
   Designed to give the electric guitar more sustain without losing its percussive
   attack. Peak or RMS detection, with saturating modes for extra warmth.
+picture:
+  file: caps-compress.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-Compress.lv2/modgui/screenshot-c-compress-mono-compressor.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

@@ -16,3 +16,10 @@ summary: Octave fuzz with an expander switch and a trim control.
 description: >-
   Simulation of a classic octave fuzz. The Expander switch scoops the mids, and the
   internal trim is exposed to set the amount of harmonics.
+picture:
+  file: gx-superfuzz.png
+  source: >-
+    https://github.com/brummer10/GxSuperFuzz.lv2/blob/a812917d03d9ff7087e4307b9d9b7711b28de7dc/MOD/modgui/screenshot-gxsuperfuzz.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

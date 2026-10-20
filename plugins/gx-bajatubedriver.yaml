@@ -15,3 +15,10 @@ summary: Tube driver overdrive, smooth and dynamic.
 description: >-
   A tube-driven overdrive pedal with drive, tone and volume. Responds to your pick
   attack, from light breakup to a singing lead.
+picture:
+  file: gx-bajatubedriver.png
+  source: >-
+    https://github.com/brummer10/GxBaJaTubeDriver.lv2/blob/372cbd6201db0df2518fe473430bd495094b6991/MOD/modgui/screenshot-gxbajatubedriver.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

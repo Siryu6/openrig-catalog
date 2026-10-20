@@ -15,3 +15,10 @@ summary: Tube-based distortion pedal, input and output.
 description: >-
   Simulation of a valve distortion pedal. Input drives the tube from warm crunch to
   thick distortion; output sets the level.
+picture:
+  file: gx-tubedistortion.png
+  source: >-
+    https://github.com/brummer10/GxTubeDistortion.lv2/blob/abadda657881f611d1a6ef881da6ce16799a4e02/MOD/modgui/screenshot-gxtubedistortion.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

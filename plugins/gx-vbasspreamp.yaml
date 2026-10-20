@@ -15,3 +15,10 @@ summary: Eighties bass amp preamp with three-band EQ and cab.
 description: >-
   Analogue simulation of the preamp section of an eighties bass amp. Bass, mid and
   treble controls and a cabinet simulation.
+picture:
+  file: gx-vbasspreamp.png
+  source: >-
+    https://github.com/brummer10/GxVBassPreAmp.lv2/blob/2fd32920bd43b284d02958f7f581eb8e10fb1ed7/MOD/modgui/screenshot-gxvbasspreamp.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

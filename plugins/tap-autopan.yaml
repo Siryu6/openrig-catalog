@@ -16,3 +16,10 @@ summary: Stereo auto-panner, a tremolo between the two sides.
 description: >-
   Moves the sound from left to right with frequency and depth controls. A stereo
   tremolo that livens up rhythm parts and pads.
+picture:
+  file: tap-autopan.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/autopan/modgui/screenshot-tap-autopanner.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

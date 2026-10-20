@@ -16,3 +16,9 @@ summary: Auto-panner that bounces the sound between sides.
 description: >-
   Moves the signal from left to right at a set frequency and width. A stereo tremolo
   for wide, moving rhythm parts.
+picture:
+  file: dpf-pingpongpan.png
+  source: >-
+    https://github.com/DISTRHO/DPF-Plugins/blob/0e6116c77e7d341306cdf8db827c2c2c3ec031d9/plugins/PingPongPan/Screenshot.png
+  credit: Filipe Coelho (DISTRHO)
+  license: LGPL-3.0-only

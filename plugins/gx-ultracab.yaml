@@ -16,3 +16,10 @@ summary: Cabinet simulator with size, punch and resonance, no IR needed.
 description: >-
   A cabinet simulator that also models the non-linear response of the speaker. Shape
   it with size, resonance, punch, mids and top.
+picture:
+  file: gx-ultracab.png
+  source: >-
+    https://github.com/brummer10/GxUltraCab.lv2/blob/2cad5980b96a759805bb83df2a4746f7c5a7348f/MOD/modgui/screenshot-gxultracab.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

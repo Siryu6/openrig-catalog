@@ -17,3 +17,10 @@ summary: Natural double tracking with random time and pitch drift.
 description: >-
   Simulates a second take of the same part, with small random drifts in timing and
   pitch. Spread the dry and wet signals in stereo for a wide double.
+picture:
+  file: tap-doubler.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/doubler/modgui/screenshot-tap-fractal-doubler.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

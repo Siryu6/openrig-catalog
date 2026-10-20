@@ -16,3 +16,10 @@ summary: Transparent clean boost with a single gain knob.
 description: >-
   A clean volume booster. Put it before an amp or a drive to push it harder into
   saturation, or after to lift a solo.
+picture:
+  file: gx-microamp.png
+  source: >-
+    https://github.com/brummer10/GxMicroAmp.lv2/blob/b291bb42c1a31cd3867c41b1de0ce04d6ead43c2/MOD/modgui/screenshot-gxmicroamp.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

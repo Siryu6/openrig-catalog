@@ -17,3 +17,10 @@ summary: Compressor, expander or gate from 15 built-in curves.
 description: >-
   Pick one of fifteen transfer curves (compressors, expanders, gates, limiters), then
   set attack, release and gain. A versatile dynamics block.
+picture:
+  file: tap-dynamics.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/dynamics/modgui/screenshot-tap-mono-dynamics.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

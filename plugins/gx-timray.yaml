@@ -15,3 +15,10 @@ summary: Transparent overdrive with bass, treble and a clipping trim.
 description: >-
   A transparent overdrive with gain, volume, bass and treble controls and a clipping
   trim. Keeps the character of your guitar and amp.
+picture:
+  file: gx-timray.png
+  source: >-
+    https://github.com/brummer10/GxTimRay.lv2/blob/d5d569d30d0939fe53fd6354799c4ec83732d02f/MOD/modgui/screenshot-gxtimray.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

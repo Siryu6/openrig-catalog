@@ -17,3 +17,10 @@ summary: Tube or tape warmth, with a blend between the two.
 description: >-
   Adds the even harmonics of a triode, or the softer saturation of tape, or a mix of
   both. Drive sets how much; subtle settings warm up a thin sound.
+picture:
+  file: tap-tubewarmth.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/tubewarmth/modgui/screenshot-tap-tubewarmth.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

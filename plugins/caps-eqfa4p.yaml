@@ -16,3 +16,10 @@ summary: Four-band smooth peaking EQ with output gain.
 description: >-
   Four peaking filters in series, each with its own on switch, frequency, bandwidth
   and gain. Musical and smooth, good for gentle tone shaping.
+picture:
+  file: caps-eqfa4p.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-EqFA4p.lv2/modgui/screenshot-c-eqfa4p-4-band-parametric-shelving-equalizer.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

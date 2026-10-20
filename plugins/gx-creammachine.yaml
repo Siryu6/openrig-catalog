@@ -16,3 +16,10 @@ summary: Tube amp with bass and treble, creamy when pushed.
 description: >-
   Tube amp simulation with a two-band tone stack and separate level and master volume.
   Clean at low settings, thick and creamy when you turn the level up.
+picture:
+  file: gx-creammachine.png
+  source: >-
+    https://github.com/brummer10/GxCreamMachine.lv2/blob/3f9a97a0935626d5368f53296f5846cf6ee4d522/MOD/modgui/screenshot-gxcreammachine.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

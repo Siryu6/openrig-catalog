@@ -16,3 +16,10 @@ summary: Classic amp-style tremolo, rate and depth.
 description: >-
   Smooth sine-wave volume modulation with frequency, depth and gain. The vintage amp
   effect for surf, country and swampy blues.
+picture:
+  file: tap-tremolo.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/tremolo/modgui/screenshot-tap-tremolo.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

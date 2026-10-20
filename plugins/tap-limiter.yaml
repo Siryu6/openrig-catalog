@@ -16,3 +16,10 @@ summary: Transparent limiter with a limit level and output volume.
 description: >-
   Keeps peaks under a limit by scaling whole half-waves, so it stays clean even when
   it works hard. Good at the end of a chain.
+picture:
+  file: tap-limiter.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/limiter/modgui/screenshot-tap-scaling-limiter.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

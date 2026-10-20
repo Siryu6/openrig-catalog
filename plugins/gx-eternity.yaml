@@ -16,3 +16,10 @@ summary: Low-compression overdrive that keeps your tone.
 description: >-
   Natural overdrive with little compression and colour. The Glass control boosts the
   highs instead of cutting them, so the tone stays clear, never muddy.
+picture:
+  file: gx-eternity.png
+  source: >-
+    https://github.com/brummer10/GxEternity.lv2/blob/31d2b9b55e9d6a5043da7f5e53764135154890cb/MOD/modgui/screenshot-gxeternity.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

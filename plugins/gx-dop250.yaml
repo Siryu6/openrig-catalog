@@ -16,3 +16,10 @@ summary: Two-knob overdrive preamp pedal, gain and level.
 description: >-
   A simple overdrive preamp pedal with just gain and level. From a fat clean boost to
   an open, mid-forward crunch.
+picture:
+  file: gx-dop250.png
+  source: >-
+    https://github.com/brummer10/GxDOP250.lv2/blob/f34e2dcbfb040983de45b215176e578e0c351ebb/MOD/modgui/screenshot-gxdop250.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

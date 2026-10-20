@@ -15,3 +15,9 @@ summary: Three-band compressor with adjustable crossovers.
 description: >-
   Mono multiband compressor with three bands and two crossover frequencies. Each band
   has its own threshold, ratio, knee, attack, release and makeup.
+picture:
+  file: zam-multicomp.png
+  source: >-
+    https://github.com/zamaudio/zam-plugins/blob/84a658153934b0a42c0eb39317db946b5f12caa7/plugins/ZaMultiComp/artwork/zamulticomp.png
+  credit: Damien Zammit
+  license: GPL-2.0-or-later

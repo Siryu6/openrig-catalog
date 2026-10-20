@@ -18,3 +18,10 @@ summary: Reverb with many room, hall and plate presets.
 description: >-
   A reverb engine with a long list of built-in types, from small rooms to large halls
   and plates. Set the decay and the dry and wet levels.
+picture:
+  file: tap-reverb.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/reverb/modgui/screenshot-tap-reverberator.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

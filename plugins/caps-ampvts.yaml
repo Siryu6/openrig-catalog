@@ -17,3 +17,10 @@ summary: Tube preamp and power amp with a choice of tone stacks.
 description: >-
   A lightweight tube amp model with switchable tone stacks modelled on classic American
   and British amps. Pair it with a cabinet block or CabinetIV.
+picture:
+  file: caps-ampvts.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-AmpVTS.lv2/modgui/screenshot-c-ampvts-tube-amp-tone-stack.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

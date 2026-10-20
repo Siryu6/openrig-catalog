@@ -15,3 +15,10 @@ summary: Classic fuzz face with light modifications.
 description: >-
   A sixties-style two-transistor fuzz with a few tweaks, and an input control to match
   your pickups. Cleans up when you roll back the guitar volume.
+picture:
+  file: gx-sunface.png
+  source: >-
+    https://github.com/brummer10/GxSunFace.lv2/blob/fd617d48d90618caafc5a7ab0525c7db80ef95e4/MOD/modgui/screenshot-gxsunface.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

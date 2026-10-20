@@ -16,3 +16,10 @@ summary: Tube preamp overdrive with interactive tone controls.
 description: >-
   Analogue simulation of a valve preamp with overdrive. The bass and treble controls
   interact like a real tone stack.
+picture:
+  file: gx-hotbox.png
+  source: >-
+    https://github.com/brummer10/GxHotBox.lv2/blob/0af207cb8c55f450fb597072ccbacec91f07787c/MOD/modgui/screenshot-gxhotbox.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

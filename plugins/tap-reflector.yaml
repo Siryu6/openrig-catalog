@@ -16,3 +16,10 @@ summary: Reverse audio effect for psychedelic leads.
 description: >-
   Plays overlapping fragments of what you just played backwards. Fragment length sets
   the size; blend with the dry signal for backward-tape solos.
+picture:
+  file: tap-reflector.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/reflector/modgui/screenshot-tap-reflector.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

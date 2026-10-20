@@ -17,3 +17,10 @@ summary: Waveshaping distortion driven by feedback.
 description: >-
   A waveshaper whose shape is pushed by feedback, for a distortion that reacts in
   unusual ways. It can get loud and nasty: watch the output.
+picture:
+  file: dpf-soulforce.png
+  source: >-
+    https://github.com/DISTRHO/DPF-Plugins/blob/0e6116c77e7d341306cdf8db827c2c2c3ec031d9/plugins/SoulForce/Screenshot.png
+  credit: Niall Moody (ndc Plugs)
+  license: MIT
+  block_face: true

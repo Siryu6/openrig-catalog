@@ -15,3 +15,10 @@ summary: Overdrive pedal with gain, tone and volume.
 description: >-
   A classic three-knob overdrive pedal. Smooth and touch-sensitive, good for stacking
   with other drives.
+picture:
+  file: gx-luna.png
+  source: >-
+    https://github.com/brummer10/GxLuna.lv2/blob/183459c67249d985f8ebd46f6f40ea616f314b84/MOD/modgui/screenshot-gxluna.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

@@ -16,3 +16,10 @@ summary: Solid-state combo amp with clipping switch and reverb.
 description: >-
   Analogue simulation of a seventies solid-state amp, with gain, bass, treble, a
   clipping switch and its own reverb.
+picture:
+  file: gx-uvox720k.png
+  source: >-
+    https://github.com/brummer10/GxUVox720k.lv2/blob/8f7365a01e21d7eb6b61caa46ac725b051d04476/MOD/modgui/screenshot-gxuvox.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

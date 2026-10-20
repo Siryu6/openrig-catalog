@@ -16,3 +16,10 @@ summary: British sixties fuzz with fuzz, tone and volume.
 description: >-
   Analogue simulation of a sixties British fuzz pedal. Thick, sustaining fuzz with a
   tone knob to dial in the bite.
+picture:
+  file: gx-suppatonebender.png
+  source: >-
+    https://github.com/brummer10/GxSuppaToneBender.lv2/blob/465630db9baa133f3847fe0f49ccc44cb69ed8bc/MOD/modgui/screenshot-gxsuppatonebender.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

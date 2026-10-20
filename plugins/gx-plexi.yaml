@@ -17,3 +17,10 @@ summary: British-style tube amp with full tone stack and presence.
 description: >-
   A power amp simulation with volume, master, bass, mid, treble and presence. Classic
   British rock crunch when you push the volume.
+picture:
+  file: gx-plexi.png
+  source: >-
+    https://github.com/brummer10/GxPlexi.lv2/blob/ac248e47d0c1922a2c95a61afa660a6878174703/MOD/modgui/screenshot-gxplexi.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

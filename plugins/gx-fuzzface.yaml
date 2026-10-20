@@ -16,3 +16,10 @@ summary: Germanium-style fuzz that cleans up with the volume knob.
 description: >-
   Two-transistor fuzz in the spirit of the sixties, with the Fuller mod for a tighter
   bottom. Roll the guitar volume back for a glassy clean.
+picture:
+  file: gx-fuzzface.png
+  source: >-
+    https://github.com/brummer10/guitarix/blob/516e9084e39698d249d25bada8d76f66b4b556da/trunk/src/LV2/gx_fuzzfacefm.lv2/modgui/screenshot-gxfuzzfacefuller.png
+  credit: Hermann Meyer
+  license: GPL-2.0-or-later
+  block_face: true

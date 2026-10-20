@@ -16,3 +16,10 @@ summary: Eight-band parametric EQ with a bandwidth per band.
 description: >-
   The TAP Equalizer with a bandwidth control on each band, for precise notches or
   broad tone shaping.
+picture:
+  file: tap-eqbw.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/eqbw/modgui/screenshot-tap-equalizerbw.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

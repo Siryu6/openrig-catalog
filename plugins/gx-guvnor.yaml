@@ -16,3 +16,10 @@ summary: British-voiced distortion with a three-band EQ.
 description: >-
   An overdrive and distortion pedal with gain, level and an active bass, mid and
   treble EQ. Amp-like crunch to full rock distortion.
+picture:
+  file: gx-guvnor.png
+  source: >-
+    https://github.com/brummer10/GxGuvnor.lv2/blob/4a38b1c93557af03f64010568b10c4f2e249fde7/MOD/modgui/screenshot-gxguvnor.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

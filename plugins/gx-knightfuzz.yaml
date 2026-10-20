@@ -15,3 +15,10 @@ summary: Simple vintage fuzz, input and volume.
 description: >-
   A two-knob vintage fuzz. Input sets how hard the circuit is hit, from a broken-up
   growl to a full buzzing fuzz.
+picture:
+  file: gx-knightfuzz.png
+  source: >-
+    https://github.com/brummer10/GxKnightFuzz.lv2/blob/41f1914d7a854b6889b49264c3a0d3746a128038/MOD/modgui/screenshot-gxknightfuzz.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true

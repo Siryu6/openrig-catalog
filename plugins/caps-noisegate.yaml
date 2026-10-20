@@ -16,3 +16,10 @@ summary: Noise gate with a mains hum filter.
 description: >-
   Silences background noise between notes, with separate open and close thresholds.
   The mains control also removes 50 or 60 Hz hum.
+picture:
+  file: caps-noisegate.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-Noisegate.lv2/modgui/screenshot-c-noisegate-attenuate-noise-resident-in-silence.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

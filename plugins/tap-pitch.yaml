@@ -16,3 +16,10 @@ summary: Pitch shifter, up to one octave up or down.
 description: >-
   Shifts the pitch by semitones within one octave, with dry and wet levels. Blend for
   octave or harmony effects, fully wet for a drop tuning.
+picture:
+  file: tap-pitch.png
+  source: >-
+    https://github.com/moddevices/tap-lv2/blob/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a/pitch/modgui/screenshot-tap-pitch-shifter.png
+  credit: MOD Devices
+  license: GPL-2.0-or-later
+  block_face: true

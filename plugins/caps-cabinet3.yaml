@@ -16,3 +16,10 @@ summary: Light loudspeaker cabinet emulation with several models.
 description: >-
   Idealised speaker cabinet models built from fixed filters, far lighter than an
   impulse response. Pick a model after an amp or drive to tame the fizz.
+picture:
+  file: caps-cabinet3.png
+  source: >-
+    https://github.com/moddevices/caps-lv2/blob/5d52a0c6e8863c058c2aab2dea9f901a90d96eb9/plugins/mod-caps-CabinetIII.lv2/modgui/screenshot-c-cabinetiii-idealised-loudspeaker-cabinet-emulation.png
+  credit: MOD Devices
+  license: GPL-3.0-or-later
+  block_face: true

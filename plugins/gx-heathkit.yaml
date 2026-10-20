@@ -16,3 +16,10 @@ summary: Vintage distortion booster with a raw, fuzzy edge.
 description: >-
   Simulation of an old distortion booster pedal. Level and tone only: a raw, sputtery
   fuzz with plenty of character.
+picture:
+  file: gx-heathkit.png
+  source: >-
+    https://github.com/brummer10/GxHeathkit.lv2/blob/54fe442ceaf7429ed3b01d9fe9e3e6ca21ade3cb/MOD/modgui/screenshot-gxheathkit.png
+  credit: Hermann Meyer
+  license: GPL-3.0-or-later
+  block_face: true
