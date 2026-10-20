@@ -9,4 +9,16 @@ source:
   url: https://github.com/moddevices/tap-lv2/archive/cab6e0dfb2ce20e4ad34b067d1281ec0b193598a.tar.gz
   sha256: c920c1ba0882b6036781c9faaec8489544111b559802442a44608db3888f95da
 # Pinned by the PR the build opens (tools/pin_build.py)
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/tap-lv2-0.7.2/tap-lv2-0.7.2-aarch64.tar.xz
+    sha256: 3a9f42b40abcbacd97c425f780ec34a3daa7398fa1e42d97d707c461efdce1c9
+    size: 8720540
+    format: tar.xz
+    root: tap-lv2-0.7.2
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/tap-lv2-0.7.2/tap-lv2-0.7.2-x86_64.tar.xz
+    sha256: 1ebf16b3ef0c0d1356007aa26c8bab36b3028a0d63c638a36c9fa58411b5df6f
+    size: 8724828
+    format: tar.xz
+    root: tap-lv2-0.7.2
