@@ -1,0 +1,19 @@
+id: caps-wider
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/Wider
+bundle: mod-caps-Wider.lv2
+name: Wider
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Utility
+subcategory: Stereo
+kind: pedal
+inspired_by: ''
+tags:
+- stereo
+- width
+- pan
+summary: Turns a mono signal into a wide stereo image.
+description: >-
+  Pan control plus complementary filters on the two outputs, so the sound spreads
+  wider without colouring it when summed back to mono.

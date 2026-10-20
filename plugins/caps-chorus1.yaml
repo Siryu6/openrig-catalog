@@ -1,0 +1,18 @@
+id: caps-chorus1
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/ChorusI
+bundle: mod-caps-ChorusI.lv2
+name: ChorusI
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Modulation
+subcategory: Chorus
+kind: pedal
+inspired_by: ''
+tags:
+- flanger
+- mono
+summary: Mono chorus that also goes all the way to flanging.
+description: >-
+  A standard chorus with feed-forward and feedback. Short times and little feedback
+  for a subtle shimmer, more feedback for a jet flanger.

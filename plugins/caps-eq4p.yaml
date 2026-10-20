@@ -1,0 +1,17 @@
+id: caps-eq4p
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/Eq4p
+bundle: mod-caps-Eq4p.lv2
+name: Eq4p
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- four-band
+summary: Four-band parametric EQ with shelf and band modes.
+description: >-
+  Four filters in series, each switchable between low shelf, band, high shelf and
+  other modes, with frequency, bandwidth and gain.

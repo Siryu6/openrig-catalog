@@ -1,0 +1,141 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/Eq10",
+  "name": "C* Eq10 - 10-band equalizer",
+  "version": "9.24",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "c8b1199fee18e2d00e6cd7933baf24aa1bbe1640e9240d222eeac8ea307f0640",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "band31hz",
+      "name": "31 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 1,
+      "symbol": "band63hz",
+      "name": "63 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 2,
+      "symbol": "band125hz",
+      "name": "125 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "band250hz",
+      "name": "250 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "band500hz",
+      "name": "500 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "band1khz",
+      "name": "1 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "band2khz",
+      "name": "2 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "band4khz",
+      "name": "4 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "band8khz",
+      "name": "8 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "band16khz",
+      "name": "16 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 11,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

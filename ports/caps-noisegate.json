@@ -1,0 +1,92 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/Noisegate",
+  "name": "C* Noisegate - Attenuate noise resident in silence",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "UtilityPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "26a4e27267fee9bf1ab10dad12fb4b3ad426091c5b1ebd36fcd1c4ce134de149",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "open",
+      "name": "Open",
+      "type": "control",
+      "direction": "in",
+      "min": -55,
+      "max": 0,
+      "default": -41,
+      "unit": "db"
+    },
+    {
+      "index": 1,
+      "symbol": "attack",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 5,
+      "default": 0,
+      "unit": "ms"
+    },
+    {
+      "index": 2,
+      "symbol": "close",
+      "name": "Close",
+      "type": "control",
+      "direction": "in",
+      "min": -80,
+      "max": 0,
+      "default": -67.5,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "mains",
+      "name": "Mains",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "hz",
+      "properties": [
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 50,
+          "label": "Global"
+        },
+        {
+          "value": 60,
+          "label": "Imperial"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

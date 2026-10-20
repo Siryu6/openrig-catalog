@@ -1,0 +1,19 @@
+id: caps-spice
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/Spice
+bundle: mod-caps-Spice.lv2
+name: Spice
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Filter
+kind: pedal
+inspired_by: ''
+tags:
+- enhancer
+- bass
+- presence
+summary: Bass and treble enhancer that adds definition.
+description: >-
+  Adds harmonics in the low and high registers when plain EQ would only raise the
+  level or the noise. More bass definition and treble presence.

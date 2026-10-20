@@ -1,0 +1,18 @@
+id: caps-plate
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/Plate
+bundle: mod-caps-Plate.lv2
+name: Plate
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Reverb
+subcategory: Plate
+kind: space
+inspired_by: ''
+tags:
+- smooth
+- stereo
+summary: Smooth plate reverb, mono in and stereo out.
+description: >-
+  A network of twelve delay lines tuned for a soft attack and a smooth ambience.
+  Bandwidth, tail, damping and blend; from a short slap to a long wash.

@@ -1,0 +1,18 @@
+id: caps-eqfa4p
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/EqFA4p
+bundle: mod-caps-EqFA4p.lv2
+name: EqFA4p
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- four-band
+- smooth
+summary: Four-band smooth peaking EQ with output gain.
+description: >-
+  Four peaking filters in series, each with its own on switch, frequency, bandwidth
+  and gain. Musical and smooth, good for gentle tone shaping.

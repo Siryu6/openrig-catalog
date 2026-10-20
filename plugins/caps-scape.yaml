@@ -1,0 +1,19 @@
+id: caps-scape
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/Scape
+bundle: mod-caps-Scape.lv2
+name: Scape
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Delay
+subcategory: Digital delay
+kind: space
+inspired_by: ''
+tags:
+- stereo
+- tempo
+- ambient
+summary: Tempo-synced stereo delay with resonant filters.
+description: >-
+  A stereo delay set by tempo and division, with resonant filters and slowly wandering
+  panning. Good for ambient pads and dotted rhythms.

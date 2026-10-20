@@ -1,0 +1,18 @@
+id: caps-noisegate
+package: caps-lv2
+uri: http://moddevices.com/plugins/caps/Noisegate
+bundle: mod-caps-Noisegate.lv2
+name: Noisegate
+author: Tim Goetze (CAPS)
+license: GPL-3.0-or-later
+family: Dynamics
+subcategory: Gate
+kind: pedal
+inspired_by: ''
+tags:
+- hum
+- noise
+summary: Noise gate with a mains hum filter.
+description: >-
+  Silences background noise between notes, with separate open and close thresholds.
+  The mains control also removes 50 or 60 Hz hum.

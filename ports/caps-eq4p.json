@@ -1,0 +1,314 @@
+{
+  "uri": "http://moddevices.com/plugins/caps/Eq4p",
+  "name": "C* Eq4p - 4-band parametric equaliser",
+  "version": "9.26",
+  "license": "http://usefulinc.com/doap/licenses/gpl",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "f4a3a0ef3424209f0b2bd85df0a6407a8c196662596221f28c493dda5ce49a62",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "a_mode",
+      "name": "A: Mode",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 2,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": -1,
+          "label": "Off"
+        },
+        {
+          "value": 0,
+          "label": "Low-Shelve"
+        },
+        {
+          "value": 1,
+          "label": "Band"
+        },
+        {
+          "value": 2,
+          "label": "High-Shelve"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "symbol": "a_freq",
+      "name": "A: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 102.87,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 2,
+      "symbol": "a_q",
+      "name": "A: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "a_gain",
+      "name": "A: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 4,
+      "symbol": "b_mode",
+      "name": "B: Mode",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 2,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": -1,
+          "label": "Off"
+        },
+        {
+          "value": 0,
+          "label": "Low-Shelve"
+        },
+        {
+          "value": 1,
+          "label": "Band"
+        },
+        {
+          "value": 2,
+          "label": "High-Shelve"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "b_freq",
+      "name": "B: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 529.15,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "b_q",
+      "name": "B: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "b_gain",
+      "name": "B: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "c_mode",
+      "name": "C: Mode",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 2,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": -1,
+          "label": "Off"
+        },
+        {
+          "value": 0,
+          "label": "Low-Shelve"
+        },
+        {
+          "value": 1,
+          "label": "Band"
+        },
+        {
+          "value": 2,
+          "label": "High-Shelve"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "c_freq",
+      "name": "C: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 1080,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "c_q",
+      "name": "C: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 11,
+      "symbol": "c_gain",
+      "name": "C: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 12,
+      "symbol": "d_mode",
+      "name": "D: Mode",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 2,
+      "default": 2,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": -1,
+          "label": "Off"
+        },
+        {
+          "value": 0,
+          "label": "Low-Shelve"
+        },
+        {
+          "value": 1,
+          "label": "Band"
+        },
+        {
+          "value": 2,
+          "label": "High-Shelve"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "symbol": "d_freq",
+      "name": "D: Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 14000,
+      "default": 2721.78,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 14,
+      "symbol": "d_q",
+      "name": "D: Bandwidth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    },
+    {
+      "index": 15,
+      "symbol": "d_gain",
+      "name": "D: Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -48,
+      "max": 24,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 16,
+      "symbol": "latency",
+      "name": "Latency",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 17,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 18,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}
