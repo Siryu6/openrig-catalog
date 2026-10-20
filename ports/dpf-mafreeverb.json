@@ -1,0 +1,78 @@
+{
+  "uri": "http://distrho.sf.net/plugins/MaFreeverb",
+  "name": "MaFreeverb",
+  "version": "1.0",
+  "license": "http://spdx.org/licenses/ISC.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "2236a4c01ad60a6e06e5262641c08c3da07370384dc8414f158641265b93d523",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "fb2",
+      "name": "fb2",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "damp",
+      "name": "damp",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "fb1",
+      "name": "fb1",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.9,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "spread",
+      "name": "spread",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 400,
+      "default": 0,
+      "unit": null
+    }
+  ]
+}

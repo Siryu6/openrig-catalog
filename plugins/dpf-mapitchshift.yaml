@@ -1,0 +1,18 @@
+id: dpf-mapitchshift
+package: dpf-plugins
+uri: http://distrho.sf.net/plugins/MaPitchshift
+bundle: MaPitchshift.lv2
+name: MaPitchshift
+author: DISTRHO (Max gen~ examples)
+license: ISC
+family: Modulation
+subcategory: Pitch
+kind: pedal
+inspired_by: ''
+tags:
+- octave
+- harmony
+summary: Simple pitch shifter with ratio and window.
+description: >-
+  Shifts the pitch by a ratio, up or down. Window and crossfade trade smoothness for
+  latency; blur adds a diffuse, shimmering edge.

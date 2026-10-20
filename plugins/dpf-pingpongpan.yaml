@@ -1,0 +1,18 @@
+id: dpf-pingpongpan
+package: dpf-plugins
+uri: http://distrho.sf.net/plugins/PingPongPan
+bundle: PingPongPan.lv2
+name: Ping Pong Pan
+author: Filipe Coelho (DISTRHO)
+license: LGPL-3.0-only
+family: Modulation
+subcategory: Tremolo
+kind: pedal
+inspired_by: ''
+tags:
+- stereo
+- auto-pan
+summary: Auto-panner that bounces the sound between sides.
+description: >-
+  Moves the signal from left to right at a set frequency and width. A stereo tremolo
+  for wide, moving rhythm parts.

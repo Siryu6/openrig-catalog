@@ -1,0 +1,19 @@
+id: dpf-magigaverb
+package: dpf-plugins
+uri: http://distrho.sf.net/plugins/MaGigaverb
+bundle: MaGigaverb.lv2
+name: MaGigaverb
+author: DISTRHO (Max gen~ examples)
+license: ISC
+family: Reverb
+subcategory: Hall
+kind: space
+inspired_by: ''
+tags:
+- large
+- ambient
+- stereo
+summary: Huge, lush reverb from rooms to endless halls.
+description: >-
+  The Gigaverb design with room size, reverb time, damping, early reflections and tail
+  levels. Goes from a big room to a near-infinite wash.
