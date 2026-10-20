@@ -1,0 +1,220 @@
+{
+  "uri": "urn:zamaudio:ZamTube",
+  "name": "ZamTube",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "8ea306a6c241ff7b78af2ac3d4029dbad2ab3c9402a1f7074ae195fc685a1f08",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "tubedrive",
+      "name": "Tube Drive",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 11,
+      "default": 0.1,
+      "unit": null
+    },
+    {
+      "index": 3,
+      "symbol": "bass",
+      "name": "Bass",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 5,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "mids",
+      "name": "Mids",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 5,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "treb",
+      "name": "Treble",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "tonestack",
+      "name": "Tone Stack Model",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 24,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "1959 Bassman 5F6-A"
+        },
+        {
+          "value": 1,
+          "label": "Mesa Boogie Mark"
+        },
+        {
+          "value": 2,
+          "label": "1969 Twin Reverb AA270"
+        },
+        {
+          "value": 3,
+          "label": "1964 Princeton AA1164"
+        },
+        {
+          "value": 4,
+          "label": "1959/81 JCM-800 Lead 100"
+        },
+        {
+          "value": 5,
+          "label": "1981 JCM-2000 Lead"
+        },
+        {
+          "value": 6,
+          "label": "JTM 45"
+        },
+        {
+          "value": 7,
+          "label": "1967 Major Lead 200"
+        },
+        {
+          "value": 8,
+          "label": "M2199 30W"
+        },
+        {
+          "value": 9,
+          "label": "1959/86 AC-30"
+        },
+        {
+          "value": 10,
+          "label": "VOX AC-15"
+        },
+        {
+          "value": 11,
+          "label": "Soldano SLO 100"
+        },
+        {
+          "value": 12,
+          "label": "Sovtek MIG 100 H"
+        },
+        {
+          "value": 13,
+          "label": "Peavey C20"
+        },
+        {
+          "value": 14,
+          "label": "Ibanez GX20"
+        },
+        {
+          "value": 15,
+          "label": "Roland Cube 60"
+        },
+        {
+          "value": 16,
+          "label": "Ampeg VL 501"
+        },
+        {
+          "value": 17,
+          "label": "Ampeg Reverb Rocket"
+        },
+        {
+          "value": 18,
+          "label": "Bogner Triple Giant Preamp"
+        },
+        {
+          "value": 19,
+          "label": "Groove Trio Preamp"
+        },
+        {
+          "value": 20,
+          "label": "Hughes&Kettner"
+        },
+        {
+          "value": 21,
+          "label": "Fender Blues Junior"
+        },
+        {
+          "value": 22,
+          "label": "Fender"
+        },
+        {
+          "value": 23,
+          "label": "Fender Hot Rod"
+        },
+        {
+          "value": 24,
+          "label": "Gibsen GS12 Reverb Rocket"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "gain",
+      "name": "Input level",
+      "type": "control",
+      "direction": "in",
+      "min": -30,
+      "max": 30,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "insane",
+      "name": "Insane Boost",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    }
+  ]
+}

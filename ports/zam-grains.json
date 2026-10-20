@@ -1,0 +1,133 @@
+{
+  "uri": "urn:zamaudio:ZamGrains",
+  "name": "ZamGrains",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "DelayPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "8fd38befd0efd00e67ba4bb3012f47e79a2df10de88877081010f36f134b8b52",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "gain",
+      "name": "Output Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -60,
+      "max": 0,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "grains",
+      "name": "Grains",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 100,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "gs",
+      "name": "Grain Speed",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 20,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "ps",
+      "name": "Play Speed",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 20,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "time",
+      "name": "Loop time",
+      "type": "control",
+      "direction": "in",
+      "min": 5,
+      "max": 1000,
+      "default": 160,
+      "unit": "ms"
+    },
+    {
+      "index": 7,
+      "symbol": "freeze",
+      "name": "Freeze",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "grpos",
+      "name": "Grain Position",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 9,
+      "symbol": "playpos",
+      "name": "Playback Position",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 10,
+      "symbol": "finalpos",
+      "name": "Final Position",
+      "type": "control",
+      "direction": "out"
+    }
+  ]
+}

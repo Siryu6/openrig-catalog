@@ -1,0 +1,57 @@
+{
+  "uri": "urn:zamaudio:ZamNoise",
+  "name": "ZamNoise",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "8307820a2f812b962c15596e1c910ac099adee44328d433b3e9177da2d5541f4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "noisecapture",
+      "name": "Noise Capture",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 3,
+      "symbol": "amount",
+      "name": "Reduction Amount",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    }
+  ]
+}

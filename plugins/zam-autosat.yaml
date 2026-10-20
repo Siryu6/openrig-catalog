@@ -1,0 +1,18 @@
+id: zam-autosat
+package: zam-plugins
+uri: urn:zamaudio:ZamAutoSat
+bundle: ZamAutoSat.lv2
+name: ZamAutoSat
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Distortion
+subcategory: Saturation
+kind: pedal
+inspired_by: ''
+tags:
+- subtle
+- no-controls
+summary: Automatic saturation with no controls, smooth levelling.
+description: >-
+  A set-and-forget saturator with no knobs. It smooths the level without changing the
+  tone much; use it generously.

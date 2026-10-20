@@ -1,0 +1,18 @@
+id: zam-verb
+package: zam-plugins
+uri: urn:zamaudio:ZamVerb
+bundle: ZamVerb.lv2
+name: ZamVerb
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Reverb
+subcategory: Room
+kind: space
+inspired_by: ''
+tags:
+- convolution
+- stereo
+summary: Convolution reverb with built-in rooms.
+description: >-
+  A stereo convolution reverb with its own room responses: no file to load. Choose the
+  room and set the wet/dry balance and level.

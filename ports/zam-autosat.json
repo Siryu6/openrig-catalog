@@ -1,0 +1,34 @@
+{
+  "uri": "urn:zamaudio:ZamAutoSat",
+  "name": "ZamAutoSat",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "DynamicsPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "fb9420f01f1c2acfaf4afac30891497004a9b8648467536825bed5515d78b532",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "uri": "urn:zamaudio:ZaMaximX2",
+  "name": "ZaMaximX2",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "LimiterPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "7720be6647160f56dc6edda51f5b85a61f99d075233c730e2bc58a6bf3a28a69",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "lv2_latency",
+      "name": "Latency",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 5,
+      "symbol": "rel",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 100,
+      "default": 25,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "gain",
+      "name": "Input Gain",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "thresh",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -30,
+      "max": 0,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "gr",
+      "name": "Gain Reduction",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 9,
+      "symbol": "outlevel",
+      "name": "Output Level",
+      "type": "control",
+      "direction": "out"
+    }
+  ]
+}

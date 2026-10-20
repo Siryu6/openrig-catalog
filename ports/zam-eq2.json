@@ -1,0 +1,184 @@
+{
+  "uri": "urn:zamaudio:ZamEQ2",
+  "name": "ZamEQ2",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "10a3806a927dc20a1d13044912bae7ae200af5eb480c52b8d57a84390e006d71",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "boost1",
+      "name": "Boost/Cut 1",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "bw1",
+      "name": "Bandwidth 1",
+      "type": "control",
+      "direction": "in",
+      "min": 0.7,
+      "max": 2.5,
+      "default": 1.5,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "f1",
+      "name": "Frequency 1",
+      "type": "control",
+      "direction": "in",
+      "min": 200,
+      "max": 2500,
+      "default": 1000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "boost2",
+      "name": "Boost/Cut 2",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "bw2",
+      "name": "Bandwidth 2",
+      "type": "control",
+      "direction": "in",
+      "min": 0.7,
+      "max": 2.5,
+      "default": 1.5,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "f2",
+      "name": "Frequency 2",
+      "type": "control",
+      "direction": "in",
+      "min": 600,
+      "max": 7000,
+      "default": 3000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "boostl",
+      "name": "Boost/Cut L",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 9,
+      "symbol": "fl",
+      "name": "Frequency L",
+      "type": "control",
+      "direction": "in",
+      "min": 40,
+      "max": 600,
+      "default": 250,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "boosth",
+      "name": "Boost/Cut H",
+      "type": "control",
+      "direction": "in",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 11,
+      "symbol": "fh",
+      "name": "Frequency H",
+      "type": "control",
+      "direction": "in",
+      "min": 1500,
+      "max": 22000,
+      "default": 8000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 12,
+      "symbol": "outputgain",
+      "name": "Output gain",
+      "type": "control",
+      "direction": "in",
+      "min": -10,
+      "max": 10,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 13,
+      "symbol": "inputgain",
+      "name": "Input gain",
+      "type": "control",
+      "direction": "in",
+      "min": -10,
+      "max": 10,
+      "default": 0,
+      "unit": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+id: zam-multicomp
+package: zam-plugins
+uri: urn:zamaudio:ZaMultiComp
+bundle: ZaMultiComp.lv2
+name: ZaMultiComp
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- multiband
+summary: Three-band compressor with adjustable crossovers.
+description: >-
+  Mono multiband compressor with three bands and two crossover frequencies. Each band
+  has its own threshold, ratio, knee, attack, release and makeup.

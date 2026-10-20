@@ -1,0 +1,18 @@
+id: zam-noise
+package: zam-plugins
+uri: urn:zamaudio:ZamNoise
+bundle: ZamNoise.lv2
+name: ZamNoise
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Dynamics
+subcategory: Gate
+kind: pedal
+inspired_by: ''
+tags:
+- noise-reduction
+- hum
+summary: Learns the background noise and removes it.
+description: >-
+  Capture a moment of silence, then it subtracts that noise profile from the signal.
+  Good for hiss and hum. The profile is not saved: capture it again after a restart.

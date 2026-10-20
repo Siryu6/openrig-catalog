@@ -1,0 +1,237 @@
+{
+  "uri": "urn:zamaudio:ZamDynamicEQ",
+  "name": "ZamDynamicEQ",
+  "version": "7.0",
+  "license": "http://spdx.org/licenses/GPL-2.0-or-later.html",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 1
+  },
+  "ports_hash": "7b861616d27c6438547522578b2fcf36eedfc431eca30b6c89596a6d6cb11208",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_sidechain_in",
+      "name": "Sidechain Input",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "att",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 100,
+      "default": 10,
+      "unit": "ms"
+    },
+    {
+      "index": 4,
+      "symbol": "rel",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 500,
+      "default": 80,
+      "unit": "ms"
+    },
+    {
+      "index": 5,
+      "symbol": "kn",
+      "name": "Knee",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "rat",
+      "name": "Ratio",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 5,
+      "default": 1.5,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "thr",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -80,
+      "max": 0,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "max",
+      "name": "Max Boost/Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 10,
+      "unit": "db"
+    },
+    {
+      "index": 9,
+      "symbol": "slew",
+      "name": "Slew",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 150,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "sidech",
+      "name": "Sidechain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "togglelow",
+      "name": "Low Shelf",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 12,
+      "symbol": "togglepeak",
+      "name": "Peak",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 13,
+      "symbol": "togglehigh",
+      "name": "High Shelf",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 14,
+      "symbol": "detectfreq",
+      "name": "Detect Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 16000,
+      "default": 1000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 15,
+      "symbol": "targetfreq",
+      "name": "Target Frequency",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 16000,
+      "default": 1000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 16,
+      "symbol": "targetwidth",
+      "name": "Target width",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 5,
+      "default": 1,
+      "unit": "oct"
+    },
+    {
+      "index": 17,
+      "symbol": "boostcut",
+      "name": "Boost / Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 18,
+      "symbol": "controlgain",
+      "name": "Control Gain",
+      "type": "control",
+      "direction": "out"
+    }
+  ]
+}

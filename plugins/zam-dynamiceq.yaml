@@ -1,0 +1,17 @@
+id: zam-dynamiceq
+package: zam-plugins
+uri: urn:zamaudio:ZamDynamicEQ
+bundle: ZamDynamicEQ.lv2
+name: ZamDynamicEQ
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- dynamic
+summary: EQ band that moves with the level of the signal.
+description: >-
+  One shelf or peak band whose gain follows a detector, like a compressor. Tame harsh
+  highs only when they get loud, or boost lows when you play softly.

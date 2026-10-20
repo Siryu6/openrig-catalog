@@ -1,0 +1,18 @@
+id: zam-tube
+package: zam-plugins
+uri: urn:zamaudio:ZamTube
+bundle: ZamTube.lv2
+name: ZamTube
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Distortion
+subcategory: Distortion
+kind: pedal
+inspired_by: ''
+tags:
+- tube
+- tone-stack
+summary: Triode tube stage with tone stacks from real amps.
+description: >-
+  A physical model of a triode amplifier stage followed by a tone stack modelled on
+  real guitar amps. Pick the model, set bass, mids and treble; Insane Boost for more.

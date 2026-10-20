@@ -1,0 +1,19 @@
+id: zam-grains
+package: zam-plugins
+uri: urn:zamaudio:ZamGrains
+bundle: ZamGrains.lv2
+name: ZamGrains
+author: Damien Zammit
+license: GPL-2.0-or-later
+family: Delay
+subcategory: Digital delay
+kind: space
+inspired_by: ''
+tags:
+- granular
+- ambient
+- freeze
+summary: Granular delay with freeze.
+description: >-
+  Chops the delayed signal into grains and replays them at another speed. Freeze holds
+  the buffer for textures and pads.
