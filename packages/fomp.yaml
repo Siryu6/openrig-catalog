@@ -9,4 +9,16 @@ source:
   url: https://download.drobilla.net/fomp-1.2.4.tar.xz
   sha256: 43805c9708442d8e56a62b65be1ad8991ca3c90636740d7722455506078ca779
 # Pinned by the PR the build opens (tools/pin_build.py)
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/fomp-1.2.4/fomp-1.2.4-aarch64.tar.xz
+    sha256: 011ef5ddd12d75d3eac8f5db9db4869e0b1c86c758b7ba89a4428ce7c810a95c
+    size: 36604
+    format: tar.xz
+    root: fomp-1.2.4
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/fomp-1.2.4/fomp-1.2.4-x86_64.tar.xz
+    sha256: 7cbbe37afc9092b75f702a65836132c2e7167ef00ff9c5c5dd6c3e9aca513ba4
+    size: 39436
+    format: tar.xz
+    root: fomp-1.2.4
