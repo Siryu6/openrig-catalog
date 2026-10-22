@@ -103,3 +103,7 @@ shows the credit and license on the plugin's page in the store.
 | `gx-fuzzface.png` | GxFuzzFaceFullerMod | Hermann Meyer | GPL-2.0-or-later | [source](https://github.com/brummer10/guitarix/blob/516e9084e39698d249d25bada8d76f66b4b556da/trunk/src/LV2/gx_fuzzfacefm.lv2/modgui/screenshot-gxfuzzfacefuller.png) |
 | `x42-darc.png` | Dynamic Compressor | Robin Gareus | GPL-3.0-or-later | [source](https://github.com/x42/darc.lv2/blob/8d69a2f2194e8bd00438d004c27dcef60ef8fb75/img/x42-darc.png) |
 | `x42-dpl.png` | Digital Peak Limiter | Robin Gareus | GPL-3.0-or-later | [source](https://github.com/x42/dpl.lv2/blob/8bcd25deaf673fc93c66c4637fdc52bfdfe8ed6a/img/x42-dpl.png) |
+| `dragonfly-hall.png` | Dragonfly Hall Reverb | Michael Willis | GPL-3.0-or-later | [source](https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-hall-screenshot.png) |
+| `dragonfly-room.png` | Dragonfly Room Reverb | Michael Willis | GPL-3.0-or-later | [source](https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-room-screenshot.png) |
+| `dragonfly-plate.png` | Dragonfly Plate Reverb | Michael Willis | GPL-3.0-or-later | [source](https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-plate-screenshot.png) |
+| `toob-ml.png` | TooB ML Amplifier | Robin E. R. Davies | MIT | [source](https://github.com/rerdavies/ToobAmp/blob/e1c7b03395afc3ba39d60c1b2b59ccb73f802828/docs/img/MlAmplifier.png) |

@@ -1,0 +1,180 @@
+{
+  "uri": "urn:dragonfly:plate",
+  "name": "Dragonfly Plate Reverb",
+  "version": "4.10",
+  "license": "http://www.gnu.org/licenses/gpl-3.0.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map",
+    "http://lv2plug.in/ns/ext/worker#schedule"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "1b190531656a1c41ec3cbd4bc64ceb966a665a54e900baee274c2aa8308f8040",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "lv2_events_in",
+      "name": "Events Input",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "lv2_events_out",
+      "name": "Events Output",
+      "type": "AtomPort",
+      "direction": "out"
+    },
+    {
+      "index": 6,
+      "symbol": "dry_level",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 80,
+      "unit": "pc"
+    },
+    {
+      "index": 7,
+      "symbol": "early_level",
+      "name": "Wet Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 20,
+      "unit": "pc"
+    },
+    {
+      "index": 8,
+      "symbol": "algorithm",
+      "name": "Algorithm",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Simple"
+        },
+        {
+          "value": 1,
+          "label": "Nested"
+        },
+        {
+          "value": 2,
+          "label": "Tank"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "width",
+      "name": "Width",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 150,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 10,
+      "symbol": "predelay",
+      "name": "Predelay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "unit": "ms"
+    },
+    {
+      "index": 11,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 10,
+      "default": 0.4,
+      "unit": "s"
+    },
+    {
+      "index": 12,
+      "symbol": "low_cut",
+      "name": "Low Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 200,
+      "default": 200,
+      "unit": "hz"
+    },
+    {
+      "index": 13,
+      "symbol": "high_cut",
+      "name": "High Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 16000,
+      "unit": "hz"
+    },
+    {
+      "index": 14,
+      "symbol": "early_damp",
+      "name": "Dampen",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 13000,
+      "unit": "hz"
+    }
+  ]
+}

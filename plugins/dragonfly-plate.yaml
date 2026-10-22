@@ -1,0 +1,25 @@
+id: dragonfly-plate
+package: dragonfly-reverb
+uri: urn:dragonfly:plate
+bundle: DragonflyPlateReverb.lv2
+name: Dragonfly Plate Reverb
+author: Michael Willis
+license: GPL-3.0-or-later
+family: Reverb
+subcategory: Plate
+kind: space
+inspired_by: ''
+tags:
+- smooth
+- stereo
+summary: Bright, dense plate reverb with three algorithms.
+description: >-
+  A studio plate: no early reflections, an instant and dense bloom. Three
+  algorithms (simple, nested, tanked), width, predelay, decay and filters to
+  shape the tail. Classic on vocals, clean chords and snappy leads.
+picture:
+  file: dragonfly-plate.png
+  source: >-
+    https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-plate-screenshot.png
+  credit: Michael Willis
+  license: GPL-3.0-or-later

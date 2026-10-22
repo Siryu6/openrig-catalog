@@ -1,0 +1,261 @@
+{
+  "uri": "https://github.com/michaelwillis/dragonfly-reverb",
+  "name": "Dragonfly Hall Reverb",
+  "version": "4.10",
+  "license": "http://www.gnu.org/licenses/gpl-3.0.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map",
+    "http://lv2plug.in/ns/ext/worker#schedule"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "051fce742f1ce7027d9591f2bda6d7ebe10af073ec40b1f48b0e351b46cef1f4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "lv2_events_in",
+      "name": "Events Input",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "lv2_events_out",
+      "name": "Events Output",
+      "type": "AtomPort",
+      "direction": "out"
+    },
+    {
+      "index": 6,
+      "symbol": "dry_level",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 80,
+      "unit": "pc"
+    },
+    {
+      "index": 7,
+      "symbol": "early_level",
+      "name": "Early Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 10,
+      "unit": "pc"
+    },
+    {
+      "index": 8,
+      "symbol": "late_level",
+      "name": "Late Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 20,
+      "unit": "pc"
+    },
+    {
+      "index": 9,
+      "symbol": "size",
+      "name": "Size",
+      "type": "control",
+      "direction": "in",
+      "min": 10,
+      "max": 60,
+      "default": 24,
+      "unit": "m"
+    },
+    {
+      "index": 10,
+      "symbol": "width",
+      "name": "Width",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 150,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 11,
+      "symbol": "delay",
+      "name": "Predelay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 4,
+      "unit": "ms"
+    },
+    {
+      "index": 12,
+      "symbol": "diffuse",
+      "name": "Diffuse",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 90,
+      "unit": "pc"
+    },
+    {
+      "index": 13,
+      "symbol": "low_cut",
+      "name": "Low Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 200,
+      "default": 4,
+      "unit": "hz"
+    },
+    {
+      "index": 14,
+      "symbol": "low_xo",
+      "name": "Low Cross",
+      "type": "control",
+      "direction": "in",
+      "min": 200,
+      "max": 1200,
+      "default": 500,
+      "unit": "hz"
+    },
+    {
+      "index": 15,
+      "symbol": "low_mult",
+      "name": "Low Mult",
+      "type": "control",
+      "direction": "in",
+      "min": 0.5,
+      "max": 2.5,
+      "default": 1.3,
+      "unit": "X"
+    },
+    {
+      "index": 16,
+      "symbol": "high_cut",
+      "name": "High Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 7600,
+      "unit": "hz"
+    },
+    {
+      "index": 17,
+      "symbol": "high_xo",
+      "name": "High Cross",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 5500,
+      "unit": "hz"
+    },
+    {
+      "index": 18,
+      "symbol": "high_mult",
+      "name": "High Mult",
+      "type": "control",
+      "direction": "in",
+      "min": 0.2,
+      "max": 1.2,
+      "default": 0.5,
+      "unit": "X"
+    },
+    {
+      "index": 19,
+      "symbol": "spin",
+      "name": "Spin",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 3.3,
+      "unit": "hz"
+    },
+    {
+      "index": 20,
+      "symbol": "wander",
+      "name": "Wander",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 40,
+      "default": 15,
+      "unit": "ms"
+    },
+    {
+      "index": 21,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 10,
+      "default": 1.3,
+      "unit": "s"
+    },
+    {
+      "index": 22,
+      "symbol": "early_send",
+      "name": "Early Send",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 20,
+      "unit": "pc"
+    },
+    {
+      "index": 23,
+      "symbol": "modulation",
+      "name": "Modulation",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 15,
+      "unit": "pc"
+    }
+  ]
+}

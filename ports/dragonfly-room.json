@@ -1,0 +1,250 @@
+{
+  "uri": "urn:dragonfly:room",
+  "name": "Dragonfly Room Reverb",
+  "version": "4.10",
+  "license": "http://www.gnu.org/licenses/gpl-3.0.html",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/options#options",
+    "http://lv2plug.in/ns/ext/urid#map",
+    "http://lv2plug.in/ns/ext/worker#schedule"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "3394237b18ad9bf5c004db52acf2dd1b5e6a81b492ecee4d694c435d9e66ed46",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "lv2_audio_in_1",
+      "name": "Audio Input 1",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "lv2_audio_in_2",
+      "name": "Audio Input 2",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "lv2_audio_out_1",
+      "name": "Audio Output 1",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "lv2_audio_out_2",
+      "name": "Audio Output 2",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "lv2_events_in",
+      "name": "Events Input",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 5,
+      "symbol": "lv2_events_out",
+      "name": "Events Output",
+      "type": "AtomPort",
+      "direction": "out"
+    },
+    {
+      "index": 6,
+      "symbol": "dry_level",
+      "name": "Dry Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 80,
+      "unit": "pc"
+    },
+    {
+      "index": 7,
+      "symbol": "early_level",
+      "name": "Early Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 10,
+      "unit": "pc"
+    },
+    {
+      "index": 8,
+      "symbol": "early_send",
+      "name": "Early Send",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 20,
+      "unit": "pc"
+    },
+    {
+      "index": 9,
+      "symbol": "late_level",
+      "name": "Late Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 20,
+      "unit": "pc"
+    },
+    {
+      "index": 10,
+      "symbol": "size",
+      "name": "Size",
+      "type": "control",
+      "direction": "in",
+      "min": 8,
+      "max": 32,
+      "default": 12,
+      "unit": "m"
+    },
+    {
+      "index": 11,
+      "symbol": "width",
+      "name": "Width",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 150,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 12,
+      "symbol": "predelay",
+      "name": "Predelay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 8,
+      "unit": "ms"
+    },
+    {
+      "index": 13,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 10,
+      "default": 0.4,
+      "unit": "s"
+    },
+    {
+      "index": 14,
+      "symbol": "diffuse",
+      "name": "Diffuse",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 70,
+      "unit": "pc"
+    },
+    {
+      "index": 15,
+      "symbol": "spin",
+      "name": "Spin",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 5,
+      "default": 0.8,
+      "unit": "hz"
+    },
+    {
+      "index": 16,
+      "symbol": "wander",
+      "name": "Wander",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 40,
+      "unit": "pc"
+    },
+    {
+      "index": 17,
+      "symbol": "in_high_cut",
+      "name": "High Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 16000,
+      "unit": "hz"
+    },
+    {
+      "index": 18,
+      "symbol": "early_damp",
+      "name": "Early Damp",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 10000,
+      "unit": "hz"
+    },
+    {
+      "index": 19,
+      "symbol": "late_damp",
+      "name": "Late Damp",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 16000,
+      "default": 9400,
+      "unit": "hz"
+    },
+    {
+      "index": 20,
+      "symbol": "low_boost",
+      "name": "Low Boost",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 21,
+      "symbol": "boost_freq",
+      "name": "Boost Freq",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 1050,
+      "default": 600,
+      "unit": "hz"
+    },
+    {
+      "index": 22,
+      "symbol": "in_low_cut",
+      "name": "Low Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 200,
+      "default": 4,
+      "unit": "hz"
+    }
+  ]
+}

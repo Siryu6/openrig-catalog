@@ -1,0 +1,28 @@
+id: toob-ml
+package: toobamp
+uri: http://two-play.com/plugins/toob-ml
+bundle: ToobAmp.lv2
+name: TooB ML Amplifier
+author: Robin E. R. Davies
+license: MIT
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: ''
+tags:
+- neural
+- tube
+- clean
+- tone-stack
+summary: Neural amp and pedal models, with tone stack and transformer sag.
+description: >-
+  Machine-learning captures of real amps and pedals (Blues Jr., Princeton,
+  Mesa Boogie, Soldano, Dumble-style, TS9, RAT, Big Muff...), picked from a
+  list. Gain, master, a bass/mid/treble stack and a sag control that makes the
+  power amp breathe. Pair it with a cabinet block.
+picture:
+  file: toob-ml.png
+  source: >-
+    https://github.com/rerdavies/ToobAmp/blob/e1c7b03395afc3ba39d60c1b2b59ccb73f802828/docs/img/MlAmplifier.png
+  credit: Robin E. R. Davies
+  license: MIT
