@@ -1,0 +1,310 @@
+{
+  "uri": "http://two-play.com/plugins/toob-ml",
+  "name": "TooB ML Amplifier",
+  "version": "0.75",
+  "license": "https://rerdavies.github.io/pipedal/LicenseToobAmp",
+  "classes": [
+    "AmplifierPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/urid#map",
+    "http://lv2plug.in/ns/ext/worker#schedule"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "cd82a6086ac4602039a51cac500905a7ff4edb7143e6306cd296624c3e1231d1",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "trim",
+      "name": "Trim",
+      "type": "control",
+      "direction": "in",
+      "min": -30,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 1,
+      "symbol": "trimOut",
+      "name": "",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "model",
+      "name": "Model",
+      "type": "control",
+      "direction": "in",
+      "min": -1,
+      "max": 32,
+      "default": -1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "hidden"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "BluesJR"
+        },
+        {
+          "value": 1,
+          "label": "BluesJR FullD"
+        },
+        {
+          "value": 2,
+          "label": "BossDistortionDs1 highGain"
+        },
+        {
+          "value": 3,
+          "label": "BossMetalZoneMt2 highGain"
+        },
+        {
+          "value": 4,
+          "label": "DumbleClone clean"
+        },
+        {
+          "value": 5,
+          "label": "DumbleClone highGain"
+        },
+        {
+          "value": 6,
+          "label": "DumbleClone medGain"
+        },
+        {
+          "value": 7,
+          "label": "EH CockFight highDrive"
+        },
+        {
+          "value": 8,
+          "label": "FenderPrinceton clean"
+        },
+        {
+          "value": 9,
+          "label": "FenderPrinceton highLevel"
+        },
+        {
+          "value": 10,
+          "label": "Goat DistortionGen highDist"
+        },
+        {
+          "value": 11,
+          "label": "Goat DistortionGen lowDist"
+        },
+        {
+          "value": 12,
+          "label": "HT40 Overdrive"
+        },
+        {
+          "value": 13,
+          "label": "LittleBigMuff"
+        },
+        {
+          "value": 14,
+          "label": "MIAudio Crunchbox highGain"
+        },
+        {
+          "value": 15,
+          "label": "MIAudio Crunchbox midGain"
+        },
+        {
+          "value": 16,
+          "label": "MesaBoogieMk2b Clean"
+        },
+        {
+          "value": 17,
+          "label": "MesaBoogieMk2b Crunch"
+        },
+        {
+          "value": 18,
+          "label": "MesaBoogieMk2b highGain"
+        },
+        {
+          "value": 19,
+          "label": "MesaBoogie Studio22 Clean"
+        },
+        {
+          "value": 20,
+          "label": "MesaBoogie Studio22 highGain"
+        },
+        {
+          "value": 21,
+          "label": "PAiA AxeGrinder highDist"
+        },
+        {
+          "value": 22,
+          "label": "ProCoRat"
+        },
+        {
+          "value": 23,
+          "label": "RockmanXPR Clean"
+        },
+        {
+          "value": 24,
+          "label": "RockmanXPR Distortion"
+        },
+        {
+          "value": 25,
+          "label": "Rockman Acoustic"
+        },
+        {
+          "value": 26,
+          "label": "Rockman Ultimatum highGain"
+        },
+        {
+          "value": 27,
+          "label": "Soldano crunch"
+        },
+        {
+          "value": 28,
+          "label": "Soldano highGain"
+        },
+        {
+          "value": 29,
+          "label": "TS9"
+        },
+        {
+          "value": 30,
+          "label": "TS9 FullD"
+        },
+        {
+          "value": 31,
+          "label": "WamplerTumnus highGain"
+        },
+        {
+          "value": 32,
+          "label": "XoticCompSP"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "symbol": "gain",
+      "name": "Gain",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 3,
+      "unit": null
+    },
+    {
+      "index": 4,
+      "symbol": "master",
+      "name": "Master",
+      "type": "control",
+      "direction": "in",
+      "min": -30,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "bass",
+      "name": "Bass",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "mid",
+      "name": "Mid",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "treble",
+      "name": "Treble",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "sag",
+      "name": "Sag Out",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "sagd",
+      "name": "Sag Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null
+    },
+    {
+      "index": 10,
+      "symbol": "sagf",
+      "name": "SagF",
+      "type": "control",
+      "direction": "in",
+      "min": 5,
+      "max": 25,
+      "default": 13,
+      "unit": "hz"
+    },
+    {
+      "index": 11,
+      "symbol": "gainEnable",
+      "name": "GainEnable",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 12,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 13,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 14,
+      "symbol": "control",
+      "name": "Control",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 15,
+      "symbol": "notify",
+      "name": "Notify",
+      "type": "AtomPort",
+      "direction": "out"
+    }
+  ]
+}

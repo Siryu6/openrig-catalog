@@ -1,0 +1,25 @@
+id: dragonfly-room
+package: dragonfly-reverb
+uri: urn:dragonfly:room
+bundle: DragonflyRoomReverb.lv2
+name: Dragonfly Room Reverb
+author: Michael Willis
+license: GPL-3.0-or-later
+family: Reverb
+subcategory: Room
+kind: space
+inspired_by: ''
+tags:
+- stereo
+- natural
+summary: Small to medium room with a short, dense and natural tail.
+description: >-
+  A room reverb tuned for short, tight decays: puts a dry amp in a real space
+  without washing out the notes. Size, predelay, diffusion, decay and a boost
+  of the low end of the tail.
+picture:
+  file: dragonfly-room.png
+  source: >-
+    https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-room-screenshot.png
+  credit: Michael Willis
+  license: GPL-3.0-or-later

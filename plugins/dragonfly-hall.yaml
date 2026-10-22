@@ -1,0 +1,26 @@
+id: dragonfly-hall
+package: dragonfly-reverb
+uri: https://github.com/michaelwillis/dragonfly-reverb
+bundle: DragonflyHallReverb.lv2
+name: Dragonfly Hall Reverb
+author: Michael Willis
+license: GPL-3.0-or-later
+family: Reverb
+subcategory: Hall
+kind: space
+inspired_by: ''
+tags:
+- stereo
+- ambient
+- natural
+summary: Lush stereo concert hall, from a small venue to a huge space.
+description: >-
+  A full hall reverb with its own early reflections and a long, dense tail.
+  Size, width, predelay, diffusion and decay, with separate decay times for the lows
+  and highs. Natural on leads and pads, endless on ambient swells.
+picture:
+  file: dragonfly-hall.png
+  source: >-
+    https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-hall-screenshot.png
+  credit: Michael Willis
+  license: GPL-3.0-or-later

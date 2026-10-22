@@ -1,0 +1,24 @@
+id: toobamp
+name: TooB Amp
+version: "1.2.75"
+license: MIT
+homepage: https://github.com/rerdavies/ToobAmp
+origin: upstream
+source:
+  url: https://github.com/rerdavies/ToobAmp/archive/refs/tags/v1.2.75.tar.gz
+  sha256: b173110e60c58ffdb0017ce46c257d49aa0f1f874bcaad23b555bee587ba119e
+# Upstream ships Debian packages only: the app unpacks the bundle from
+# data.tar.* (needs the app's deb support)
+artifacts:
+  aarch64:
+    url: https://github.com/rerdavies/ToobAmp/releases/download/v1.2.75/toobamp_1.2.75_arm64.deb
+    sha256: 1fac63ff90f0773b8f759f51c42030017f6ab7ed72b6dfc5ae15bb96e4807692
+    size: 14560286
+    format: deb
+    root: usr/lib/lv2
+  x86_64:
+    url: https://github.com/rerdavies/ToobAmp/releases/download/v1.2.75/toobamp_1.2.75_amd64.deb
+    sha256: acaab85449f4db3fc575b54bac22fa64359d17696d8bd865dc59ffcc6b2cc28b
+    size: 12379358
+    format: deb
+    root: usr/lib/lv2
