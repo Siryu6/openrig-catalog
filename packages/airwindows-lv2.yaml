@@ -10,4 +10,16 @@ source:
   url: https://git.sr.ht/~hannes/airwindows-lv2/archive/v40.0.tar.gz
   sha256: 8db2c1f8ae8bc49d2fb555805412c3113025df500a32853b05aacb1b156cc90d
 # Pinned by the PR the build opens (tools/pin_build.py)
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/airwindows-lv2-40.0/airwindows-lv2-40.0-aarch64.tar.xz
+    sha256: f2a5dcd0293e92c130eba46c141e72706044e88cb9a80a979ed9e46ef338a836
+    size: 430044
+    format: tar.xz
+    root: airwindows-lv2-40.0
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/airwindows-lv2-40.0/airwindows-lv2-40.0-x86_64.tar.xz
+    sha256: 2b43d9ae19df055cb89b93b3fa29cdf420bee7407cf851465e397727dcd3668e
+    size: 427440
+    format: tar.xz
+    root: airwindows-lv2-40.0
