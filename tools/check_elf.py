@@ -81,28 +81,51 @@ class Report:
         self.warnings.append(f"{where}: {message}")
 
 
-def host_features(source):
-    """SUPPORTED_FEATURES of lv2_features.rs, from a file or a URL"""
+def read_source(source):
+    """Text of a Rust file, from a path or a URL"""
     if re.match(r"^https?://", source):
         request = urllib.request.Request(source, headers={"User-Agent": "openrig-catalog"})
         with urllib.request.urlopen(request, timeout=60) as response:
-            text = response.read().decode()
-    else:
-        text = Path(source).read_text()
-    consts = dict(re.findall(r'const\s+([A-Z0-9_]+)\s*:\s*&str\s*=\s*"([^"]+)"\s*;', text))
+            return response.read().decode()
+    return Path(source).read_text()
+
+
+def str_consts(text):
+    return dict(re.findall(r'const\s+([A-Z0-9_]+)\s*:\s*&str\s*=\s*"([^"]+)"\s*;', text))
+
+
+def host_features(source):
+    """SUPPORTED_FEATURES of lv2_features.rs, from a file or a URL.
+
+    Constants may come from a sibling module (`lv2_worker::SCHEDULE`): it is
+    read from <module>.rs next to the source."""
+    text = read_source(source)
+    consts = str_consts(text)
+    modules = {}
     block = re.search(r"SUPPORTED_FEATURES\s*:\s*&\[&str\]\s*=\s*&\[(.*?)\];", text, re.S)
     if not block:
         sys.exit(f"{source}: SUPPORTED_FEATURES not found")
     features = set()
     # String literals, comments (skipped) and constant names, in order
-    for m in re.finditer(r'"([^"\\]*)"|//[^\n]*|/\*.*?\*/|([A-Za-z_][A-Za-z0-9_]*)', block.group(1), re.S):
-        literal, name = m.groups()
+    for m in re.finditer(r'"([^"\\]*)"|//[^\n]*|/\*.*?\*/|(?:([a-z_][a-z0-9_]*)::)?([A-Za-z_][A-Za-z0-9_]*)',
+                         block.group(1), re.S):
+        literal, module, name = m.groups()
         if literal is not None:
             features.add(literal)
         elif name is not None:
-            if name not in consts:
-                sys.exit(f"{source}: cannot resolve {name} in SUPPORTED_FEATURES")
-            features.add(consts[name])
+            scope = consts
+            if module is not None:
+                if module not in modules:
+                    sibling = source.rsplit("/", 1)[0] + f"/{module}.rs" if "/" in source else f"{module}.rs"
+                    try:
+                        modules[module] = str_consts(read_source(sibling))
+                    except OSError as e:
+                        sys.exit(f"{source}: cannot read {sibling} for {module}::{name}: {e}")
+                scope = modules[module]
+            if name not in scope:
+                qualified = f"{module}::{name}" if module else name
+                sys.exit(f"{source}: cannot resolve {qualified} in SUPPORTED_FEATURES")
+            features.add(scope[name])
     if not features:
         sys.exit(f"{source}: SUPPORTED_FEATURES is empty")
     return features
