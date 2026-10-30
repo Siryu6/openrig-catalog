@@ -1,0 +1,19 @@
+id: airwindows-grindamp
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/grindamp
+bundle: Airwindows.lv2
+name: GrindAmp
+author: Airwindows
+license: MIT
+family: Simulator
+subcategory: Amp
+kind: amp
+inspired_by: ''
+tags:
+- heavy
+- high-gain
+summary: Heavier, high-gain amp sim for many styles.
+description: >-
+  The high-gain member of the Airwindows amp family: thick and saturated, for heavy
+  rhythm and sustained leads. Gain, tone, output and dry/wet. Follow it with a cabinet
+  block.

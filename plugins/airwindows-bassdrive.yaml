@@ -1,0 +1,19 @@
+id: airwindows-bassdrive
+package: airwindows-lv2
+uri: https://hannesbraun.net/ns/lv2/airwindows/bassdrive
+bundle: Airwindows.lv2
+name: BassDrive
+author: Airwindows
+license: MIT
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- bass
+- eq
+- amp
+summary: Bass amp-like drive with a four-band tone stack.
+description: >-
+  A drive made for bass, with presence, high, mid and low controls before the drive
+  stage. Also useful as a thick, dark guitar overdrive.

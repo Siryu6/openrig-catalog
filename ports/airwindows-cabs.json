@@ -1,0 +1,140 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/cabs",
+  "name": "Cabs",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "SimulatorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "f565e2f63d0d1f709306bdfad1faa87b9e4ef9bb35ccfbc010ae08624aaae707",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "cabType",
+      "name": "CabType",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 6,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "HPStack"
+        },
+        {
+          "value": 1,
+          "label": "Vintage"
+        },
+        {
+          "value": 2,
+          "label": "Boutiqe"
+        },
+        {
+          "value": 3,
+          "label": "Large C"
+        },
+        {
+          "value": 4,
+          "label": "Small C"
+        },
+        {
+          "value": 5,
+          "label": "BassAmp"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "intense",
+      "name": "Intense",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.66,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "rmLoud",
+      "name": "Rm Loud",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.33,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "cabSize",
+      "name": "Cab Size",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.66,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "offAxis",
+      "name": "OffAxsis",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.33,
+      "unit": null
+    },
+    {
+      "index": 9,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    }
+  ]
+}

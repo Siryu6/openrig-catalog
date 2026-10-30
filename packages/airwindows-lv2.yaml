@@ -1,23 +1,13 @@
 id: airwindows-lv2
 name: airwindows-lv2
-version: "20.0"
+version: "40.0"
 license: MIT
-homepage: https://github.com/hannesbraun/airwindows-lv2
+homepage: https://git.sr.ht/~hannes/airwindows-lv2
 # No Linux arm64 build upstream: built by OpenRig, published with its sources
 origin: openrig-build
 source:
-  url: https://github.com/hannesbraun/airwindows-lv2/archive/refs/tags/v20.0.tar.gz
-  sha256: e9e98b1d339848a055874490bff31ba686e46c9c130b07e9730ba4af5db1f43b
-artifacts:
-  aarch64:
-    url: https://github.com/Siryu6/openrig-catalog/releases/download/airwindows-lv2-20.0/airwindows-lv2-20.0-aarch64.tar.xz
-    sha256: 507056fa25d0b5ea8feeac6a0f2dc1a856fd6240611c1e3f6781b31679d1e94b
-    size: 189908
-    format: tar.xz
-    root: airwindows-lv2-20.0
-  x86_64:
-    url: https://github.com/Siryu6/openrig-catalog/releases/download/airwindows-lv2-20.0/airwindows-lv2-20.0-x86_64.tar.xz
-    sha256: c963b009e3304b87b8ed6e746d091cadae7fc9df6faa23bf4c23c75276a7d1b9
-    size: 191676
-    format: tar.xz
-    root: airwindows-lv2-20.0
+  # Moved from GitHub to SourceHut after v34.0
+  url: https://git.sr.ht/~hannes/airwindows-lv2/archive/v40.0.tar.gz
+  sha256: 8db2c1f8ae8bc49d2fb555805412c3113025df500a32853b05aacb1b156cc90d
+# Pinned by the PR the build opens (tools/pin_build.py)
+artifacts: {}

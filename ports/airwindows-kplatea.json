@@ -1,0 +1,100 @@
+{
+  "uri": "https://hannesbraun.net/ns/lv2/airwindows/kplatea",
+  "name": "kPlateA",
+  "version": "2.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "d0441321813e71e6efe2fe179536b5c3fe6da5333a62fbc6a2eb29c9419a404f",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "inL",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "inR",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "outL",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "outR",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "inputPad",
+      "name": "InputPad",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null
+    },
+    {
+      "index": 5,
+      "symbol": "damping",
+      "name": "Damping",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 10,
+      "default": 5,
+      "unit": null
+    },
+    {
+      "index": 6,
+      "symbol": "lowCut",
+      "name": "Low Cut",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 3,
+      "default": 3,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "predelay",
+      "name": "Predelay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 0.5,
+      "default": 0,
+      "unit": "s"
+    },
+    {
+      "index": 8,
+      "symbol": "wetness",
+      "name": "Wetness",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0.25,
+      "unit": null
+    }
+  ]
+}
