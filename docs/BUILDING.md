@@ -69,7 +69,7 @@ Current recipes:
 | `gxplugins` | make (`make mod`) | the 43 `gx_*.lv2`, with MOD's `.ttl` (7 still declare an X11 UI, not shipped) |
 | `x42-plugins` | make | `fil4.lv2`, `dpl.lv2` and `darc.lv2` only, from the source tarball (never the x42-plugins.com binaries) |
 | `guitarix` | `g++`, without waf | `gxts9.lv2` and `gx_fuzzfacefm.lv2` only, from the Faust code shipped pre-generated (the full waf build needs the whole app) |
-| `tap-lv2` | make (`NOOPT=true`) | the 19 `tap-*.lv2`, with their MOD web UI files (HTML/CSS/PNG, no binary) |
+| `tap-lv2` | make (`NOOPT=true`) | the 19 `tap-*.lv2`, with their MOD web UI files (HTML/CSS/PNG, no binary), and a patch that declares TAP Pitch Shifter's latency port as an output |
 
 ## Build environment
 

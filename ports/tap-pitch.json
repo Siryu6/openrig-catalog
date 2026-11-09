@@ -12,7 +12,7 @@
     "inputs": 1,
     "outputs": 1
   },
-  "ports_hash": "0981b6cb05ce1c1aeab72a27dbcf22300cd3ca5590bfc7f037c650af76bbf7f1",
+  "ports_hash": "0555d7abe01be45b4381a7db97b38cec051a3e013c3f275db398b0e5d2fd435e",
   "ports": [
     {
       "index": 0,
@@ -63,11 +63,7 @@
       "symbol": "Latency",
       "name": "latency",
       "type": "control",
-      "direction": "in",
-      "min": 0,
-      "max": 16027,
-      "default": 0,
-      "unit": null
+      "direction": "out"
     },
     {
       "index": 5,
