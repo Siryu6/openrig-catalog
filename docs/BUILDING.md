@@ -64,7 +64,7 @@ Current recipes:
 |---|---|---|
 | `mda-lv2` | meson | `mda.lv2` (all plugins and presets) |
 | `fomp` | meson | `fomp.lv2` (all plugins) |
-| `airwindows-lv2` | meson | `Airwindows.lv2` (all plugins) |
+| `airwindows-lv2` | meson | `Airwindows.lv2` (all plugins), with a patch that fixes the CPU cost of GlitchShifter after a Tighten change |
 | `caps-lv2` | make | the 27 `mod-caps-*.lv2`, with their MOD web UI files (HTML/CSS/PNG, no binary) |
 | `gxplugins` | make (`make mod`) | the 43 `gx_*.lv2`, with MOD's `.ttl` (7 still declare an X11 UI, not shipped) |
 | `x42-plugins` | make | `fil4.lv2`, `dpl.lv2` and `darc.lv2` only, from the source tarball (never the x42-plugins.com binaries) |

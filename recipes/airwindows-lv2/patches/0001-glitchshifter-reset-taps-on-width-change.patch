@@ -1,0 +1,158 @@
+GlitchShifter: reset the delay taps when the width changes
+
+The buffer width comes from Tighten: 65536 samples at 0, 6 at 1. When it
+changed, only crossesL/R and realzeroesL/R were reset. positionL/R,
+sincezerocrossL/R and the zero-cross registry (offsetL/R[]...) kept values
+made with the old width. A splice then jumped back to such a stale offset,
+and the tap crawled back by `width` per sample, while the
+`while (count > width) count -= width` loops cost (distance / width)
+iterations per sample. Raising Tighten live from 0 to 1 gave blocks of up
+to 108 % of a 128-frame period at 48 kHz on a 5 GHz x86_64, for as long
+as the setting stayed.
+
+- On a width change, also clear the registry, the tap positions and the
+  zero-cross counters, as activate() does (the audio buffer is kept), and
+  smooth the jump of a moving tap like a splice does.
+- Replace the wrap loops with an exact constant-time equivalent.
+
+With fixed settings, the output is bit-identical to the unpatched build.
+
+--- a/src/GlitchShifter/GlitchShifter.c
++++ b/src/GlitchShifter/GlitchShifter.c
+@@ -180,6 +180,20 @@
+ 	while (glitchShifter->fpdR < 16386) glitchShifter->fpdR = rand() * UINT32_MAX;
+ }
+ 
++// Same result as the "while (c < 0) c += width; while (c > width) c -= width;"
++// pairs it replaces, in constant time: those loops ran once per sample and
++// cost (distance / width) iterations, which is huge after width shrinks.
++static inline int wrapCount(int c, int width)
++{
++	if (c < 0) {
++		c %= width;
++		if (c < 0) c += width;
++	} else if (c > width) {
++		c = (c - 1) % width + 1;
++	}
++	return c;
++}
++
+ static void run(LV2_Handle instance, uint32_t sampleFrames)
+ {
+ 	GlitchShifter* glitchShifter = (GlitchShifter*) instance;
+@@ -246,6 +260,31 @@
+ 			glitchShifter->crossesR = 0;
+ 			glitchShifter->realzeroesR = 0;
+ 			glitchShifter->lastwidth = width;
++			// The delay taps and the zero-cross registry hold positions made
++			// with the old width: a splice would jump back to them, and the
++			// tap would then crawl back by 'width' per sample (tens of
++			// thousands of samples when tighten goes up). Start over from the
++			// state activate() leaves, keeping the audio buffer.
++			for (int count = 0; count < 257; count++) {
++				glitchShifter->offsetL[count] = 0;
++				glitchShifter->pastzeroL[count] = 0;
++				glitchShifter->previousL[count] = 0;
++				glitchShifter->thirdL[count] = 0;
++				glitchShifter->fourthL[count] = 0;
++				glitchShifter->offsetR[count] = 0;
++				glitchShifter->pastzeroR[count] = 0;
++				glitchShifter->previousR[count] = 0;
++				glitchShifter->thirdR[count] = 0;
++				glitchShifter->fourthR[count] = 0;
++			}
++			// Smooth the jump of a tap, as a splice does (a tap already at 0,
++			// as after activate(), does not jump)
++			if (glitchShifter->positionL != 0.0) glitchShifter->splicingL = true;
++			if (glitchShifter->positionR != 0.0) glitchShifter->splicingR = true;
++			glitchShifter->positionL = 0.0;
++			glitchShifter->positionR = 0.0;
++			glitchShifter->sincezerocrossL = 0;
++			glitchShifter->sincezerocrossR = 0;
+ 		}
+ 		// global: changing this resets both channels
+ 
+@@ -256,24 +295,9 @@
+ 		int count = glitchShifter->gcount;
+ 		int countone = count - 1;
+ 		int counttwo = count - 2;
+-		while (count < 0) {
+-			count += width;
+-		}
+-		while (countone < 0) {
+-			countone += width;
+-		}
+-		while (counttwo < 0) {
+-			counttwo += width;
+-		}
+-		while (count > width) {
+-			count -= width;
+-		} // this can only happen with very insane variables
+-		while (countone > width) {
+-			countone -= width;
+-		}
+-		while (counttwo > width) {
+-			counttwo -= width;
+-		}
++		count = wrapCount(count, width);
++		countone = wrapCount(countone, width);
++		counttwo = wrapCount(counttwo, width);
+ 		// yay sanity checks
+ 		// now we have counts zero, one, two, none of which have sanity checked values
+ 		// we are tracking most recent samples and must SUBTRACT.
+@@ -461,24 +485,9 @@
+ 		counttwo = count + 2;
+ 		// now we have counts zero, one, two, none of which have sanity checked values
+ 		// we are interpolating, we ADD
+-		while (count < 0) {
+-			count += width;
+-		}
+-		while (countone < 0) {
+-			countone += width;
+-		}
+-		while (counttwo < 0) {
+-			counttwo += width;
+-		}
+-		while (count > width) {
+-			count -= width;
+-		} // this can only happen with very insane variables
+-		while (countone > width) {
+-			countone -= width;
+-		}
+-		while (counttwo > width) {
+-			counttwo -= width;
+-		}
++		count = wrapCount(count, width);
++		countone = wrapCount(countone, width);
++		counttwo = wrapCount(counttwo, width);
+ 
+ 		// here's where we do our shift against the rotating buffer
+ 		glitchShifter->tempL = 0;
+@@ -514,24 +523,9 @@
+ 		counttwo = count + 2;
+ 		// now we have counts zero, one, two, none of which have sanity checked values
+ 		// we are interpolating, we ADD
+-		while (count < 0) {
+-			count += width;
+-		}
+-		while (countone < 0) {
+-			countone += width;
+-		}
+-		while (counttwo < 0) {
+-			counttwo += width;
+-		}
+-		while (count > width) {
+-			count -= width;
+-		} // this can only happen with very insane variables
+-		while (countone > width) {
+-			countone -= width;
+-		}
+-		while (counttwo > width) {
+-			counttwo -= width;
+-		}
++		count = wrapCount(count, width);
++		countone = wrapCount(countone, width);
++		counttwo = wrapCount(counttwo, width);
+ 
+ 		glitchShifter->tempR = 0;
+ 		glitchShifter->tempR += (int) (glitchShifter->pR[count] * (1 - (glitchShifter->positionR - floor(glitchShifter->positionR)))); // less as value moves away from .0
