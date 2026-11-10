@@ -1,0 +1,24 @@
+TAP Pitch Shifter: declare the Latency port as an output
+
+tap_pitch.ttl declares port 4 "Latency" as an input control port, but
+tap_pitch.c writes the plugin's latency to it in run(). Hosts then show it
+as a knob (0 to 16027) that the plugin overwrites. Declare it as an output
+control port that reports the latency (lv2:designation lv2:latency, and
+the older lv2:reportsLatency property).
+
+--- a/pitch/tap_pitch.ttl
++++ b/pitch/tap_pitch.ttl
+@@ -77,10 +77,12 @@
+     lv2:maximum 20;
+ ],
+ [
+-    a lv2:InputPort, lv2:ControlPort;
++    a lv2:OutputPort, lv2:ControlPort;
+     lv2:index 4;
+     lv2:symbol "Latency";
+     lv2:name "latency";
++    lv2:designation lv2:latency;
++    lv2:portProperty lv2:reportsLatency, lv2:integer;
+     lv2:default 0;
+     lv2:minimum 0;
+     lv2:maximum 16027;
