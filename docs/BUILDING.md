@@ -70,6 +70,7 @@ Current recipes:
 | `x42-plugins` | make | `fil4.lv2`, `dpl.lv2` and `darc.lv2` only, from the source tarball (never the x42-plugins.com binaries) |
 | `guitarix` | `g++`, without waf | `gxts9.lv2` and `gx_fuzzfacefm.lv2` only, from the Faust code shipped pre-generated (the full waf build needs the whole app) |
 | `tap-lv2` | make (`NOOPT=true`) | the 19 `tap-*.lv2`, with their MOD web UI files (HTML/CSS/PNG, no binary), and a patch that declares TAP Pitch Shifter's latency port as an output |
+| `dragonfly-reverb` | make (DPF, `lv2_dsp` only) | `DragonflyHallReverb.lv2`, `DragonflyRoomReverb.lv2`, `DragonflyPlateReverb.lv2`, `DragonflyEarlyReflections.lv2` (DSP only; the `.ttl` still declares the UI, not shipped), with a patch that stops a CPU spike every 32768 samples in Plate (Tank) and Room |
 
 ## Build environment
 

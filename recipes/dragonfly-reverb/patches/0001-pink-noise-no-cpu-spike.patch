@@ -1,0 +1,115 @@
+--- a/common/freeverb/efilter_t.hpp
++++ b/common/freeverb/efilter_t.hpp
+@@ -226,30 +226,46 @@
+    * Set the pink noise parameters.
+    * @param[in] param1 The Hurst constant, between 0 and 0.9999 (fractal dimension).
+    * @param[in] length The fractal noise generator size will be 2^length.
++   *
++   * Allocates and fills the first pattern: not real-time safe.
+    */
+   void setParams(_fv3_float_t param1, long length)
+   {
+     pfn1_param = param1;
+     pfn1_length = (1<<length);
+     if(pfn1_slot.getsize() != pfn1_length)
+-      {
+-	pfn1_slot.alloc(pfn1_length, 1);
+-	pfn1_count = 0;
+-      }
+-    mute();
++      pfn1_slot.alloc(pfn1_length, 2);
++    pfn1_front = pfn1_slot.L;
++    pfn1_back = pfn1_slot.R;
++    fractal(pfn1_front, pfn1_length, pfn1_param);
++    startBack();
++    pfn1_pos = 0;
+   }
+-  
+-  void mute(){ pfn1_slot.mute(); pfn1_count = 0; }
+-  
++
++  /**
++   * Restart the pattern. Real-time safe: the patterns are kept, nothing is
++   * generated here.
++   */
++  void mute(){ pfn1_pos = 0; }
++
++  /**
++   * One sample of the current pattern. The next pattern is built in the
++   * back buffer one midpoint per sample, so no call costs more than a few
++   * operations. (The original code built the whole 2^length pattern in the
++   * call that ran out of samples: 32768 rand() calls in one audio block.)
++   */
+   inline _fv3_float_t process()
+   {
+-    if(pfn1_count == 0)
++    stepBack();
++    if(pfn1_pos >= pfn1_length)
+       {
+-	fractal(pfn1_slot.L, pfn1_length, pfn1_param);
+-	pfn1_count = pfn1_length;
++	// Never more than a few midpoints left: N - 1 midpoints for N samples
++	while(pfn1_level > 1) stepBack();
++	_fv3_float_t * t = pfn1_front; pfn1_front = pfn1_back; pfn1_back = t;
++	startBack();
++	pfn1_pos = 0;
+       }
+-    pfn1_count --;
+-    return pfn1_slot.L[pfn1_length - (pfn1_count+1)];
++    return pfn1_front[pfn1_pos++];
+   }
+   inline _fv3_float_t operator()(){ return this->process(); }
+   inline _fv3_float_t process(_fv3_float_t input){ return this->process()*input; }
+@@ -275,19 +291,44 @@
+       {
+ 	k = N / l;
+ 	for (c = 0; c < k; c++)
+-	  {
+-	    v[c*l + l/2] = (v[c*l] + v[((c+1) * l) % N]) / 2.0
+-	      + 2.0 * r * ((_fv3_float_t)std::rand() - (_fv3_float_t)RAND_MAX/2.0) / (_fv3_float_t)RAND_MAX;
+-	    if(v[c*l + l/2] < -1.) v[c*l + l/2] = -1.;
+-	    if(v[c*l + l/2] >  1.) v[c*l + l/2] =  1.;
+-	  }
++	  midpoint(v, N, l, c, r);
+ 	l /= 2;
+ 	r /= std::pow((_fv3_float_t)2., H);
+       }
+   }
++
++  static inline void midpoint(_fv3_float_t * v, long N, long l, long c, _fv3_float_t r)
++  {
++    v[c*l + l/2] = (v[c*l] + v[((c+1) * l) % N]) / 2.0
++      + 2.0 * r * ((_fv3_float_t)std::rand() - (_fv3_float_t)RAND_MAX/2.0) / (_fv3_float_t)RAND_MAX;
++    if(v[c*l + l/2] < -1.) v[c*l + l/2] = -1.;
++    if(v[c*l + l/2] >  1.) v[c*l + l/2] =  1.;
++  }
++
++  // fractal() on the back buffer, one midpoint per call, in the same order
++  void startBack()
++  {
++    pfn1_back[0] = 0;
++    pfn1_level = pfn1_length;
++    pfn1_index = 0;
++    pfn1_r = 2.0 * (pfn1_param*pfn1_param) + 0.3;
++  }
++
++  inline void stepBack()
++  {
++    if(pfn1_level <= 1) return;
++    midpoint(pfn1_back, pfn1_length, pfn1_level, pfn1_index, pfn1_r);
++    if(++pfn1_index >= pfn1_length / pfn1_level)
++      {
++	pfn1_index = 0;
++	pfn1_level /= 2;
++	pfn1_r /= std::pow((_fv3_float_t)2., pfn1_param);
++      }
++  }
+   
+-  _fv3_float_t pfn1_param;
+-  long pfn1_length, pfn1_count;
++  _fv3_float_t pfn1_param, pfn1_r;
++  long pfn1_length, pfn1_pos, pfn1_level, pfn1_index;
++  _fv3_float_t * pfn1_front, * pfn1_back;
+   _FV3_(slot) pfn1_slot;
+ };
+ 
