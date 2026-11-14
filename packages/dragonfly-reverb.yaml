@@ -11,4 +11,16 @@ source:
   url: https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-src.tar.xz
   sha256: 18af55a9592c9f50c4d5f86c9d5159132735d9ba53d49e9cfe7169b3109f7743
 # Pinned by the PR the build opens (tools/pin_build.py)
-artifacts: {}
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/dragonfly-reverb-3.2.10-2/dragonfly-reverb-3.2.10-2-aarch64.tar.xz
+    sha256: 5310dc53a926452d752a0917c7dcfabff55cdfa36d348a24fa7d949e0be8fe02
+    size: 137220
+    format: tar.xz
+    root: dragonfly-reverb-3.2.10-2
+  x86_64:
+    url: https://github.com/Siryu6/openrig-catalog/releases/download/dragonfly-reverb-3.2.10-2/dragonfly-reverb-3.2.10-2-x86_64.tar.xz
+    sha256: 77f6aaf9b33c8b4edf88623817e70546c94f2d84b1d06ad7e8931e141a87d304
+    size: 157196
+    format: tar.xz
+    root: dragonfly-reverb-3.2.10-2
