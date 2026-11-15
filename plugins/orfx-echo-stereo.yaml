@@ -1,0 +1,20 @@
+id: orfx-echo-stereo
+package: openrig-fx
+uri: https://openrig.eu/plugins/echo-stereo
+bundle: or-echo.lv2
+name: OR Echo Stereo
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Delay
+subcategory: Ping-pong delay
+kind: space
+inspired_by: ''
+tags:
+- tempo-sync
+- stereo
+- ping-pong
+- trails
+summary: Stereo echo with ping-pong, digital, tape or analog, with trails.
+description: OR Echo with a line per channel, or ping-pong repeats that alternate
+  between the sides. The same digital, tape and analog voicings, tempo sync, filters
+  in the loop, ducking and trails on bypass.

@@ -107,3 +107,7 @@ shows the credit and license on the plugin's page in the store.
 | `dragonfly-room.png` | Dragonfly Room Reverb | Michael Willis | GPL-3.0-or-later | [source](https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-room-screenshot.png) |
 | `dragonfly-plate.png` | Dragonfly Plate Reverb | Michael Willis | GPL-3.0-or-later | [source](https://github.com/michaelwillis/dragonfly-reverb/blob/440ec7b3b3db2fec34b9f80cf4890102ca14d1c3/dragonfly-plate-screenshot.png) |
 | `toob-ml.png` | TooB ML Amplifier | Robin E. R. Davies | MIT | [source](https://github.com/rerdavies/ToobAmp/blob/e1c7b03395afc3ba39d60c1b2b59ccb73f802828/docs/img/MlAmplifier.png) |
+| `orfx-echo.png` | OR Echo | OpenRig | GPL-3.0-or-later | [source](https://github.com/Siryu6/openrig-fx/blob/v0.1.0/docs/img/echo.png) |
+| `orfx-green-drive.png` | OR Green Drive | OpenRig | GPL-3.0-or-later | [source](https://github.com/Siryu6/openrig-fx/blob/v0.1.0/docs/img/green-drive.png) |
+| `orfx-black-dist.png` | OR Black Dist | OpenRig | GPL-3.0-or-later | [source](https://github.com/Siryu6/openrig-fx/blob/v0.1.0/docs/img/black-dist.png) |
+| `orfx-drop.png` | OR Drop | OpenRig | GPL-3.0-or-later | [source](https://github.com/Siryu6/openrig-fx/blob/v0.1.0/docs/img/drop.png) |

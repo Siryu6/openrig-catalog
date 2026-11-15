@@ -1,0 +1,140 @@
+{
+  "uri": "https://openrig.eu/plugins/comp",
+  "name": "OR Comp",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "CompressorPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "3f1eb1f86a899d7c23c121cbb8c11faf0e9f0b2cdde4a3060d1db54264e74260",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "threshold",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -60,
+      "max": 0,
+      "default": -30,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "ratio",
+      "name": "Ratio",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 20,
+      "default": 4,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "knee",
+      "name": "Knee",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 24,
+      "default": 6,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "attack",
+      "name": "Attack",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 100,
+      "default": 5,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "release",
+      "name": "Release",
+      "type": "control",
+      "direction": "in",
+      "min": 10,
+      "max": 2000,
+      "default": 150,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "level",
+      "name": "Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "mix",
+      "name": "Blend",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 9,
+      "symbol": "reduction",
+      "name": "Reduction",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 10,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    }
+  ]
+}

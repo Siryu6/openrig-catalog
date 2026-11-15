@@ -1,0 +1,18 @@
+id: orfx-eq
+package: openrig-fx
+uri: https://openrig.eu/plugins/eq
+bundle: or-eq.lv2
+name: OR EQ
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Parametric EQ
+kind: pedal
+inspired_by: ''
+tags:
+- zero-latency
+- curve
+summary: 'Parametric EQ: two cuts, two shelves and three bells, zero latency.'
+description: Low and high cuts, low and high shelves and three bells with Q, plus
+  an output level. Zero latency and transparent when flat. OpenRig draws its curve
+  from the bands the plugin declares.

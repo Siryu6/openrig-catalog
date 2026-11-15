@@ -1,0 +1,124 @@
+{
+  "uri": "https://openrig.eu/plugins/drive",
+  "name": "OR Drive",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "c37579c56f91a99df749bdd86243f312d8d8e7011cb96501789f4639691fe9c2",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 3,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Boost"
+        },
+        {
+          "value": 1,
+          "label": "Overdrive"
+        },
+        {
+          "value": 2,
+          "label": "Distortion"
+        },
+        {
+          "value": 3,
+          "label": "Fuzz"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "symbol": "drive",
+      "name": "Drive",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 4,
+      "symbol": "tone",
+      "name": "Tone",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 5,
+      "symbol": "bass",
+      "name": "Bass",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "level",
+      "name": "Level",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    }
+  ]
+}

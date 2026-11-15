@@ -1,0 +1,146 @@
+{
+  "uri": "https://openrig.eu/plugins/drop",
+  "name": "OR Drop",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "PitchPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "877d247cba4309fb5ffc9e86de8f43faf188dfc59eeb0e41e9962ff204846fc9",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "shift",
+      "name": "Shift",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 12,
+      "default": -2,
+      "unit": "semitone12TET",
+      "properties": [
+        "integer"
+      ]
+    },
+    {
+      "index": 3,
+      "symbol": "mix",
+      "name": "Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 4,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Tight"
+        },
+        {
+          "value": 1,
+          "label": "Quality"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "dive",
+      "name": "Dive",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "dive_to",
+      "name": "Dive To",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 12,
+      "default": -12,
+      "unit": "semitone12TET",
+      "properties": [
+        "integer"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "dive_time",
+      "name": "Dive Time",
+      "type": "control",
+      "direction": "in",
+      "min": 10,
+      "max": 2000,
+      "default": 250,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 9,
+      "symbol": "latency",
+      "name": "Latency",
+      "type": "control",
+      "direction": "out"
+    }
+  ]
+}

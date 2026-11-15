@@ -1,0 +1,26 @@
+id: openrig-fx
+name: OpenRig FX
+version: "0.1.0"
+license: GPL-3.0-or-later
+homepage: https://openrig.eu/fx
+origin: upstream
+source:
+  url: https://github.com/Siryu6/openrig-fx/archive/refs/tags/v0.1.0.tar.gz
+  sha256: null
+# OpenRig's own plugins, from the project's release: one archive per
+# architecture, the .lv2 bundles under openrig-fx-<version>-<arch>/.
+# TODO(release): fill in sha256 and size from the v0.1.0 release's
+# SHA256SUMS once the tag is pushed.
+artifacts:
+  aarch64:
+    url: https://github.com/Siryu6/openrig-fx/releases/download/v0.1.0/openrig-fx-0.1.0-aarch64.tar.gz
+    sha256: TODO
+    size: TODO
+    format: tar.gz
+    root: openrig-fx-0.1.0-aarch64
+  x86_64:
+    url: https://github.com/Siryu6/openrig-fx/releases/download/v0.1.0/openrig-fx-0.1.0-x86_64.tar.gz
+    sha256: TODO
+    size: TODO
+    format: tar.gz
+    root: openrig-fx-0.1.0-x86_64

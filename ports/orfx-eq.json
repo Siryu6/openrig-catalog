@@ -1,0 +1,281 @@
+{
+  "uri": "https://openrig.eu/plugins/eq",
+  "name": "OR EQ",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "ParaEQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "a34e4643f9e5d82e7d8e800499f296267f574013621de8961ff8741c584f842d",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "low_cut_on",
+      "name": "Low cut on",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 3,
+      "symbol": "low_cut",
+      "name": "Low cut",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 400,
+      "default": 80,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "low_freq",
+      "name": "Low freq",
+      "type": "control",
+      "direction": "in",
+      "min": 40,
+      "max": 600,
+      "default": 120,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "low_gain",
+      "name": "Low",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "low_mid_freq",
+      "name": "Low mid freq",
+      "type": "control",
+      "direction": "in",
+      "min": 100,
+      "max": 1500,
+      "default": 400,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "low_mid_gain",
+      "name": "Low mid",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "low_mid_q",
+      "name": "Low mid Q",
+      "type": "control",
+      "direction": "in",
+      "min": 0.3,
+      "max": 8,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "mid_freq",
+      "name": "Mid freq",
+      "type": "control",
+      "direction": "in",
+      "min": 300,
+      "max": 4000,
+      "default": 900,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "mid_gain",
+      "name": "Mid",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 11,
+      "symbol": "mid_q",
+      "name": "Mid Q",
+      "type": "control",
+      "direction": "in",
+      "min": 0.3,
+      "max": 8,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 12,
+      "symbol": "high_mid_freq",
+      "name": "High mid freq",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 10000,
+      "default": 2500,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 13,
+      "symbol": "high_mid_gain",
+      "name": "High mid",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 14,
+      "symbol": "high_mid_q",
+      "name": "High mid Q",
+      "type": "control",
+      "direction": "in",
+      "min": 0.3,
+      "max": 8,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 15,
+      "symbol": "high_freq",
+      "name": "High freq",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 12000,
+      "default": 4500,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 16,
+      "symbol": "high_gain",
+      "name": "High",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 17,
+      "symbol": "high_cut_on",
+      "name": "High cut on",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 18,
+      "symbol": "high_cut",
+      "name": "High cut",
+      "type": "control",
+      "direction": "in",
+      "min": 1500,
+      "max": 20000,
+      "default": 8000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 19,
+      "symbol": "level",
+      "name": "Level",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 20,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    }
+  ]
+}

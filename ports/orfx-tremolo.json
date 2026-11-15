@@ -1,0 +1,232 @@
+{
+  "uri": "https://openrig.eu/plugins/tremolo",
+  "name": "OR Tremolo",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "ModulatorPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "9d7c39264102dd5ea16b261ce0b8ed503a450ca136a67aa2c83cd0948e2c3eab",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "rate",
+      "name": "Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 20,
+      "default": 5,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 3,
+      "symbol": "sync",
+      "name": "Sync",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 11,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "1/1"
+        },
+        {
+          "value": 2,
+          "label": "1/2"
+        },
+        {
+          "value": 3,
+          "label": "1/2."
+        },
+        {
+          "value": 4,
+          "label": "1/4"
+        },
+        {
+          "value": 5,
+          "label": "1/4."
+        },
+        {
+          "value": 6,
+          "label": "1/4T"
+        },
+        {
+          "value": 7,
+          "label": "1/8"
+        },
+        {
+          "value": 8,
+          "label": "1/8."
+        },
+        {
+          "value": 9,
+          "label": "1/8T"
+        },
+        {
+          "value": 10,
+          "label": "1/16"
+        },
+        {
+          "value": 11,
+          "label": "1/16T"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "depth",
+      "name": "Depth",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 5,
+      "symbol": "shape",
+      "name": "Shape",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "unit": "pc"
+    },
+    {
+      "index": 6,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Classic"
+        },
+        {
+          "value": 1,
+          "label": "Opto"
+        },
+        {
+          "value": 2,
+          "label": "Harmonic"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "crossover",
+      "name": "Crossover",
+      "type": "control",
+      "direction": "in",
+      "min": 150,
+      "max": 2500,
+      "default": 800,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 8,
+      "symbol": "output",
+      "name": "Output",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 6,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 9,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 10,
+      "symbol": "lfo_phase",
+      "name": "LFO phase",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 11,
+      "symbol": "lfo_gain",
+      "name": "Modulation gain",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 12,
+      "symbol": "events",
+      "name": "Events",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 13,
+      "symbol": "cycle",
+      "name": "Modulation cycle",
+      "type": "AtomPort",
+      "direction": "out"
+    }
+  ]
+}
