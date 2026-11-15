@@ -9,18 +9,17 @@ source:
   sha256: null
 # OpenRig's own plugins, from the project's release: one archive per
 # architecture, the .lv2 bundles under openrig-fx-<version>-<arch>/.
-# TODO(release): fill in sha256 and size from the v0.1.0 release's
-# SHA256SUMS once the tag is pushed.
+# sha256 from the release's SHA256SUMS.
 artifacts:
   aarch64:
     url: https://github.com/Siryu6/openrig-fx/releases/download/v0.1.0/openrig-fx-0.1.0-aarch64.tar.gz
-    sha256: TODO
-    size: TODO
+    sha256: 4a6323291f4acbd2e17c1cfe20991e951f75754075c4eda0f79ef27b5c7a6643
+    size: 2022788
     format: tar.gz
     root: openrig-fx-0.1.0-aarch64
   x86_64:
     url: https://github.com/Siryu6/openrig-fx/releases/download/v0.1.0/openrig-fx-0.1.0-x86_64.tar.gz
-    sha256: TODO
-    size: TODO
+    sha256: 2a2de3c147afa03a6467112197c84131d031e6cb5db0429073291f75f8b959b0
+    size: 2152975
     format: tar.gz
     root: openrig-fx-0.1.0-x86_64
