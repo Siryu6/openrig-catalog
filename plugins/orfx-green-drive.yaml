@@ -1,0 +1,25 @@
+id: orfx-green-drive
+package: openrig-fx
+uri: https://openrig.eu/plugins/green-drive
+bundle: or-green-drive.lv2
+name: OR Green Drive
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- circuit-model
+- mid-hump
+- boost
+summary: The classic mid-hump overdrive, solved as a circuit, with Tight.
+description: 'A circuit model of the classic mid-hump op-amp overdrive: diodes
+  in the feedback solved sample by sample, the gain leg, the tone network and
+  the buffers. Classic, Fat and Asymmetric voicings. Tight, a high pass before
+  the clipping, keeps the low end firm when boosting a high-gain amp.'
+picture:
+  file: orfx-green-drive.png
+  source: https://github.com/Siryu6/openrig-fx/blob/v0.1.0/docs/img/green-drive.png
+  credit: OpenRig
+  license: GPL-3.0-or-later

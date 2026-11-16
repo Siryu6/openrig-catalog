@@ -1,0 +1,19 @@
+id: orfx-gate
+package: openrig-fx
+uri: https://openrig.eu/plugins/gate
+bundle: or-gate.lv2
+name: OR Gate
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Dynamics
+subcategory: Gate
+kind: pedal
+inspired_by: ''
+tags:
+- noise
+- high-gain
+- meter
+summary: 'A noise gate for high gain: fast to open, no chatter on fading notes.'
+description: Threshold with hysteresis, hold, decay and a range from full gate
+  to gentle expander. A gain reduction meter shows it working, and the signal
+  passes untouched while the gate is open.

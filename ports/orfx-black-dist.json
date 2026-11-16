@@ -1,0 +1,109 @@
+{
+  "uri": "https://openrig.eu/plugins/black-dist",
+  "name": "OR Black Dist",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "DistortionPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "c27cf5c6523098fc753f2ea3ed17306ff378e191a441091e687bbc79dc418c5b",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "distortion",
+      "name": "Distortion",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 3,
+      "symbol": "tone",
+      "name": "Tone",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 4,
+      "symbol": "level",
+      "name": "Level",
+      "type": "control",
+      "direction": "in",
+      "min": -24,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "voicing",
+      "name": "Diodes",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Silicon"
+        },
+        {
+          "value": 1,
+          "label": "LED"
+        },
+        {
+          "value": 2,
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    }
+  ]
+}

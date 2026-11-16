@@ -1,0 +1,24 @@
+id: orfx-black-dist
+package: openrig-fx
+uri: https://openrig.eu/plugins/black-dist
+bundle: or-black-dist.lv2
+name: OR Black Dist
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Distortion
+kind: pedal
+inspired_by: ''
+tags:
+- circuit-model
+- hard-clipping
+summary: The classic op-amp hard-clipping distortion, with a choice of diodes.
+description: 'A circuit model of the classic op-amp distortion: a high-gain op-amp
+  with its bandwidth, slew rate and rails, diodes to ground and a passive filter,
+  oversampled eight times. Pick silicon diodes, LEDs for more open clipping, or
+  none for the op-amp''s own rail clipping; all level-matched.'
+picture:
+  file: orfx-black-dist.png
+  source: https://github.com/Siryu6/openrig-fx/blob/v0.1.0/docs/img/black-dist.png
+  credit: OpenRig
+  license: GPL-3.0-or-later

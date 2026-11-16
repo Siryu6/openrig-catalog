@@ -1,0 +1,135 @@
+{
+  "uri": "https://openrig.eu/plugins/graphic-eq",
+  "name": "OR Graphic EQ",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "EQPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "703804117d80d6eed00ccfa76843c73a2eba0ebf71d3c6bd50e32969970d90cc",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "g100",
+      "name": "100 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "g200",
+      "name": "200 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 4,
+      "symbol": "g400",
+      "name": "400 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 5,
+      "symbol": "g800",
+      "name": "800 Hz",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "g1600",
+      "name": "1.6 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 7,
+      "symbol": "g3200",
+      "name": "3.2 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "g6400",
+      "name": "6.4 kHz",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 9,
+      "symbol": "level",
+      "name": "Level",
+      "type": "control",
+      "direction": "in",
+      "min": -15,
+      "max": 15,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 10,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    }
+  ]
+}

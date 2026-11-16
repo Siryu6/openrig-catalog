@@ -1,0 +1,200 @@
+{
+  "uri": "https://openrig.eu/plugins/plate",
+  "name": "OR Plate",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "ReverbPlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "2e1755a30075d22f79ec19b6a5a68f78b8b2014cd0d815d76ef7f6af7a2c45b4",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in_l",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "in_r",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "out_l",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "out_r",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "predelay",
+      "name": "Pre-delay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 250,
+      "default": 15,
+      "unit": "ms"
+    },
+    {
+      "index": 5,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0.3,
+      "max": 20,
+      "default": 2.2,
+      "unit": "s",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "low_decay",
+      "name": "Low decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0.25,
+      "max": 2,
+      "default": 0.8,
+      "unit": null
+    },
+    {
+      "index": 7,
+      "symbol": "high_decay",
+      "name": "High decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0.1,
+      "max": 1,
+      "default": 0.5,
+      "unit": null
+    },
+    {
+      "index": 8,
+      "symbol": "crossover_low",
+      "name": "Low crossover",
+      "type": "control",
+      "direction": "in",
+      "min": 50,
+      "max": 1000,
+      "default": 300,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "crossover_high",
+      "name": "High crossover",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 12000,
+      "default": 3500,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "low_cut",
+      "name": "Low cut",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 1000,
+      "default": 100,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "high_cut",
+      "name": "High cut",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 20000,
+      "default": 20000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 12,
+      "symbol": "modulation",
+      "name": "Modulation",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 30,
+      "unit": "pc"
+    },
+    {
+      "index": 13,
+      "symbol": "mix",
+      "name": "Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 25,
+      "unit": "pc"
+    },
+    {
+      "index": 14,
+      "symbol": "freeze",
+      "name": "Freeze",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 15,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    }
+  ]
+}

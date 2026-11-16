@@ -1,0 +1,20 @@
+id: orfx-plate
+package: openrig-fx
+uri: https://openrig.eu/plugins/plate
+bundle: or-plate.lv2
+name: OR Plate
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Reverb
+subcategory: Plate
+kind: space
+inspired_by: ''
+tags:
+- stereo
+- freeze
+- trails
+summary: A dense stereo plate, decay set in seconds, with freeze.
+description: A modulated plate reverb with a smooth, dense tail. The decay is
+  set in seconds, scaled below and above two crossovers. Pre-delay, a low cut
+  and a high cut shape the reverb only. Freeze holds the tail, and the tail rings
+  out on bypass.

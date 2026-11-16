@@ -1,0 +1,19 @@
+id: orfx-comp
+package: openrig-fx
+uri: https://openrig.eu/plugins/comp
+bundle: or-comp.lv2
+name: OR Comp
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Dynamics
+subcategory: Compressor
+kind: pedal
+inspired_by: ''
+tags:
+- parallel
+- soft-knee
+- meter
+summary: A guitar compressor with a soft knee and a blend for parallel use.
+description: Threshold, ratio, soft knee, attack, release and level, with a blend
+  for parallel compression and a gain reduction meter. Below the threshold the
+  signal passes untouched.

@@ -1,0 +1,101 @@
+{
+  "uri": "https://openrig.eu/plugins/gate",
+  "name": "OR Gate",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "GatePlugin"
+  ],
+  "required_features": [],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "9d65610947d6e2f73225b25eeb320c178c9511a8ed390d05d5108fff387cbebe",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "threshold",
+      "name": "Threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": -20,
+      "default": -60,
+      "unit": "db"
+    },
+    {
+      "index": 3,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 5,
+      "max": 2000,
+      "default": 150,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "hold",
+      "name": "Hold",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 500,
+      "default": 20,
+      "unit": "ms"
+    },
+    {
+      "index": 5,
+      "symbol": "range",
+      "name": "Range",
+      "type": "control",
+      "direction": "in",
+      "min": -90,
+      "max": 0,
+      "default": -90,
+      "unit": "db"
+    },
+    {
+      "index": 6,
+      "symbol": "reduction",
+      "name": "Reduction",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 7,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    }
+  ]
+}

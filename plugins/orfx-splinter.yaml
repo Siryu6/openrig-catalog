@@ -1,0 +1,22 @@
+id: orfx-splinter
+package: openrig-fx
+uri: https://openrig.eu/plugins/splinter
+bundle: or-splinter.lv2
+name: OR Splinter
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Modulation
+subcategory: Glitch
+kind: pedal
+inspired_by: ''
+tags:
+- tempo-sync
+- stutter
+- tape-stop
+- glitch
+summary: Stutter, reverse, tape stop and rhythmic chop, on the beat.
+description: Hold the footswitch and it captures a slice of 1/4 to 1/32 on the
+  beat and repeats it, forward or backward, with a pitch step and a decay per
+  repeat; or it slows the tape to a stop and spins it back up. Rhythmic chop patterns,
+  a bit and sample-rate crush, and a chaos amount. Follows the host tempo and
+  bar, or its own tempo. Zero latency.

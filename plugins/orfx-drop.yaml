@@ -1,0 +1,26 @@
+id: orfx-drop
+package: openrig-fx
+uri: https://openrig.eu/plugins/drop
+bundle: or-drop.lv2
+name: OR Drop
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Modulation
+subcategory: Pitch
+kind: pedal
+inspired_by: ''
+tags:
+- pitch
+- drop-tuning
+- octave
+- dive
+summary: Drop tunings, octaves and momentary dives, with low latency.
+description: Shifts the pitch from two octaves down to an octave up in the time
+  domain, with a low, fixed latency reported to the host. A Dive toggle glides
+  to its own target and back, ready for a momentary footswitch. Mix with a phase-aligned
+  dry, and a Tight or Quality mode.
+picture:
+  file: orfx-drop.png
+  source: https://github.com/Siryu6/openrig-fx/blob/v0.1.0/docs/img/drop.png
+  credit: OpenRig
+  license: GPL-3.0-or-later

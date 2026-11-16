@@ -1,0 +1,376 @@
+{
+  "uri": "https://openrig.eu/plugins/splinter",
+  "name": "OR Splinter",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "DelayPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 1,
+    "outputs": 1
+  },
+  "ports_hash": "d3247e15d3585556ecb1b31764deea611f9cacdf1ec5e5ec630277e85b82fa31",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in",
+      "name": "In",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "out",
+      "name": "Out",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 2,
+      "symbol": "events",
+      "name": "Events",
+      "type": "AtomPort",
+      "direction": "in"
+    },
+    {
+      "index": 3,
+      "symbol": "hold",
+      "name": "Hold",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 4,
+      "symbol": "action",
+      "name": "Action",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 3,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Repeat"
+        },
+        {
+          "value": 1,
+          "label": "Reverse"
+        },
+        {
+          "value": 2,
+          "label": "Tape Stop"
+        },
+        {
+          "value": 3,
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "slice",
+      "name": "Slice",
+      "type": "control",
+      "direction": "in",
+      "min": 4,
+      "max": 13,
+      "default": 7,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 4,
+          "label": "1/4"
+        },
+        {
+          "value": 6,
+          "label": "1/4T"
+        },
+        {
+          "value": 7,
+          "label": "1/8"
+        },
+        {
+          "value": 9,
+          "label": "1/8T"
+        },
+        {
+          "value": 10,
+          "label": "1/16"
+        },
+        {
+          "value": 11,
+          "label": "1/16T"
+        },
+        {
+          "value": 12,
+          "label": "1/32"
+        },
+        {
+          "value": 13,
+          "label": "1/32T"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "repeats",
+      "name": "Repeats",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 16,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "integer"
+      ]
+    },
+    {
+      "index": 7,
+      "symbol": "decay",
+      "name": "Decay",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 12,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 8,
+      "symbol": "step",
+      "name": "Pitch Step",
+      "type": "control",
+      "direction": "in",
+      "min": -12,
+      "max": 12,
+      "default": 0,
+      "unit": "semitone12TET",
+      "properties": [
+        "integer"
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "stop_time",
+      "name": "Stop Time",
+      "type": "control",
+      "direction": "in",
+      "min": 0.25,
+      "max": 4,
+      "default": 1,
+      "unit": "beat"
+    },
+    {
+      "index": 10,
+      "symbol": "tape_start",
+      "name": "Tape Start",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "pattern",
+      "name": "Chop",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 6,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "1/8"
+        },
+        {
+          "value": 2,
+          "label": "1/16"
+        },
+        {
+          "value": 3,
+          "label": "Triplets"
+        },
+        {
+          "value": 4,
+          "label": "Gallop"
+        },
+        {
+          "value": 5,
+          "label": "Offbeat"
+        },
+        {
+          "value": 6,
+          "label": "Breakdown"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "symbol": "duty",
+      "name": "Duty",
+      "type": "control",
+      "direction": "in",
+      "min": 10,
+      "max": 100,
+      "default": 50,
+      "unit": "pc"
+    },
+    {
+      "index": 13,
+      "symbol": "scope",
+      "name": "Chop and Crush",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "While Held"
+        },
+        {
+          "value": 1,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "symbol": "bits",
+      "name": "Bits",
+      "type": "control",
+      "direction": "in",
+      "min": 1,
+      "max": 16,
+      "default": 16,
+      "unit": null
+    },
+    {
+      "index": 15,
+      "symbol": "rate",
+      "name": "Rate",
+      "type": "control",
+      "direction": "in",
+      "min": 500,
+      "max": 48000,
+      "default": 48000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 16,
+      "symbol": "chaos",
+      "name": "Chaos",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "unit": "pc"
+    },
+    {
+      "index": 17,
+      "symbol": "mix",
+      "name": "Mix",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 100,
+      "unit": "pc"
+    },
+    {
+      "index": 18,
+      "symbol": "quantize",
+      "name": "Quantize",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 19,
+      "symbol": "tempo",
+      "name": "Tempo",
+      "type": "control",
+      "direction": "in",
+      "min": 40,
+      "max": 300,
+      "default": 120,
+      "unit": "bpm"
+    },
+    {
+      "index": 20,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 21,
+      "symbol": "grid",
+      "name": "Step grid",
+      "type": "AtomPort",
+      "direction": "out"
+    }
+  ]
+}

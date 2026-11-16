@@ -1,0 +1,20 @@
+id: orfx-drive
+package: openrig-fx
+uri: https://openrig.eu/plugins/drive
+bundle: or-drive.lv2
+name: OR Drive
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Distortion
+subcategory: Overdrive
+kind: pedal
+inspired_by: ''
+tags:
+- boost
+- fuzz
+- anti-aliased
+summary: Boost, overdrive, distortion and fuzz, level-matched and anti-aliased.
+description: 'Four drive circuits in one plugin, modelled from how they behave:
+  a clean boost, a soft op-amp overdrive, a hard-clipping distortion and a fuzz.
+  Tone voiced per circuit, bass before the clipping, and level-matched modes.
+  Oversampled antiderivative clipping keeps the highs clean.'

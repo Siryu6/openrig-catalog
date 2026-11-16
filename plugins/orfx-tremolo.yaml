@@ -1,0 +1,19 @@
+id: orfx-tremolo
+package: openrig-fx
+uri: https://openrig.eu/plugins/tremolo
+bundle: or-tremolo.lv2
+name: OR Tremolo
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Modulation
+subcategory: Tremolo
+kind: pedal
+inspired_by: ''
+tags:
+- tempo-sync
+- opto
+- harmonic
+summary: Classic, opto and harmonic tremolo, synced to the tempo.
+description: 'A tremolo with three voicings: classic volume, the soft throb of
+  an opto cell, and harmonic, where lows and highs swap. Depth, rate in hertz
+  or note values synced to the tempo, and a shape from sine to square.'

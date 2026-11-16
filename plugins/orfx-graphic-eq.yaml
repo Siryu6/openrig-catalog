@@ -1,0 +1,18 @@
+id: orfx-graphic-eq
+package: openrig-fx
+uri: https://openrig.eu/plugins/graphic-eq
+bundle: or-eq.lv2
+name: OR Graphic EQ
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Filter
+subcategory: Graphic EQ
+kind: pedal
+inspired_by: ''
+tags:
+- zero-latency
+- curve
+summary: Seven guitar bands from 100 Hz to 6.4 kHz, one per octave.
+description: 'A graphic EQ voiced for guitar: seven bands an octave apart from
+  100 Hz to 6.4 kHz, and an output level. Zero latency, transparent when flat,
+  drawn as a curve in OpenRig.'

@@ -1,0 +1,314 @@
+{
+  "uri": "https://openrig.eu/plugins/echo-stereo",
+  "name": "OR Echo Stereo",
+  "version": "2.0",
+  "license": "http://spdx.org/licenses/GPL-3.0-or-later",
+  "classes": [
+    "DelayPlugin"
+  ],
+  "required_features": [
+    "http://lv2plug.in/ns/ext/urid#map"
+  ],
+  "audio": {
+    "inputs": 2,
+    "outputs": 2
+  },
+  "ports_hash": "7127460703f7011de8774534747f69fc2f39cd6597777e7cf1230d79be8e41e0",
+  "ports": [
+    {
+      "index": 0,
+      "symbol": "in_l",
+      "name": "In L",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 1,
+      "symbol": "in_r",
+      "name": "In R",
+      "type": "audio",
+      "direction": "in"
+    },
+    {
+      "index": 2,
+      "symbol": "out_l",
+      "name": "Out L",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 3,
+      "symbol": "out_r",
+      "name": "Out R",
+      "type": "audio",
+      "direction": "out"
+    },
+    {
+      "index": 4,
+      "symbol": "time",
+      "name": "Time",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 2000,
+      "default": 400,
+      "unit": "ms",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 5,
+      "symbol": "sync",
+      "name": "Sync",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 11,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Off"
+        },
+        {
+          "value": 1,
+          "label": "1/1"
+        },
+        {
+          "value": 2,
+          "label": "1/2"
+        },
+        {
+          "value": 3,
+          "label": "1/2."
+        },
+        {
+          "value": 4,
+          "label": "1/4"
+        },
+        {
+          "value": 5,
+          "label": "1/4."
+        },
+        {
+          "value": 6,
+          "label": "1/4T"
+        },
+        {
+          "value": 7,
+          "label": "1/8"
+        },
+        {
+          "value": 8,
+          "label": "1/8."
+        },
+        {
+          "value": 9,
+          "label": "1/8T"
+        },
+        {
+          "value": 10,
+          "label": "1/16"
+        },
+        {
+          "value": 11,
+          "label": "1/16T"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "symbol": "feedback",
+      "name": "Feedback",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 110,
+      "default": 35,
+      "unit": "pc"
+    },
+    {
+      "index": 7,
+      "symbol": "level",
+      "name": "Level",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 40,
+      "unit": "pc"
+    },
+    {
+      "index": 8,
+      "symbol": "mode",
+      "name": "Mode",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 2,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "enumeration",
+        "integer"
+      ],
+      "scale_points": [
+        {
+          "value": 0,
+          "label": "Digital"
+        },
+        {
+          "value": 1,
+          "label": "Tape"
+        },
+        {
+          "value": 2,
+          "label": "Analog"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "symbol": "low_cut",
+      "name": "Low cut",
+      "type": "control",
+      "direction": "in",
+      "min": 20,
+      "max": 1000,
+      "default": 20,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 10,
+      "symbol": "high_cut",
+      "name": "High cut",
+      "type": "control",
+      "direction": "in",
+      "min": 1000,
+      "max": 20000,
+      "default": 20000,
+      "unit": "hz",
+      "properties": [
+        "logarithmic"
+      ]
+    },
+    {
+      "index": 11,
+      "symbol": "modulation",
+      "name": "Modulation",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 20,
+      "unit": "pc"
+    },
+    {
+      "index": 12,
+      "symbol": "drive",
+      "name": "Drive",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 100,
+      "default": 33,
+      "unit": "pc"
+    },
+    {
+      "index": 13,
+      "symbol": "duck",
+      "name": "Duck",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "unit": "db"
+    },
+    {
+      "index": 14,
+      "symbol": "duck_threshold",
+      "name": "Duck threshold",
+      "type": "control",
+      "direction": "in",
+      "min": -60,
+      "max": 0,
+      "default": -30,
+      "unit": "db"
+    },
+    {
+      "index": 15,
+      "symbol": "dry",
+      "name": "Dry",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 16,
+      "symbol": "ping_pong",
+      "name": "Ping-pong",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "unit": null,
+      "properties": [
+        "toggled"
+      ]
+    },
+    {
+      "index": 17,
+      "symbol": "enabled",
+      "name": "Enabled",
+      "type": "control",
+      "direction": "in",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "unit": null,
+      "properties": [
+        "integer",
+        "toggled"
+      ],
+      "designation": "enabled"
+    },
+    {
+      "index": 18,
+      "symbol": "delay_ms",
+      "name": "Delay",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 19,
+      "symbol": "ducking",
+      "name": "Ducking",
+      "type": "control",
+      "direction": "out"
+    },
+    {
+      "index": 20,
+      "symbol": "events",
+      "name": "Events",
+      "type": "AtomPort",
+      "direction": "in"
+    }
+  ]
+}

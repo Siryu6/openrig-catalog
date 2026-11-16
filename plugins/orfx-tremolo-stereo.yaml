@@ -1,0 +1,19 @@
+id: orfx-tremolo-stereo
+package: openrig-fx
+uri: https://openrig.eu/plugins/tremolo-stereo
+bundle: or-tremolo.lv2
+name: OR Tremolo Stereo
+author: OpenRig FX contributors
+license: GPL-3.0-or-later
+family: Modulation
+subcategory: Tremolo
+kind: pedal
+inspired_by: ''
+tags:
+- tempo-sync
+- stereo
+- auto-pan
+summary: Stereo tremolo and auto-pan, synced to the tempo.
+description: 'OR Tremolo in stereo: the same voicings, with a spread that moves
+  the two sides apart until it becomes an auto-pan. Synced to the tempo in note
+  values, or set in hertz.'
